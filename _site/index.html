@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="/css/fontawesome.css" />
     <title>Winnow Design System - Home</title>
   </head>
-  <body><nav class="navbar" role="navigation" aria-label="main navigation">
+  <body><nav class="navbar has-shadow" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
     <a class="navbar-item" href="/">
       <img src="assets/img/logo_winnow.svg" width="145" height="35" />
@@ -317,5 +317,27 @@
     </div>
   </div>
 </nav>
-</body>
+<script>
+      function dropDownLayoutFunction() {
+        var element = document.getElementById("winnowDropDownLayout");
+        element.classList.toggle("is-active");
+      }
+      function dropDownLayoutMiniFunction() {
+        var element = document.getElementById("winnowDropDownLayoutMini");
+        element.classList.toggle("is-active");
+      }
+      function dropDownShareFunction() {
+        var element = document.getElementById("winnowDropDownShare");
+        element.classList.toggle("is-active");
+      }
+      function dropDownShareMiniFunction() {
+        var element = document.getElementById("winnowDropDownShareMini");
+        element.classList.toggle("is-active");
+      }
+      function dropDownSearchFunction() {
+        var element = document.getElementById("winnowDropDownSearch");
+        element.classList.toggle("is-active");
+      }
+    </script>
+  </body>
 </html>

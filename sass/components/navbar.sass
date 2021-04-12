@@ -125,7 +125,7 @@ $navbar-colors: $colors !default
       box-shadow: $navbar-bottom-box-shadow-size $navbar-box-shadow-color
   &.is-fixed-top
     top: 0
-
+  
 html,
 body
   &.has-navbar-fixed-top
@@ -139,6 +139,9 @@ body
   display: flex
   flex-shrink: 0
   min-height: $navbar-height
+
+.navbar-minimal
+    display: none
 
 .navbar-brand
   a.navbar-item
@@ -243,6 +246,9 @@ a.navbar-item,
     .navbar-item
       align-items: center
       display: flex
+  .navbar-minimal
+    display: flex
+    margin-left: auto
   .navbar-link
     &::after
       display: none
@@ -403,6 +409,7 @@ a.navbar-item,
       +ltr-property("margin", -.75rem, false)
     .navbar-menu
       +ltr-property("margin", -.75rem)
+
   // Fixed navbar
   .navbar
     &.is-fixed-bottom-desktop,

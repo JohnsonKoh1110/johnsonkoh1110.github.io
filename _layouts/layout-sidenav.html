@@ -16,5 +16,27 @@
   </head>
   <body>
     {%- include wds-header.html -%}
+    <script>
+      function dropDownLayoutFunction() {
+        var element = document.getElementById("winnowDropDownLayout");
+        element.classList.toggle("is-active");
+      }
+      function dropDownLayoutMiniFunction() {
+        var element = document.getElementById("winnowDropDownLayoutMini");
+        element.classList.toggle("is-active");
+      }
+      function dropDownShareFunction() {
+        var element = document.getElementById("winnowDropDownShare");
+        element.classList.toggle("is-active");
+      }
+      function dropDownShareMiniFunction() {
+        var element = document.getElementById("winnowDropDownShareMini");
+        element.classList.toggle("is-active");
+      }
+      function dropDownSearchFunction() {
+        var element = document.getElementById("winnowDropDownSearch");
+        element.classList.toggle("is-active");
+      }
+    </script>
   </body>
 </html>
