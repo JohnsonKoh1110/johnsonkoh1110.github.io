@@ -1,27 +1,303 @@
-<nav class="navbar">
-  <div class="container">
-    <div class="navbar-brand">
-      <a class="navbar-item" href="/">
-        <img src="/assets/logo_winnow.svg" alt="" />
-      </a>
-      <div class="navbar-burger burger" data-target="navbarMain">
-        <span></span>
-        <span></span>
-        <span></span>
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="/">
+      <img src="assets/img/logo_winnow.svg" width="145" height="35" />
+    </a>
+    <div class="navbar-minimal">
+      <div class="navbar-item">
+        <div
+          id="winnowDropDownSearch"
+          class="dropdown"
+          onclick="dropDownSearchFunction()"
+        >
+          <div class="dropdown-trigger">
+            <button class="button"><i class="fal fa-search"></i></button>
+          </div>
+          <div class="dropdown-menu" id="dropdown-menu" role="menu">
+            <div class="dropdown-content">
+              <div class="dropdown-item">
+                <div class="field has-addons">
+                  <div class="control is-expanded">
+                    <input
+                      type="text"
+                      class="input is-fullwidth"
+                      placeholder="Enter company name"
+                    />
+                  </div>
+                  <div class="control">
+                    <a class="button"><i class="fal fa-search"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="navbar-item">
+        <div
+          id="winnowDropDownLayoutMini"
+          class="dropdown"
+          onclick="dropDownLayoutMiniFunction()"
+        >
+          <div class="dropdown-trigger">
+            <button
+              class="button"
+              aria-haspopup="true"
+              aria-controls="dropdown-menu"
+            >
+              <span class="icon is-small">
+                <i class="fal fa-th"></i>
+              </span>
+              <span class="icon is-small">
+                <i class="fas fa-angle-down" aria-hidden="true"></i>
+              </span>
+            </button>
+          </div>
+          <div class="dropdown-menu" id="dropdown-menu" role="menu">
+            <div class="dropdown-content">
+              <div class="dropdown-item">
+                <label class="label is-small">NEW LAYOUT</label>
+                <div class="field has-addons">
+                  <div class="control is-expanded">
+                    <input
+                      type="text"
+                      class="input is-fullwidth"
+                      placeholder="New layout name"
+                    />
+                  </div>
+                  <div class="control">
+                    <a class="button"><i class="fal fa-save"></i></a>
+                  </div>
+                </div>
+              </div>
+              <hr class="dropdown-divider" />
+              <div class="dropdown-item">
+                <label class="label is-small">SAVED LAYOUTS</label>
+              </div>
+              <a href="#" class="dropdown-item">
+                <div class="level is-mobile">
+                  <div class="level-left">
+                    <span class="icon level-item">
+                      <i class="fas fa-check-circle"></i
+                    ></span>
+                    <span class="level-item">Default Layout</span>
+                  </div>
+                  <div class="level-right">
+                    <span class="icon level-item"> </span>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="dropdown-item">
+                <div class="level is-mobile">
+                  <div class="level-left">
+                    <span class="icon level-item"> </span>
+                    <span class="level-item">Sales Graph</span>
+                  </div>
+                  <div class="level-right">
+                    <span class="icon level-item">
+                      <i class="fal fa-trash-alt"></i>
+                    </span>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="dropdown-item">
+                <div class="level is-mobile">
+                  <div class="level-left">
+                    <span class="icon level-item"> </span>
+                    <span class="level-item">Competitor Analysis</span>
+                  </div>
+                  <div class="level-right">
+                    <span class="icon level-item">
+                      <i class="fal fa-trash-alt"></i>
+                    </span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="navbar-item">
+        <div
+          id="winnowDropDownShareMini"
+          class="dropdown"
+          onclick="dropDownShareMiniFunction()"
+        >
+          <div class="dropdown-trigger">
+            <button class="button"><i class="fal fa-share"></i></button>
+          </div>
+          <div class="dropdown-menu" id="dropdown-menu" role="menu">
+            <div class="dropdown-content">
+              <div class="dropdown-item">
+                <label class="label is-small">SHARE LINK</label>
+                <div class="field has-addons">
+                  <div class="control is-expanded">
+                    <input
+                      type="text"
+                      class="input is-fullwidth"
+                      placeholder="https://winnow.onetemasek.local/companyname"
+                    />
+                  </div>
+                  <div class="control">
+                    <a class="button"><i class="fal fa-copy"></i></a>
+                  </div>
+                </div>
+              </div>
+              <hr class="dropdown-divider" />
+              <div class="dropdown-item">
+                <p>
+                  You can share this link with people you want to discuss the
+                  company with. Your layout is preserved in the link.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <div id="navbarMain" class="navbar-menu">
-      {%- assign links = site.data.navigation -%} {%- for lvl1item in links -%}
-      {%- assign class = nil -%} {%- if page.url contains lvl1item.url -%} {%-
-      assign class = 'is-active' -%} {%- endif -%}
-      <a
-        class="navbar-item is-uppercase {{class}}"
-        href="{{ site.baseurl }}{{ lvl1item.url }} "
-      >
-        {{ lvl1item.title }}
-      </a>
-
-      {%- endfor -%}
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="field has-addons">
+          <div class="control is-expanded">
+            <input
+              type="text"
+              class="input is-fullwidth"
+              placeholder="Enter company name"
+            />
+          </div>
+          <div class="control">
+            <a class="button"><i class="fal fa-search"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="navbar-item">
+        <div class="field">
+          <div
+            id="winnowDropDownLayout"
+            class="dropdown is-right"
+            onclick="dropDownLayoutFunction()"
+          >
+            <div class="dropdown-trigger">
+              <button
+                class="button"
+                aria-haspopup="true"
+                aria-controls="dropdown-menu"
+              >
+                <span class="icon is-small">
+                  <i class="fal fa-th"></i>
+                </span>
+                <span>Default Layout</span>
+                <span class="icon is-small">
+                  <i class="fas fa-angle-down" aria-hidden="true"></i>
+                </span>
+              </button>
+            </div>
+            <div class="dropdown-menu" id="dropdown-menu" role="menu">
+              <div class="dropdown-content">
+                <div class="dropdown-item">
+                  <label class="label is-small">NEW LAYOUT</label>
+                  <div class="field has-addons">
+                    <div class="control is-expanded">
+                      <input
+                        type="text"
+                        class="input is-fullwidth"
+                        placeholder="New layout name"
+                      />
+                    </div>
+                    <div class="control">
+                      <a class="button"><i class="fal fa-save"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <hr class="dropdown-divider" />
+                <div class="dropdown-item">
+                  <label class="label is-small">SAVED LAYOUTS</label>
+                </div>
+                <a href="#" class="dropdown-item">
+                  <div class="level">
+                    <div class="level-left">
+                      <span class="icon level-item">
+                        <i class="fas fa-check-circle"></i
+                      ></span>
+                      <span class="level-item">Default Layout</span>
+                    </div>
+                    <div class="level-right">
+                      <span class="icon level-item"> </span>
+                    </div>
+                  </div>
+                </a>
+                <a href="#" class="dropdown-item">
+                  <div class="level">
+                    <div class="level-left">
+                      <span class="icon level-item"> </span>
+                      <span class="level-item">Sales Graph</span>
+                    </div>
+                    <div class="level-right">
+                      <span class="icon level-item">
+                        <i class="fal fa-trash-alt"></i>
+                      </span>
+                    </div>
+                  </div>
+                </a>
+                <a href="#" class="dropdown-item">
+                  <div class="level">
+                    <div class="level-left">
+                      <span class="icon level-item"> </span>
+                      <span class="level-item">Competitor Analysis</span>
+                    </div>
+                    <div class="level-right">
+                      <span class="icon level-item">
+                        <i class="fal fa-trash-alt"></i>
+                      </span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="navbar-item">
+        <div class="field">
+          <div
+            id="winnowDropDownShare"
+            class="dropdown is-right"
+            onclick="dropDownShareFunction()"
+          >
+            <div class="dropdown-trigger">
+              <button class="button"><i class="fal fa-share"></i></button>
+            </div>
+            <div class="dropdown-menu" id="dropdown-menu" role="menu">
+              <div class="dropdown-content">
+                <div class="dropdown-item">
+                  <label class="label is-small">SHARE LINK</label>
+                  <div class="field has-addons">
+                    <div class="control is-expanded">
+                      <input
+                        type="text"
+                        class="input is-fullwidth"
+                        placeholder="https://winnow.onetemasek.local/companyname"
+                      />
+                    </div>
+                    <div class="control">
+                      <a class="button"><i class="fal fa-copy"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <hr class="dropdown-divider" />
+                <div class="dropdown-item">
+                  <p>
+                    You can share this link with people you want to discuss the
+                    company with. Your layout is preserved in the link.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </nav>
