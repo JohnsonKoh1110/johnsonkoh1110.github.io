@@ -31,7 +31,7 @@ $hero-colors: $colors !default
       .title
         color: $color-invert
       .subtitle
-        color: bulmaRgba($color-invert, 0.9)
+        color: winnowRgba($color-invert, 0.9)
         a:not(.button),
         strong
           color: $color-invert
@@ -40,12 +40,12 @@ $hero-colors: $colors !default
           background-color: $color
       .navbar-item,
       .navbar-link
-        color: bulmaRgba($color-invert, 0.7)
+        color: winnowRgba($color-invert, 0.7)
       a.navbar-item,
       .navbar-link
         &:hover,
         &.is-active
-          background-color: bulmaDarken($color, 5%)
+          background-color: winnowDarken($color, 5%)
           color: $color-invert
       .tabs
         a
@@ -61,7 +61,7 @@ $hero-colors: $colors !default
           a
             color: $color-invert
             &:hover
-              background-color: bulmaRgba($scheme-invert, 0.1)
+              background-color: winnowRgba($scheme-invert, 0.1)
           li.is-active a
             &,
             &:hover

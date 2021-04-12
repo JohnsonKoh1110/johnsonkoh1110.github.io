@@ -1,4 +1,4 @@
-/* Bulma Utilities */
+/* Utilities */
 .button, .input, .textarea, .select select, .file-cta,
 .file-name, .pagination-previous,
 .pagination-next,
@@ -189,7 +189,7 @@
   right: 0;
   top: 0; }
 
-/* Bulma Base */
+/* Base */
 /*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
 html,
 body,
@@ -376,7 +376,7 @@ table th {
   to {
     transform: rotate(359deg); } }
 
-/* Bulma Elements */
+/* Elements */
 .box {
   background-color: white;
   border-radius: 6px;
@@ -2153,7 +2153,7 @@ a.tag:hover {
   text-align: center;
   vertical-align: top; }
 
-/* Bulma Form */
+/* Form */
 .input, .textarea, .select select {
   background-color: white;
   border-color: #dbdbdb;
@@ -2959,7 +2959,7 @@ a.tag:hover {
   .control.is-loading.is-large:after {
     font-size: 1.5rem; }
 
-/* Bulma Components */
+/* Components */
 .breadcrumb {
   font-size: 1rem;
   white-space: nowrap; }
@@ -4694,7 +4694,7 @@ label.panel-block {
   .tabs.is-large {
     font-size: 1.5rem; }
 
-/* Bulma Grid */
+/* Grid */
 .column {
   display: block;
   flex-basis: 0;
@@ -5886,7 +5886,7 @@ label.panel-block {
       flex: none;
       width: 100%; } }
 
-/* Bulma Helpers */
+/* Helpers */
 .has-text-white {
   color: white !important; }
 
@@ -7254,7 +7254,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   .is-invisible-fullhd {
     visibility: hidden !important; } }
 
-/* Bulma Layout */
+/* Layout */
 .hero {
   align-items: stretch;
   display: flex;
