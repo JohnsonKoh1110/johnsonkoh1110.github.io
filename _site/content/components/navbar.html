@@ -1,4 +1,162 @@
-<nav class="navbar has-shadow" role="navigation" aria-label="main navigation">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta property="og:title" content="Winnow Design System" />
+    <meta property="og:description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description." />
+    <meta property="og:url" content="" />
+    <link rel="stylesheet" href="/css/winnow.css" />
+    <link rel="stylesheet" href="/css/fontawesome.css" />
+    <title>Winnow Design System - Navbar</title>
+  </head>
+  <body>
+    <nav
+      class="navbar has-shadow"
+      role="navigation"
+      aria-label="main navigation"
+    >
+      <div class="navbar-brand">
+        <a class="navbar-item">
+          <img src="../../assets/img/logo_winnowdesignsystem.svg" />
+        </a>
+        <a
+          role="button"
+          class="navbar-burger"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="winnowNav"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+      <div id="winnowNav" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item is-active"> Documentation </a>
+          <a class="navbar-item"> About </a>
+        </div>
+      </div>
+    </nav>
+    <section class="main-content columns is-fullheight">
+      <aside class="column is-2 is-narrow-mobile is-fullheight section">
+        
+        <p class="menu-label">Components</p>
+        <ul class="menu-list">
+          
+          <li>
+            <a
+              href="/content/components/navbar.html"
+              class="is-active"
+              >Navbar</a
+            >
+          </li>
+          
+          <li>
+            <a
+              href="/content/components/widget.html"
+              class=""
+              >Widget</a
+            >
+          </li>
+          
+        </ul>
+        
+        <p class="menu-label">Elements</p>
+        <ul class="menu-list">
+          
+          <li>
+            <a
+              href="/content/elements/button.html"
+              class=""
+              >Button</a
+            >
+          </li>
+          
+          <li>
+            <a
+              href="/content/elements/delete.html"
+              class=""
+              >Delete</a
+            >
+          </li>
+          
+          <li>
+            <a
+              href="/content/elements/icon.html"
+              class=""
+              >Icon</a
+            >
+          </li>
+          
+          <li>
+            <a
+              href=""
+              class=""
+              >Notification</a
+            >
+          </li>
+          
+        </ul>
+        
+        <p class="menu-label">Form</p>
+        <ul class="menu-list">
+          
+          <li>
+            <a
+              href="/content/form/input.html"
+              class=""
+              >Input</a
+            >
+          </li>
+          
+        </ul>
+        
+        <p class="menu-label">Layout</p>
+        <ul class="menu-list">
+          
+          <li>
+            <a
+              href="/content/layout/container.html"
+              class=""
+              >Container</a
+            >
+          </li>
+          
+          <li>
+            <a
+              href="/content/layout/level.html"
+              class=""
+              >Level</a
+            >
+          </li>
+          
+          <li>
+            <a
+              href="/content/layout/section.html"
+              class=""
+              >Section</a
+            >
+          </li>
+          
+        </ul>
+        
+      </aside>
+      <div class="column is-10 is-fullheight section has-background-light">
+        <section>
+  <h3 class="title is-3">Basic Navbar</h3>
+  <div class="content">
+    <p>
+      Here is what a complete basic navbar looks like. Resize the browser and
+      observe its responsiveness.
+    </p>
+  </div>
+  <nav class="navbar has-shadow" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
     <a class="navbar-item" href="/">
       <img src="../../assets/img/logo_winnow.svg" width="145" height="35" />
@@ -324,3 +482,10 @@
     element.classList.toggle("is-active");
   }
 </script>
+
+</section>
+
+      </div>
+    </section>
+  </body>
+</html>

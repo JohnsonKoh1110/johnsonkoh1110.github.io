@@ -15,28 +15,54 @@
     <title>Winnow Design System - {{ page.title }}</title>
   </head>
   <body>
-    {%- include wds-header.html -%}
-    <script>
-      function dropDownLayoutFunction() {
-        var element = document.getElementById("winnowDropDownLayout");
-        element.classList.toggle("is-active");
-      }
-      function dropDownLayoutMiniFunction() {
-        var element = document.getElementById("winnowDropDownLayoutMini");
-        element.classList.toggle("is-active");
-      }
-      function dropDownShareFunction() {
-        var element = document.getElementById("winnowDropDownShare");
-        element.classList.toggle("is-active");
-      }
-      function dropDownShareMiniFunction() {
-        var element = document.getElementById("winnowDropDownShareMini");
-        element.classList.toggle("is-active");
-      }
-      function dropDownSearchFunction() {
-        var element = document.getElementById("winnowDropDownSearch");
-        element.classList.toggle("is-active");
-      }
-    </script>
+    <nav
+      class="navbar has-shadow"
+      role="navigation"
+      aria-label="main navigation"
+    >
+      <div class="navbar-brand">
+        <a class="navbar-item">
+          <img src="../../assets/img/logo_winnowdesignsystem.svg" />
+        </a>
+        <a
+          role="button"
+          class="navbar-burger"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="winnowNav"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+      <div id="winnowNav" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item is-active"> Documentation </a>
+          <a class="navbar-item"> About </a>
+        </div>
+      </div>
+    </nav>
+    <section class="main-content columns is-fullheight">
+      <aside class="column is-2 is-narrow-mobile is-fullheight section">
+        {% for item in site.data.navigation.path %}
+        <p class="menu-label">{{ item.title }}</p>
+        <ul class="menu-list">
+          {% for entry in item.subfolderitems %}
+          <li>
+            <a
+              href="{{ entry.url }}"
+              class="{% if entry.url == page.url %}is-active{% endif %}"
+              >{{ entry.page }}</a
+            >
+          </li>
+          {% endfor %}
+        </ul>
+        {% endfor %}
+      </aside>
+      <div class="column is-10 is-fullheight section has-background-light">
+        {{content}}
+      </div>
+    </section>
   </body>
 </html>

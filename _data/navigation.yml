@@ -1,8 +1,28 @@
-- title: Docs
-  url: /docs/
-
-- title: FAQs
-  url: /general/faq/
-
-- title: About
-  url: /about/
+path:
+  - title: Components
+    subfolderitems:
+      - page: Navbar
+        url: /content/components/navbar.html
+      - page: Widget
+        url: /content/components/widget.html
+  - title: Elements
+    subfolderitems:
+      - page: Button
+        url: /content/elements/button.html
+      - page: Delete
+        url: /content/elements/delete.html
+      - page: Icon
+        url: /content/elements/icon.html
+      - page: Notification
+  - title: Form
+    subfolderitems:
+      - page: Input
+        url: /content/form/input.html
+  - title: Layout
+    subfolderitems:
+      - page: Container
+        url: /content/layout/container.html
+      - page: Level
+        url: /content/layout/level.html
+      - page: Section
+        url: /content/layout/section.html
