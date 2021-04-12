@@ -1,0 +1,27 @@
+<nav class="navbar">
+  <div class="container">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/">
+        <img src="/assets/logo_winnow.svg" alt="" />
+      </a>
+      <div class="navbar-burger burger" data-target="navbarMain">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <div id="navbarMain" class="navbar-menu">
+      {%- assign links = site.data.navigation -%} {%- for lvl1item in links -%}
+      {%- assign class = nil -%} {%- if page.url contains lvl1item.url -%} {%-
+      assign class = 'is-active' -%} {%- endif -%}
+      <a
+        class="navbar-item is-uppercase {{class}}"
+        href="{{ site.baseurl }}{{ lvl1item.url }} "
+      >
+        {{ lvl1item.title }}
+      </a>
+
+      {%- endfor -%}
+    </div>
+  </div>
+</nav>
