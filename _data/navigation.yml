@@ -14,6 +14,7 @@ path:
       - page: Icon
         url: /content/elements/icon.html
       - page: Notification
+        url: /content/elements/notification.html
   - title: Form
     subfolderitems:
       - page: Input
