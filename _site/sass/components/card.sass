@@ -6,9 +6,9 @@ $card-shadow: 0 0.5em 1em -0.125em rgba($scheme-invert, 0.1), 0 0px 0 1px rgba($
 $card-radius: 0.25rem !default
 
 $card-header-background-color: transparent !default
-$card-header-color: $text-strong !default
+$card-header-color: $purple !default
 $card-header-padding: 0.75rem 1rem !default
-$card-header-shadow: 0 0.125em 0.25em rgba($scheme-invert, 0.1) !default
+$card-header-shadow: 0 !default
 $card-header-weight: $weight-bold !default
 
 $card-content-background-color: transparent !default
@@ -16,7 +16,7 @@ $card-content-padding: 1.5rem !default
 
 $card-footer-background-color: transparent !default
 $card-footer-border-top: 1px solid $border-light !default
-$card-footer-padding: 0.75rem !default
+$card-footer-padding: 1rem !default
 
 $card-media-margin: $block-spacing !default
 
@@ -41,17 +41,23 @@ $card-media-margin: $block-spacing !default
   background-color: $card-header-background-color
   align-items: stretch
   box-shadow: $card-header-shadow
+  border-bottom: 1px solid $border-light
   display: flex
+  justify-content: space-between
+  button
+    background-color: transparent
+    border: 0
 
 .card-header-title
-  align-items: center
   color: $card-header-color
-  display: flex
-  flex-grow: 1
+  text-transform: uppercase
   font-weight: $card-header-weight
   padding: $card-header-padding
-  &.is-centered
-    justify-content: center
+  small
+    text-transform: none
+    color: $grey
+    font-weight: $weight-normal
+    font-size: $size-7
 
 .card-header-icon
   align-items: center
@@ -90,7 +96,6 @@ $card-media-margin: $block-spacing !default
   flex-basis: 0
   flex-grow: 1
   flex-shrink: 0
-  justify-content: center
   padding: $card-footer-padding
   &:not(:last-child)
     +ltr-property("border", $card-footer-border-top)
