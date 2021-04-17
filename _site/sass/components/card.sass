@@ -27,6 +27,28 @@ $card-media-margin: $block-spacing !default
   color: $card-color
   max-width: 100%
   position: relative
+  &:not(:last-child)
+    margin-bottom: $card-media-margin
+  img
+    border-radius: 8px
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    width: 100%
+    height: 100%
+    object-fit: cover
+    object-position: center
+    position: absolute
+  .img-container
+    position: relative
+    width: 100%
+  .img-container:after
+    content: ""
+    display: block
+    padding-bottom: 100%
+  .columns:not(:last-child)
+    border-bottom: 1px solid $border-light
 
 %card-item
   &:first-child
@@ -87,8 +109,9 @@ $card-media-margin: $block-spacing !default
   @extend %card-item
   background-color: $card-footer-background-color
   border-top: $card-footer-border-top
-  align-items: stretch
-  display: flex
+  padding: $card-footer-padding
+  .icon-resize
+    transform: rotate(315deg);
 
 .card-footer-item
   align-items: center
