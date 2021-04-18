@@ -3023,20 +3023,23 @@ a.tag:hover {
   position: relative; }
   .card:not(:last-child) {
     margin-bottom: 1.5rem; }
-  .card img {
-    border-radius: 8px;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    position: absolute; }
+  .card .logo-container {
+    height: auto;
+    max-width: 200px; }
   .card .img-container {
     position: relative;
     width: 100%; }
+    .card .img-container img {
+      border-radius: 8px;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      position: absolute; }
   .card .img-container:after {
     content: "";
     display: block;
