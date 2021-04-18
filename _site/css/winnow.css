@@ -4461,6 +4461,7 @@ fieldset[disabled] .select select:hover {
   width: 15%;
   margin: 10px;
   border: 1px solid #d9e5e6;
+  border-radius: 8px;
   align-content: stretch;
 }
 .card .flex-header {
