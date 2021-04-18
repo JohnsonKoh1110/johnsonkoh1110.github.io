@@ -5,6 +5,8 @@ path:
         url: /content/components/navbar.html
       - page: Widget
         url: /content/components/widget.html
+      - page: Widget (HITL)
+        url: /content/components/hitl.html
   - title: Elements
     subfolderitems:
       - page: Button

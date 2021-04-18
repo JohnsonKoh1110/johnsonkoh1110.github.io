@@ -12,7 +12,7 @@
     <meta property="og:url" content="" />
     <link rel="stylesheet" href="/css/winnow.css" />
     <link rel="stylesheet" href="/css/fontawesome.css" />
-    <title>Winnow Design System - Home</title>
+    <title>Winnow Design System - Widget (HITL)</title>
   </head>
   <body>
     <nav
@@ -68,7 +68,7 @@
           <li>
             <a
               href="/content/components/hitl.html"
-              class=""
+              class="is-active"
               >Widget (HITL)</a
             >
           </li>
@@ -157,21 +157,58 @@
       </aside>
       <div class="column is-10 is-fullheight section has-background-light">
         <section>
-  <h3 class="title is-3">Welcome to</h3>
+  <h3 class="title is-3">Widget (HITL)</h3>
   <div class="content">
-    <div class="block">
-      <img src="../../assets/img/logo_winnowdesignsystem.svg" width="400" />
+    <div class="card">
+      <header class="card-header has-background-warning-light">
+        <div class="card-header-title">
+          <label>Funds</label><br />
+          <small>Source: PEFI</small>
+        </div>
+        <button class="card-header-icon" aria-label="more options">
+          <span class="icon">
+            <i class="fal fa-ellipsis-v fa-2x" aria-hidden="true"></i>
+          </span>
+        </button>
+      </header>
+      <div class="card-content">
+        <div class="content">
+          <p>Did you mean any of the following companies?</p>
+          <div class="tags are-medium">
+            <span class="tag is-link">Adobe Systems</span>
+            <span class="tag">Padobe</span>
+            <span class="tag">Cradobe Innovations</span>
+            <span class="tag is-danger is-light">None of the above</span>
+          </div>
+        </div>
+      </div>
     </div>
-    <p>
-      With more teams ramping up their efforts to build and maintain Winnow
-      Platform, this design system is to support the common visual language to
-      be used across the widgets.
-    </p>
-    <p>
-      This is a living design documentation, that means it will add, update or
-      remove components. Please refer to this whenever you are about to start
-      designing a widget. Thanks!
-    </p>
+    <!--Widget-->
+    <div class="card">
+      <header class="card-header has-background-warning-light">
+        <div class="card-header-title">
+          <label>Funds</label><br />
+          <small>Source: PEFI</small>
+        </div>
+        <button class="card-header-icon" aria-label="more options">
+          <span class="icon">
+            <i class="fal fa-ellipsis-v fa-2x" aria-hidden="true"></i>
+          </span>
+        </button>
+      </header>
+      <div class="card-content">
+        <div class="content">
+          <p>Which company were you looking for?</p>
+          <input
+            class="input"
+            type="text"
+            placeholder="E.g. Company name or website URL"
+          />
+          <button class="button is-light my-3">Submit</button>
+        </div>
+      </div>
+    </div>
+    <!--Widget-->
   </div>
 </section>
 
