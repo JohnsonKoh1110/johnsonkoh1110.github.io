@@ -3043,6 +3043,33 @@ a.tag:hover {
     padding-bottom: 100%; }
   .card .columns:not(:last-child) {
     border-bottom: 1px solid #ededed; }
+  .card .flex-container {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    -ms-box-orient: horizontal;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex; }
+  .card .flex-item {
+    width: 15%;
+    margin: 10px;
+    border: 1px solid #D9E5E6;
+    align-content: stretch; }
+  .card .flex-header {
+    background-color: #D9E5E6;
+    padding: 5px;
+    color: #691098;
+    font-weight: 700;
+    font-size: 0.75rem; }
+  .card .wrap {
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  .card .block {
+    padding: 5px; }
 
 .card-header:first-child, .card-content:first-child, .card-footer:first-child {
   border-top-left-radius: 0.25rem;
