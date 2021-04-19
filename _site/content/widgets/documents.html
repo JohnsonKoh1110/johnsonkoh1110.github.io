@@ -12,7 +12,7 @@
     <meta property="og:url" content="" />
     <link rel="stylesheet" href="/css/winnow.css" />
     <link rel="stylesheet" href="/css/fontawesome.css" />
-    <title>Winnow Design System - Widget (HITL)</title>
+    <title>Winnow Design System - Documents</title>
   </head>
   <body>
     <nav
@@ -67,22 +67,6 @@
             >
           </li>
           
-          <li>
-            <a
-              href="/content/components/widget.html"
-              class=""
-              >Widget</a
-            >
-          </li>
-          
-          <li>
-            <a
-              href="/content/components/hitl.html"
-              class="is-active"
-              >Widget (HITL)</a
-            >
-          </li>
-          
         </ul>
         
         <p class="menu-label">Elements</p>
@@ -114,6 +98,14 @@
           
           <li>
             <a
+              href="/content/elements/input.html"
+              class=""
+              >Input</a
+            >
+          </li>
+          
+          <li>
+            <a
               href="/content/elements/table.html"
               class=""
               >Table</a
@@ -130,43 +122,59 @@
           
         </ul>
         
-        <p class="menu-label">Form</p>
+        <p class="menu-label">Flows</p>
         <ul class="menu-list">
           
           <li>
             <a
-              href="/content/form/input.html"
+              href="/content/flows/matchcompany.html"
               class=""
-              >Input</a
+              >Match Company</a
             >
           </li>
           
         </ul>
         
-        <p class="menu-label">Layout</p>
+        <p class="menu-label">Widgets</p>
         <ul class="menu-list">
           
           <li>
             <a
-              href="/content/layout/container.html"
-              class=""
-              >Container</a
+              href="/content/widgets/documents.html"
+              class="is-active"
+              >Documents</a
             >
           </li>
           
           <li>
             <a
-              href="/content/layout/level.html"
+              href="/content/widgets/info.html"
               class=""
-              >Level</a
+              >Info</a
             >
           </li>
           
           <li>
             <a
-              href="/content/layout/section.html"
+              href="/content/widgets/news.html"
               class=""
-              >Section</a
+              >News</a
+            >
+          </li>
+          
+          <li>
+            <a
+              href="/content/widgets/profile.html"
+              class=""
+              >Profile</a
+            >
+          </li>
+          
+          <li>
+            <a
+              href="/content/widgets/tiles.html"
+              class=""
+              >Tiles</a
             >
           </li>
           
@@ -175,13 +183,13 @@
       </aside>
       <div class="column is-10 is-fullheight section has-background-white">
         <section>
-  <h3 class="title is-3">Widget (HITL)</h3>
+  <h3 class="title is-3">Documents</h3>
   <div class="content">
     <div class="card">
-      <header class="card-header has-background-warning-light">
+      <header class="card-header">
         <div class="card-header-title">
-          <label>Funds</label><br />
-          <small>Source: PEFI</small>
+          <label>External References</label><br />
+          <small>Source: Winnow</small>
         </div>
         <button class="card-header-icon" aria-label="more options">
           <span class="icon">
@@ -191,38 +199,40 @@
       </header>
       <div class="card-content">
         <div class="content">
-          <p>Did you mean any of the following companies?</p>
-          <div class="tags are-medium">
-            <span class="tag is-link">Adobe Systems</span>
-            <span class="tag">Padobe</span>
-            <span class="tag">Cradobe Innovations</span>
-            <span class="tag is-danger is-light">None of the above</span>
+          <button class="button is-fullwidth mb-5">
+            <span class="icon has-text-link">
+              <i class="fal fa-file-plus"></i>
+            </span>
+            <span>Add New Link</span>
+          </button>
+          <div class="columns is-mobile">
+            <div class="column">
+              <span class="title is-6">Project X Research PPT</span><br />
+              <small class="is-size-7 has-text-link"
+                >Richard Bhamb - 4:42 AM GMT+8•January 1, 2021
+              </small>
+              <p class="is-size-7 has-text-danger mt-4">Remove</p>
+            </div>
+            <div class="column is-2 has-text-right">
+              <span class="icon">
+                <i class="fal fa-external-link-alt"></i>
+              </span>
+            </div>
           </div>
-        </div>
-      </div>
-    </div>
-    <!--Widget-->
-    <div class="card">
-      <header class="card-header has-background-warning-light">
-        <div class="card-header-title">
-          <label>Funds</label><br />
-          <small>Source: PEFI</small>
-        </div>
-        <button class="card-header-icon" aria-label="more options">
-          <span class="icon">
-            <i class="fal fa-ellipsis-v fa-2x" aria-hidden="true"></i>
-          </span>
-        </button>
-      </header>
-      <div class="card-content">
-        <div class="content">
-          <p>Which company were you looking for?</p>
-          <input
-            class="input"
-            type="text"
-            placeholder="E.g. Company name or website URL"
-          />
-          <button class="button is-light my-3">Submit</button>
+          <div class="columns is-mobile">
+            <div class="column">
+              <span class="title is-6">Project X Research PPT</span><br />
+              <small class="is-size-7 has-text-link"
+                >Richard Bhamb - 4:42 AM GMT+8•January 1, 2021
+              </small>
+              <p class="is-size-7 has-text-danger mt-4">Remove</p>
+            </div>
+            <div class="column is-2 has-text-right">
+              <span class="icon">
+                <i class="fal fa-external-link-alt"></i>
+              </span>
+            </div>
+          </div>
         </div>
       </div>
     </div>

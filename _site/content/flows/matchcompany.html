@@ -12,7 +12,7 @@
     <meta property="og:url" content="" />
     <link rel="stylesheet" href="/css/winnow.css" />
     <link rel="stylesheet" href="/css/fontawesome.css" />
-    <title>Winnow Design System - Level</title>
+    <title>Winnow Design System - Match Company</title>
   </head>
   <body>
     <nav
@@ -67,22 +67,6 @@
             >
           </li>
           
-          <li>
-            <a
-              href="/content/components/widget.html"
-              class=""
-              >Widget</a
-            >
-          </li>
-          
-          <li>
-            <a
-              href="/content/components/hitl.html"
-              class=""
-              >Widget (HITL)</a
-            >
-          </li>
-          
         </ul>
         
         <p class="menu-label">Elements</p>
@@ -114,6 +98,14 @@
           
           <li>
             <a
+              href="/content/elements/input.html"
+              class=""
+              >Input</a
+            >
+          </li>
+          
+          <li>
+            <a
               href="/content/elements/table.html"
               class=""
               >Table</a
@@ -130,43 +122,59 @@
           
         </ul>
         
-        <p class="menu-label">Form</p>
+        <p class="menu-label">Flows</p>
         <ul class="menu-list">
           
           <li>
             <a
-              href="/content/form/input.html"
-              class=""
-              >Input</a
+              href="/content/flows/matchcompany.html"
+              class="is-active"
+              >Match Company</a
             >
           </li>
           
         </ul>
         
-        <p class="menu-label">Layout</p>
+        <p class="menu-label">Widgets</p>
         <ul class="menu-list">
           
           <li>
             <a
-              href="/content/layout/container.html"
+              href="/content/widgets/documents.html"
               class=""
-              >Container</a
+              >Documents</a
             >
           </li>
           
           <li>
             <a
-              href="/content/layout/level.html"
-              class="is-active"
-              >Level</a
+              href="/content/widgets/info.html"
+              class=""
+              >Info</a
             >
           </li>
           
           <li>
             <a
-              href="/content/layout/section.html"
+              href="/content/widgets/news.html"
               class=""
-              >Section</a
+              >News</a
+            >
+          </li>
+          
+          <li>
+            <a
+              href="/content/widgets/profile.html"
+              class=""
+              >Profile</a
+            >
+          </li>
+          
+          <li>
+            <a
+              href="/content/widgets/tiles.html"
+              class=""
+              >Tiles</a
             >
           </li>
           
@@ -175,9 +183,58 @@
       </aside>
       <div class="column is-10 is-fullheight section has-background-white">
         <section>
-  <h3 class="title is-3">Level</h3>
+  <h3 class="title is-3">Match Company</h3>
   <div class="content">
-    <p>Placeholder</p>
+    <div class="card">
+      <header class="card-header has-background-warning-light">
+        <div class="card-header-title">
+          <label>Funds</label><br />
+          <small>Source: PEFI</small>
+        </div>
+        <button class="card-header-icon" aria-label="more options">
+          <span class="icon">
+            <i class="fal fa-ellipsis-v fa-2x" aria-hidden="true"></i>
+          </span>
+        </button>
+      </header>
+      <div class="card-content">
+        <div class="content">
+          <p>Did you mean any of the following companies?</p>
+          <div class="tags are-medium">
+            <span class="tag is-link">Adobe Systems</span>
+            <span class="tag">Padobe</span>
+            <span class="tag">Cradobe Innovations</span>
+            <span class="tag is-danger is-light">None of the above</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Widget-->
+    <div class="card">
+      <header class="card-header has-background-warning-light">
+        <div class="card-header-title">
+          <label>Funds</label><br />
+          <small>Source: PEFI</small>
+        </div>
+        <button class="card-header-icon" aria-label="more options">
+          <span class="icon">
+            <i class="fal fa-ellipsis-v fa-2x" aria-hidden="true"></i>
+          </span>
+        </button>
+      </header>
+      <div class="card-content">
+        <div class="content">
+          <p>Which company were you looking for?</p>
+          <input
+            class="input"
+            type="text"
+            placeholder="E.g. Company name or website URL"
+          />
+          <button class="button is-light my-3">Submit</button>
+        </div>
+      </div>
+    </div>
+    <!--Widget-->
   </div>
 </section>
 

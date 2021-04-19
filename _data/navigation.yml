@@ -5,10 +5,6 @@ path:
         url: /content/components/navbar.html
       - page: Pagination
         url: /content/components/pagination.html
-      - page: Widget
-        url: /content/components/widget.html
-      - page: Widget (HITL)
-        url: /content/components/hitl.html
   - title: Elements
     subfolderitems:
       - page: Button
@@ -17,19 +13,25 @@ path:
         url: /content/elements/icon.html
       - page: Notification
         url: /content/elements/notification.html
+      - page: Input
+        url: /content/elements/input.html
       - page: Table
         url: /content/elements/table.html
       - page: Tag
         url: /content/elements/tag.html
-  - title: Form
+  - title: Flows
     subfolderitems:
-      - page: Input
-        url: /content/form/input.html
-  - title: Layout
+      - page: Match Company
+        url: /content/flows/matchcompany.html
+  - title: Widgets
     subfolderitems:
-      - page: Container
-        url: /content/layout/container.html
-      - page: Level
-        url: /content/layout/level.html
-      - page: Section
-        url: /content/layout/section.html
+      - page: Documents
+        url: /content/widgets/documents.html
+      - page: Info
+        url: /content/widgets/info.html
+      - page: News
+        url: /content/widgets/news.html
+      - page: Profile
+        url: /content/widgets/profile.html
+      - page: Tiles
+        url: /content/widgets/tiles.html
