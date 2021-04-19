@@ -3,6 +3,8 @@ path:
     subfolderitems:
       - page: Navbar
         url: /content/components/navbar.html
+      - page: Pagination
+        url: /content/components/pagination.html
       - page: Widget
         url: /content/components/widget.html
       - page: Widget (HITL)
