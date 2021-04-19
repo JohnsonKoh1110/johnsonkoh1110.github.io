@@ -44,7 +44,9 @@
       </div>
     </nav>
     <section class="main-content columns is-fullheight is-marginless">
-      <aside class="column is-2 is-narrow-mobile is-fullheight section">
+      <aside
+        class="column is-2 is-narrow-mobile is-fullheight section has-background-light"
+      >
         
         <p class="menu-label">Components</p>
         <ul class="menu-list">
@@ -88,14 +90,6 @@
           
           <li>
             <a
-              href="/content/elements/delete.html"
-              class=""
-              >Delete</a
-            >
-          </li>
-          
-          <li>
-            <a
               href="/content/elements/icon.html"
               class=""
               >Icon</a
@@ -107,6 +101,14 @@
               href="/content/elements/notification.html"
               class=""
               >Notification</a
+            >
+          </li>
+          
+          <li>
+            <a
+              href="/content/elements/table.html"
+              class=""
+              >Table</a
             >
           </li>
           
@@ -155,11 +157,23 @@
         </ul>
         
       </aside>
-      <div class="column is-10 is-fullheight section has-background-light">
+      <div class="column is-10 is-fullheight section has-background-white">
         <section>
   <h3 class="title is-3">Input</h3>
   <div class="content">
-    <p>Placeholder</p>
+    <div class="block">
+      <input
+        class="input"
+        type="text"
+        placeholder="E.g. Company name or website URL"
+      />
+    </div>
+    <div class="block">
+      <input type="text" class="input" placeholder="New layout name" />
+    </div>
+    <div class="block">
+      <textarea class="textarea" placeholder="e.g. Hello world"></textarea>
+    </div>
   </div>
 </section>
 

@@ -11,12 +11,12 @@ path:
     subfolderitems:
       - page: Button
         url: /content/elements/button.html
-      - page: Delete
-        url: /content/elements/delete.html
       - page: Icon
         url: /content/elements/icon.html
       - page: Notification
         url: /content/elements/notification.html
+      - page: Table
+        url: /content/elements/table.html
   - title: Form
     subfolderitems:
       - page: Input

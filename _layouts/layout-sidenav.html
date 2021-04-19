@@ -44,7 +44,9 @@
       </div>
     </nav>
     <section class="main-content columns is-fullheight is-marginless">
-      <aside class="column is-2 is-narrow-mobile is-fullheight section">
+      <aside
+        class="column is-2 is-narrow-mobile is-fullheight section has-background-light"
+      >
         {% for item in site.data.navigation.path %}
         <p class="menu-label">{{ item.title }}</p>
         <ul class="menu-list">
@@ -60,7 +62,7 @@
         </ul>
         {% endfor %}
       </aside>
-      <div class="column is-10 is-fullheight section has-background-light">
+      <div class="column is-10 is-fullheight section has-background-white">
         {{content}}
       </div>
     </section>

@@ -12,7 +12,7 @@
     <meta property="og:url" content="" />
     <link rel="stylesheet" href="/css/winnow.css" />
     <link rel="stylesheet" href="/css/fontawesome.css" />
-    <title>Winnow Design System - Delete</title>
+    <title>Winnow Design System - Table</title>
   </head>
   <body>
     <nav
@@ -44,7 +44,9 @@
       </div>
     </nav>
     <section class="main-content columns is-fullheight is-marginless">
-      <aside class="column is-2 is-narrow-mobile is-fullheight section">
+      <aside
+        class="column is-2 is-narrow-mobile is-fullheight section has-background-light"
+      >
         
         <p class="menu-label">Components</p>
         <ul class="menu-list">
@@ -88,14 +90,6 @@
           
           <li>
             <a
-              href="/content/elements/delete.html"
-              class="is-active"
-              >Delete</a
-            >
-          </li>
-          
-          <li>
-            <a
               href="/content/elements/icon.html"
               class=""
               >Icon</a
@@ -107,6 +101,14 @@
               href="/content/elements/notification.html"
               class=""
               >Notification</a
+            >
+          </li>
+          
+          <li>
+            <a
+              href="/content/elements/table.html"
+              class="is-active"
+              >Table</a
             >
           </li>
           
@@ -155,11 +157,63 @@
         </ul>
         
       </aside>
-      <div class="column is-10 is-fullheight section has-background-light">
+      <div class="column is-10 is-fullheight section has-background-white">
         <section>
-  <h3 class="title is-3">Delete</h3>
+  <h3 class="title is-3">Table</h3>
   <div class="content">
-    <p>Placeholder</p>
+      <div class="table-container">
+        <table class="table">
+            <thead>
+              <tr>
+                  <th>Score</th>
+                  <th>Name</th>
+                  <th>Type</th>
+                  <th>Status</th>
+                  <th>Geography</th>
+                  <th>Revenue</th>
+                  <th>Employee Count</th>
+                  <th>Last Funding Board</th>
+                  <th>Last Funding Type</th>
+              </tr>
+            </thead>
+            </tfoot>
+            <tbody>
+              <tr>
+                  <td>60%</td>
+                  <td>Uber</td>
+                  <td>Public</td>
+                  <td>IPO</td>
+                  <td>USA</td>
+                  <td>$10B+</td>
+                  <td>10,000+</td>
+                  <td>2020-09-14</td>
+                  <td>Post IPO Debt</td>    
+              </tr>
+              <tr class="is-selected">
+                  <td>60%</td>
+                  <td>Uber</td>
+                  <td>Public</td>
+                  <td>IPO</td>
+                  <td>USA</td>
+                  <td>$10B+</td> 
+                  <td>10,000+</td>
+                  <td>2020-09-14</td>
+                  <td>Post IPO Debt</td>     
+              </tr>
+              <tr>
+                  <td>60%</td>
+                  <td>Uber</td>
+                  <td>Public</td>
+                  <td>IPO</td>
+                  <td>USA</td>
+                  <td>$10B+</td>
+                  <td>10,000+</td>
+                  <td>2020-09-14</td>
+                  <td>Post IPO Debt</td>    
+              </tr>
+            </tbody>
+          </table>
+      </div>
   </div>
 </section>
 
