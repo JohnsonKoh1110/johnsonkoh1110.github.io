@@ -33,5 +33,5 @@ path:
         url: /content/widgets/news.html
       - page: Profile
         url: /content/widgets/profile.html
-      - page: Tiles
-        url: /content/widgets/tiles.html
+      - page: Grid
+        url: /content/widgets/grid.html

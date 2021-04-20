@@ -3,13 +3,65 @@ title: Home
 layout: layout-sidenav
 ---
 
-<section>
-  <h3 class="title is-5">Design Systems Overview</h3>
+<section class="section">
+  <h3 class="title has-text-weight-light">Design Systems Overview</h3>
   <div class="content">
+    <img src="/assets/img/img_lego.svg" width="150" height="auto" />
     <p>
       Design systems are Pattern Libraries: a big box of UI Lego pieces that can
       be assembled in any ways. All the pieces may be consistent, but that
       doesn't mean the assembled results will be. It has structure and meaning.
     </p>
+  </div>
+</section>
+<section class="section">
+  <h3 class="title has-text-weight-light">Concept for Winnow Dashboard</h3>
+  <div class="content">
+    <p>
+      Winnow Dashboard is made up of tile elements to build 2-dimensional
+      Metro-like, Pinterest-like or whatever-you-like grids. It is responsive
+      and the tiles will stack above one another when displayed in mobile. You
+      can resize this browser to see it live.
+    </p>
+    <p>
+      Each tile below represent a
+      <a href="content/widgets/documents.html">widget</a> where different
+      layouts are available for mix-and-match.
+    </p>
+    <div class="tile is-ancestor">
+      <div class="tile is-vertical is-8">
+        <div class="tile">
+          <div class="tile is-parent">
+            <article class="tile is-child box has-background-light">
+              <p class="has-text-link">1 by 1</p>
+            </article>
+          </div>
+          <div class="tile is-parent">
+            <article class="tile is-child box has-background-light">
+              <p class="has-text-link">1 by 1</p>
+            </article>
+          </div>
+        </div>
+        <div class="tile is-parent">
+          <article class="tile is-child box has-background-light">
+            <p class="has-text-link">2 by 1</p>
+          </article>
+        </div>
+      </div>
+      <div class="tile is-parent">
+        <article class="tile is-child box has-background-light">
+          <div class="content">
+            <p class="has-text-link">1 by 2</p>
+          </div>
+        </article>
+      </div>
+    </div>
+    <div class="tile is-ancestor">
+      <div class="tile is-parent">
+        <article class="tile is-child box has-background-light">
+          <p class="has-text-link">3 by 1</p>
+        </article>
+      </div>
+    </div>
   </div>
 </section>
