@@ -5,20 +5,35 @@ permalink: /content/elements/input.html
 category: Elements/Input
 ---
 
-<section>
-  <h3 class="title is-3">Input</h3>
-  <div class="content">
+<section class="section">
+  <h3 class="title has-text-weight-light">Input</h3>
+  <p>Text input and its variation.</p>
+  <div class="content mt-5">
     <div class="block">
+      <h5 class="has-text-link">Basic Input</h5>
       <input
         class="input"
         type="text"
         placeholder="E.g. Company name or website URL"
       />
     </div>
-    <div class="block">
-      <input type="text" class="input" placeholder="New layout name" />
+    <div class="block pt-5">
+      <h5 class="has-text-link">With Button</h5>
+      <div class="field has-addons">
+        <div class="control is-expanded">
+          <input
+            type="text"
+            class="input is-fullwidth"
+            placeholder="New layout name"
+          />
+        </div>
+        <div class="control">
+          <a class="button"><i class="fal fa-save"></i></a>
+        </div>
+      </div>
     </div>
-    <div class="block">
+    <div class="block pt-5">
+      <h5 class="has-text-link">Text Area</h5>
       <textarea class="textarea" placeholder="e.g. Hello world"></textarea>
     </div>
   </div>

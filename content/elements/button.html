@@ -5,19 +5,68 @@ permalink: /content/elements/button.html
 category: Elements/Button
 ---
 
-<section>
-  <h3 class="title is-3">Button</h3>
-  <div class="content">
+<section class="section">
+  <h3 class="title has-text-weight-light">Button</h3>
+  <p>The classic button, in different styles.</p>
+  <div class="content mt-5">
     <div class="block">
+      <h5 class="has-text-link">With Icon</h5>
       <button class="button">
         <span class="icon has-text-danger">
           <i class="fas fa-usd-circle"></i>
         </span>
         <span>Get Contact Details</span>
       </button>
+      <button class="button">
+        <span class="icon has-text-link">
+          <i class="fal fa-file-plus"></i>
+        </span>
+        <span>Add New Link</span>
+      </button>
     </div>
     <div class="block">
-      <button class="button is-light my-3">Submit</button>
+      <button class="button is-loading">
+        <span class="icon has-text-danger">
+          <i class="fas fa-usd-circle"></i>
+        </span>
+        <span>Get Contact Details</span>
+      </button>
+      <button class="button is-loading">
+        <span class="icon has-text-link">
+          <i class="fal fa-file-plus"></i>
+        </span>
+        <span>Add New Link</span>
+      </button>
+    </div>
+    <div class="block">
+      <button class="button" disabled>
+        <span class="icon has-text-danger">
+          <i class="fas fa-usd-circle"></i>
+        </span>
+        <span>Get Contact Details</span>
+      </button>
+      <button class="button" disabled>
+        <span class="icon has-text-link">
+          <i class="fal fa-file-plus"></i>
+        </span>
+        <span>Add New Link</span>
+      </button>
+    </div>
+    <div class="block pt-5">
+      <h5 class="has-text-link">Use for Form Submission</h5>
+      <button class="button is-light">Submit</button>
+      <button class="button is-primary">Approve</button>
+      <button class="button is-danger">Reject</button>
+    </div>
+    <div class="block">
+      <button class="button is-light is-loading">Submit</button>
+      <button class="button is-primary is-loading">Approve</button>
+      <button class="button is-danger is-loading">Reject</button>
+    </div>
+    <div class="block">
+      <button class="button is-light" disabled>Submit</button>
+      <button class="button is-primary" disabled>Approve</button>
+      <button class="button is-danger" disabled>Reject</button>
     </div>
   </div>
 </section>

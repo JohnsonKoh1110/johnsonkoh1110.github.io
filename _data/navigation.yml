@@ -1,4 +1,20 @@
 path:
+  - title: Widgets
+    subfolderitems:
+      - page: Documents
+        url: /content/widgets/documents.html
+      - page: Grid
+        url: /content/widgets/grid.html
+      - page: Info
+        url: /content/widgets/info.html
+      - page: News
+        url: /content/widgets/news.html
+      - page: Profile
+        url: /content/widgets/profile.html
+  - title: Flows
+    subfolderitems:
+      - page: Match Company
+        url: /content/flows/matchcompany.html
   - title: Components
     subfolderitems:
       - page: Navbar
@@ -19,19 +35,3 @@ path:
         url: /content/elements/table.html
       - page: Tag
         url: /content/elements/tag.html
-  - title: Flows
-    subfolderitems:
-      - page: Match Company
-        url: /content/flows/matchcompany.html
-  - title: Widgets
-    subfolderitems:
-      - page: Documents
-        url: /content/widgets/documents.html
-      - page: Info
-        url: /content/widgets/info.html
-      - page: News
-        url: /content/widgets/news.html
-      - page: Profile
-        url: /content/widgets/profile.html
-      - page: Grid
-        url: /content/widgets/grid.html
