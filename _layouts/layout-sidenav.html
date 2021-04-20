@@ -38,14 +38,32 @@
       </div>
       <div id="winnowNav" class="navbar-menu">
         <div class="navbar-start">
-          <a class="navbar-item is-active" href="/"> Home </a>
+          <a class="navbar-item" href="/"> Home </a>
+          <div class="is-hidden-desktop">
+            <div class="block">
+              {% for item in site.data.navigation.path %}
+              <p class="pl-3 pt-3 is-size-7 is-uppercase has-text-grey-light">{{ item.title }}</p>
+              <ul class="menu-list">
+                {% for entry in item.subfolderitems %}
+                <li>
+                  <a
+                    href="{{ entry.url }}"
+                    class="{% if entry.url == page.url %}is-active{% endif %}"
+                    >{{ entry.page }}</a
+                  >
+                </li>
+                {% endfor %}
+              </ul>
+              {% endfor %}
+            </div>
+          </a>
           <a class="navbar-item"> About </a>
         </div>
       </div>
     </nav>
     <section class="main-content columns is-fullheight is-marginless">
       <aside
-        class="column is-2 is-narrow-mobile is-fullheight section has-background-light"
+        class="column is-2 is-narrow-mobile is-fullheight section has-background-light is-hidden-touch"
       >
         {% for item in site.data.navigation.path %}
         <p class="menu-label">{{ item.title }}</p>
@@ -77,5 +95,23 @@
         </small>
       </div>
     </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const $navbarBurgers = Array.prototype.slice.call(
+          document.querySelectorAll(".navbar-burger"),
+          0
+        );
+        if ($navbarBurgers.length > 0) {
+          $navbarBurgers.forEach((el) => {
+            el.addEventListener("click", () => {
+              const target = el.dataset.target;
+              const $target = document.getElementById(target);
+              el.classList.toggle("is-active");
+              $target.classList.toggle("is-active");
+            });
+          });
+        }
+      });
+    </script>
   </body>
 </html>

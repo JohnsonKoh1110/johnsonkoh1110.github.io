@@ -38,14 +38,151 @@
       </div>
       <div id="winnowNav" class="navbar-menu">
         <div class="navbar-start">
-          <a class="navbar-item is-active" href="/"> Home </a>
+          <a class="navbar-item" href="/"> Home </a>
+          <div class="is-hidden-desktop">
+            <div class="block">
+              
+              <p class="pl-3 pt-3 is-size-7 is-uppercase has-text-grey-light">Components</p>
+              <ul class="menu-list">
+                
+                <li>
+                  <a
+                    href="/content/components/navbar.html"
+                    class=""
+                    >Navbar</a
+                  >
+                </li>
+                
+                <li>
+                  <a
+                    href="/content/components/pagination.html"
+                    class=""
+                    >Pagination</a
+                  >
+                </li>
+                
+              </ul>
+              
+              <p class="pl-3 pt-3 is-size-7 is-uppercase has-text-grey-light">Elements</p>
+              <ul class="menu-list">
+                
+                <li>
+                  <a
+                    href="/content/elements/button.html"
+                    class=""
+                    >Button</a
+                  >
+                </li>
+                
+                <li>
+                  <a
+                    href="/content/elements/icon.html"
+                    class=""
+                    >Icon</a
+                  >
+                </li>
+                
+                <li>
+                  <a
+                    href="/content/elements/notification.html"
+                    class=""
+                    >Notification</a
+                  >
+                </li>
+                
+                <li>
+                  <a
+                    href="/content/elements/input.html"
+                    class=""
+                    >Input</a
+                  >
+                </li>
+                
+                <li>
+                  <a
+                    href="/content/elements/table.html"
+                    class=""
+                    >Table</a
+                  >
+                </li>
+                
+                <li>
+                  <a
+                    href="/content/elements/tag.html"
+                    class=""
+                    >Tag</a
+                  >
+                </li>
+                
+              </ul>
+              
+              <p class="pl-3 pt-3 is-size-7 is-uppercase has-text-grey-light">Flows</p>
+              <ul class="menu-list">
+                
+                <li>
+                  <a
+                    href="/content/flows/matchcompany.html"
+                    class=""
+                    >Match Company</a
+                  >
+                </li>
+                
+              </ul>
+              
+              <p class="pl-3 pt-3 is-size-7 is-uppercase has-text-grey-light">Widgets</p>
+              <ul class="menu-list">
+                
+                <li>
+                  <a
+                    href="/content/widgets/documents.html"
+                    class=""
+                    >Documents</a
+                  >
+                </li>
+                
+                <li>
+                  <a
+                    href="/content/widgets/info.html"
+                    class=""
+                    >Info</a
+                  >
+                </li>
+                
+                <li>
+                  <a
+                    href="/content/widgets/news.html"
+                    class=""
+                    >News</a
+                  >
+                </li>
+                
+                <li>
+                  <a
+                    href="/content/widgets/profile.html"
+                    class=""
+                    >Profile</a
+                  >
+                </li>
+                
+                <li>
+                  <a
+                    href="/content/widgets/tiles.html"
+                    class=""
+                    >Tiles</a
+                  >
+                </li>
+                
+              </ul>
+              
+            </div>
+          </a>
           <a class="navbar-item"> About </a>
         </div>
       </div>
     </nav>
     <section class="main-content columns is-fullheight is-marginless">
       <aside
-        class="column is-2 is-narrow-mobile is-fullheight section has-background-light"
+        class="column is-2 is-narrow-mobile is-fullheight section has-background-light is-hidden-touch"
       >
         
         <p class="menu-label">Components</p>
@@ -206,5 +343,23 @@
         </small>
       </div>
     </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const $navbarBurgers = Array.prototype.slice.call(
+          document.querySelectorAll(".navbar-burger"),
+          0
+        );
+        if ($navbarBurgers.length > 0) {
+          $navbarBurgers.forEach((el) => {
+            el.addEventListener("click", () => {
+              const target = el.dataset.target;
+              const $target = document.getElementById(target);
+              el.classList.toggle("is-active");
+              $target.classList.toggle("is-active");
+            });
+          });
+        }
+      });
+    </script>
   </body>
 </html>
