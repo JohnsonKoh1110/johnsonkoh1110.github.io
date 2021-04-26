@@ -61,7 +61,7 @@ category: Flows/VerifyCompanyUser
   <div class="content mt-5">
     <h5 class="has-text-link">Demo</h5>
     <p>
-      Screen 1 - This view will appear when user clicked on
+      <b>Screen 1</b> - This view will appear when user clicked on
       <code>Fix Company Name</code>.
     </p>
     <div class="card">
@@ -93,7 +93,7 @@ category: Flows/VerifyCompanyUser
     </div>
     <!--Widget-->
     <p>
-      Screen 2 - This view will appear when user clicked on
+      <b>Screen 2</b> - This view will appear when user clicked on
       <code>None of the above</code>.
     </p>
     <div class="card">
@@ -123,9 +123,9 @@ category: Flows/VerifyCompanyUser
     <!--Widget-->
     <!--Widget-->
     <p>
-      Screen 3 - This view will appear when user clicked on
+      <b>Screen 3</b> - This view will appear when user clicked on
       <code>Submit</code> from Screen 2. Clicking <code>Cancel</code> will lead
-      user back to Screen 1.
+      user back to Screen 1. Clicking <code>Done</code> will go to Screen 4.
     </p>
     <div class="card">
       <header class="card-header has-background-warning-light">
@@ -145,7 +145,31 @@ category: Flows/VerifyCompanyUser
           <button class="button is-light is-fullwidth my-3">
             Hide this Widget
           </button>
+          <button class="button is-light is-fullwidth my-3">Done</button>
           <button class="button is-danger is-fullwidth my-3">Cancel</button>
+        </div>
+      </div>
+    </div>
+    <!--Widget-->
+    <p>
+      <b>Screen 4</b> - This view appears when (1) company name matched but data
+      not available, and (2) company name was not matched.
+    </p>
+    <div class="card">
+      <header class="card-header has-background-warning-light">
+        <div class="card-header-title">
+          <label>Funds</label><br />
+          <small>Source: PEFI</small>
+        </div>
+        <button class="card-header-icon" aria-label="more options">
+          <span class="icon">
+            <i class="fal fa-ellipsis-v fa-2x" aria-hidden="true"></i>
+          </span>
+        </button>
+      </header>
+      <div class="card-content">
+        <div class="content">
+          <p>No data available.</p>
         </div>
       </div>
     </div>
