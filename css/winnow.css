@@ -269,7 +269,8 @@ html {
   overflow-x: hidden;
   overflow-y: scroll;
   text-rendering: optimizeLegibility;
-  text-size-adjust: 100%; }
+  text-size-adjust: 100%;
+  scroll-behavior: smooth; }
 
 article,
 aside,

@@ -8,11 +8,11 @@
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta property="og:title" content="Winnow Design System" />
-    <meta property="og:description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description." />
+    <meta property="og:description" content="Examples here are meant for communicating responsive designs to Winnow development teams." />
     <meta property="og:url" content="" />
     <link rel="stylesheet" href="/css/winnow.css" />
     <link rel="stylesheet" href="/css/fontawesome.css" />
-    <title>Winnow Design System - Match Company</title>
+    <title>Winnow Design System - Fuzzy Results</title>
   </head>
   <body>
     <nav
@@ -95,9 +95,17 @@
               
               <li>
                 <a
-                  href="/content/flows/matchcompany.html"
+                  href="/content/flows/fuzzyresults.html"
                   class="is-active"
-                  >Match Company</a
+                  >Fuzzy Results</a
+                >
+              </li>
+              
+              <li>
+                <a
+                  href="/content/flows/fixmatch.html"
+                  class=""
+                  >Fix Match</a
                 >
               </li>
               
@@ -107,6 +115,14 @@
               Components
             </p>
             <ul class="menu-list">
+              
+              <li>
+                <a
+                  href="/content/components/modal.html"
+                  class=""
+                  >Modal</a
+                >
+              </li>
               
               <li>
                 <a
@@ -245,9 +261,17 @@
           
           <li>
             <a
-              href="/content/flows/matchcompany.html"
+              href="/content/flows/fuzzyresults.html"
               class="is-active"
-              >Match Company</a
+              >Fuzzy Results</a
+            >
+          </li>
+          
+          <li>
+            <a
+              href="/content/flows/fixmatch.html"
+              class=""
+              >Fix Match</a
             >
           </li>
           
@@ -255,6 +279,14 @@
         
         <p class="menu-label">Components</p>
         <ul class="menu-list">
+          
+          <li>
+            <a
+              href="/content/components/modal.html"
+              class=""
+              >Modal</a
+            >
+          </li>
           
           <li>
             <a
@@ -330,71 +362,184 @@
       </aside>
       <div class="column is-10 is-fullheight has-background-white">
         <section class="section">
-  <h3 class="title has-text-weight-light">Match Company</h3>
+  <h3 class="title has-text-weight-light">Fuzzy Results</h3>
   <p>
-    This flow will trigger when a widget cannot match the searched company
-    within its datasource.
+    This flow will trigger when there is no exact company name match from one or
+    more data sources. It is to get user's help in creating a relationship for
+    similar company names.
   </p>
+  <hr />
   <div class="content mt-5">
-    <h5 class="has-text-link">Prompt when company unmatched</h5>
-    <div class="card">
-      <header class="card-header has-background-warning-light">
-        <div class="card-header-title">
-          <label>Funds</label><br />
-          <small>Source: PEFI</small>
-        </div>
-        <button class="card-header-icon" aria-label="more options">
-          <span class="icon">
-            <i class="fal fa-ellipsis-v fa-2x" aria-hidden="true"></i>
-          </span>
-        </button>
-      </header>
-      <div class="card-content">
-        <div class="content">
-          <p>Did you mean any of the following companies?</p>
-          <div class="tags are-medium">
-            <span class="tag is-link"
-              >Adobe Systems <button class="delete is-small"></button
-            ></span>
-            <span class="tag">Padobe</span>
-            <span class="tag">Cradobe Innovations</span>
-            <span class="tag is-danger is-light">None of the above</span>
+    <h5 class="has-text-link">Demo</h5>
+    <div class="field has-addons">
+      <div class="control is-expanded">
+        <input type="text" class="input is-fullwidth" placeholder="Adobe Inc" />
+      </div>
+      <div class="control">
+        <a class="button"><i class="fal fa-search"></i></a>
+      </div>
+    </div>
+    <div id="anchor-fuzzymatch" class="notification is-warning is-light">
+      <p>
+        Select company names that match with <b>Adobe Inc</b>
+        <a onclick="modalFunction()"
+          ><u class="has-text-danger">(what's this?)</u></a
+        >:
+      </p>
+      <div class="tags are-medium">
+        <span class="tag is-link">
+          Adobe Systems <button id="test" class="delete is-small"></button>
+        </span>
+        <span class="tag">Adobe Systems Incorporated</span>
+        <span class="tag">Padobe</span>
+        <span class="tag">Cradobe Innovations</span>
+      </div>
+      <button class="button is-light">Submit</button>
+    </div>
+    <!--Widget-->
+    <div class="tile is-ancestor">
+      <div class="tile is-parent">
+        <div class="tile is-child card">
+          <header class="card-header">
+            <div class="card-header-title">
+              <label>Company Info</label><br />
+              <small>Source: Pitchbook (Adobe Inc)</small>
+            </div>
+            <button class="card-header-icon" aria-label="more options">
+              <span class="icon">
+                <i class="fal fa-ellipsis-v fa-2x" aria-hidden="true"></i>
+              </span>
+            </button>
+          </header>
+          <div class="card-content">
+            <div class="content">
+              <div class="logo-container mb-5">
+                <img src="../../assets/img/img_adobelogo.png" />
+              </div>
+              <div class="columns">
+                <div class="column is-2">
+                  <p class="title is-7">Name</p>
+                </div>
+                <div class="column">
+                  <p>Adobe Inc</p>
+                </div>
+              </div>
+              <div class="columns">
+                <div class="column is-2">
+                  <p class="title is-7">Description</p>
+                </div>
+                <div class="column">
+                  <p>
+                    Adobe Inc. is an American multinational computer software
+                    company. Incorporated in Delaware and headquartered in San
+                    Jose, California, it has historically focused upon the
+                    creation of multimedia and creativity software products,
+                    with a more recent foray towards digital marketing software.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
-          <button class="button is-light is-fullwidth my-3">Submit</button>
+          <footer class="card-footer">
+            <div class="level is-mobile">
+              <div class="level-left">
+                <div class="level-item">
+                  <a href="#">Go to External Link</a>
+                </div>
+              </div>
+              <div class="level-right">
+                <div class="level-item is-pulled-right">
+                  <i
+                    class="fal fa-chevron-down icon-resize"
+                    aria-hidden="true"
+                  ></i>
+                </div>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+      <div class="tile is-parent">
+        <div class="card tile is-child">
+          <header class="card-header has-background-warning-light">
+            <div class="card-header-title">
+              <label>Funds</label><br />
+              <small>Source: PEFI</small>
+            </div>
+            <button class="card-header-icon" aria-label="more options">
+              <span class="icon">
+                <i class="fal fa-ellipsis-v fa-2x" aria-hidden="true"></i>
+              </span>
+            </button>
+          </header>
+          <div class="card-content">
+            <div class="content">
+              <p><b>Adobe Inc</b> was not found.</p>
+              <a
+                href="#anchor-fuzzymatch"
+                class="button is-light is-fullwidth my-3"
+                >Try another company name</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tile is-parent">
+        <div class="card tile is-child">
+          <header class="card-header has-background-warning-light">
+            <div class="card-header-title">
+              <label>Portfolio Performance</label><br />
+              <small>Source: AskGini</small>
+            </div>
+            <button class="card-header-icon" aria-label="more options">
+              <span class="icon">
+                <i class="fal fa-ellipsis-v fa-2x" aria-hidden="true"></i>
+              </span>
+            </button>
+          </header>
+          <div class="card-content">
+            <div class="content">
+              <p><b>Adobe Inc</b> was not found.</p>
+              <a
+                href="#anchor-fuzzymatch"
+                class="button is-light is-fullwidth my-3"
+                >Try another company name</a
+              >
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <!--Widget-->
-    <h5 class="has-text-link pt-5">
-      Prompt when user chose "None of the above"
-    </h5>
-    <div class="card">
-      <header class="card-header has-background-warning-light">
-        <div class="card-header-title">
-          <label>Funds</label><br />
-          <small>Source: PEFI</small>
-        </div>
-        <button class="card-header-icon" aria-label="more options">
-          <span class="icon">
-            <i class="fal fa-ellipsis-v fa-2x" aria-hidden="true"></i>
-          </span>
-        </button>
-      </header>
-      <div class="card-content">
-        <div class="content">
-          <p>Which company were you looking for?</p>
-          <input
-            class="input"
-            type="text"
-            placeholder="E.g. Company name or website URL"
-          />
-          <button class="button is-light is-fullwidth my-3">Submit</button>
-        </div>
-      </div>
-    </div>
-    <!--Widget-->
   </div>
 </section>
+<div id="winnowModal" class="modal">
+  <div class="modal-background"></div>
+  <div class="modal-card">
+    <header class="modal-card-head">
+      <p class="modal-card-title">Help us improve</p>
+      <button
+        class="delete"
+        onclick="modalFunction()"
+        aria-label="close"
+      ></button>
+    </header>
+    <section class="modal-card-body">
+      <p>
+        You can help Winnow provide more accurate results by matching company
+        names across different data sources.
+      </p>
+    </section>
+    <footer class="modal-card-foot">
+      <button class="button" onclick="modalFunction()">Close</button>
+    </footer>
+  </div>
+</div>
+<script>
+  function modalFunction() {
+    var element = document.getElementById("winnowModal");
+    element.classList.toggle("is-active");
+  }
+</script>
 
       </div>
     </section>

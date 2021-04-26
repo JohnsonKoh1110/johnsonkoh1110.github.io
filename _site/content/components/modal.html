@@ -12,7 +12,7 @@
     <meta property="og:url" content="" />
     <link rel="stylesheet" href="/css/winnow.css" />
     <link rel="stylesheet" href="/css/fontawesome.css" />
-    <title>Winnow Design System - Notification</title>
+    <title>Winnow Design System - Modal</title>
   </head>
   <body>
     <nav
@@ -119,7 +119,7 @@
               <li>
                 <a
                   href="/content/components/modal.html"
-                  class=""
+                  class="is-active"
                   >Modal</a
                 >
               </li>
@@ -166,7 +166,7 @@
               <li>
                 <a
                   href="/content/elements/notification.html"
-                  class="is-active"
+                  class=""
                   >Notification</a
                 >
               </li>
@@ -283,7 +283,7 @@
           <li>
             <a
               href="/content/components/modal.html"
-              class=""
+              class="is-active"
               >Modal</a
             >
           </li>
@@ -328,7 +328,7 @@
           <li>
             <a
               href="/content/elements/notification.html"
-              class="is-active"
+              class=""
               >Notification</a
             >
           </li>
@@ -362,27 +362,40 @@
       </aside>
       <div class="column is-10 is-fullheight has-background-white">
         <section class="section">
-  <h3 class="title has-text-weight-light">Notification</h3>
-  <p>Notification blocks to alert users of something.</p>
+  <h3 class="title has-text-weight-light">Modal</h3>
+  <p>A classic modal overlay, in which you can include any content you want.</p>
   <div class="content mt-5">
-    <div class="notification">
-      <button class="delete"></button>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum dolor.
-    </div>
-    <div class="notification is-success is-light">
-      <button class="delete"></button>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum dolor.
-    </div>
-    <div class="notification is-warning is-light">
-      <button class="delete"></button>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum dolor.
-    </div>
-    <div class="notification is-danger is-light">
-      <button class="delete"></button>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum dolor.
+    <a onclick="modalFunction()" class="button is-light">Launch Modal</a>
+    <div id="winnowModal" class="modal">
+      <div class="modal-background"></div>
+      <div class="modal-card">
+        <header class="modal-card-head">
+          <p class="modal-card-title">Help us improve</p>
+          <button
+            class="delete"
+            onclick="modalFunction()"
+            aria-label="close"
+          ></button>
+        </header>
+        <section class="modal-card-body">
+          <p>
+            You can help Winnow provide more accurate results by matching
+            company names across different data sources.
+          </p>
+        </section>
+        <footer class="modal-card-foot">
+          <button class="button" onclick="modalFunction()">Close</button>
+        </footer>
+      </div>
     </div>
   </div>
 </section>
+<script>
+  function modalFunction() {
+    var element = document.getElementById("winnowModal");
+    element.classList.toggle("is-active");
+  }
+</script>
 
       </div>
     </section>

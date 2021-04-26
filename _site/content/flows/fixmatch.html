@@ -12,7 +12,7 @@
     <meta property="og:url" content="" />
     <link rel="stylesheet" href="/css/winnow.css" />
     <link rel="stylesheet" href="/css/fontawesome.css" />
-    <title>Winnow Design System - Notification</title>
+    <title>Winnow Design System - Fix Match</title>
   </head>
   <body>
     <nav
@@ -104,7 +104,7 @@
               <li>
                 <a
                   href="/content/flows/fixmatch.html"
-                  class=""
+                  class="is-active"
                   >Fix Match</a
                 >
               </li>
@@ -166,7 +166,7 @@
               <li>
                 <a
                   href="/content/elements/notification.html"
-                  class="is-active"
+                  class=""
                   >Notification</a
                 >
               </li>
@@ -270,7 +270,7 @@
           <li>
             <a
               href="/content/flows/fixmatch.html"
-              class=""
+              class="is-active"
               >Fix Match</a
             >
           </li>
@@ -328,7 +328,7 @@
           <li>
             <a
               href="/content/elements/notification.html"
-              class="is-active"
+              class=""
               >Notification</a
             >
           </li>
@@ -362,24 +362,148 @@
       </aside>
       <div class="column is-10 is-fullheight has-background-white">
         <section class="section">
-  <h3 class="title has-text-weight-light">Notification</h3>
-  <p>Notification blocks to alert users of something.</p>
+  <h3 class="title has-text-weight-light">Fix Match</h3>
+  <p>
+    This flow will trigger when user wants to fix the company name match of a
+    widget. It is accessible through the dropdown menu by clicking on the
+    ellipsis at top right of a widget and then select
+    <code>Fix Company Name</code>.
+  </p>
+  <div class="mt-5">
+    <div class="card">
+      <header class="card-header">
+        <div class="card-header-title">
+          <label>Placeholder Widget</label><br />
+          <small>Source: Winnow</small>
+        </div>
+        <div class="dropdown is-active is-right">
+          <div class="dropdown-trigger">
+            <button class="card-header-icon" aria-label="more options">
+              <span class="icon mt-3">
+                <i class="fal fa-ellipsis-v fa-2x" aria-hidden="true"></i>
+              </span>
+            </button>
+          </div>
+          <div class="dropdown-menu" id="dropdown-menu" role="menu">
+            <div class="dropdown-content">
+              <a href="#" class="dropdown-item">
+                <div class="level">
+                  <div class="level-item level-left">
+                    <span class="icon mr-3"> <i class="fal fa-flag"></i></span>
+                    <span>Fix Company Name</span>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="dropdown-item">
+                <div class="level">
+                  <div class="level-item level-left">
+                    <span class="icon mr-3">
+                      <i class="fal fa-eye-slash"></i
+                    ></span>
+                    <span>Hide Widget</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="card-content">
+        <div class="content pt-5 pb-5"></div>
+      </div>
+    </div>
+  </div>
+  <hr />
   <div class="content mt-5">
-    <div class="notification">
-      <button class="delete"></button>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum dolor.
+    <h5 class="has-text-link">Demo</h5>
+    <p>
+      Screen 1 - This view will appear when user clicked on
+      <code>Fix Company Name</code>.
+    </p>
+    <div class="card">
+      <header class="card-header has-background-warning-light">
+        <div class="card-header-title">
+          <label>Funds</label><br />
+          <small>Source: PEFI</small>
+        </div>
+        <button class="card-header-icon" aria-label="more options">
+          <span class="icon">
+            <i class="fal fa-ellipsis-v fa-2x" aria-hidden="true"></i>
+          </span>
+        </button>
+      </header>
+      <div class="card-content">
+        <div class="content">
+          <p>Did you mean any of the following companies?</p>
+          <div class="tags are-medium">
+            <span class="tag is-link"
+              >Adobe Systems <button class="delete is-small"></button
+            ></span>
+            <span class="tag">Padobe</span>
+            <span class="tag">Cradobe Innovations</span>
+            <span class="tag is-danger is-light">None of the above</span>
+          </div>
+          <button class="button is-light is-fullwidth my-3">Submit</button>
+        </div>
+      </div>
     </div>
-    <div class="notification is-success is-light">
-      <button class="delete"></button>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum dolor.
+    <!--Widget-->
+    <p>
+      Screen 2 - This view will appear when user clicked on
+      <code>None of the above</code>.
+    </p>
+    <div class="card">
+      <header class="card-header has-background-warning-light">
+        <div class="card-header-title">
+          <label>Funds</label><br />
+          <small>Source: PEFI</small>
+        </div>
+        <button class="card-header-icon" aria-label="more options">
+          <span class="icon">
+            <i class="fal fa-ellipsis-v fa-2x" aria-hidden="true"></i>
+          </span>
+        </button>
+      </header>
+      <div class="card-content">
+        <div class="content">
+          <p>Which company were you looking for?</p>
+          <input
+            class="input"
+            type="text"
+            placeholder="E.g. Company name or website URL"
+          />
+          <button class="button is-light is-fullwidth my-3">Submit</button>
+        </div>
+      </div>
     </div>
-    <div class="notification is-warning is-light">
-      <button class="delete"></button>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum dolor.
-    </div>
-    <div class="notification is-danger is-light">
-      <button class="delete"></button>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum dolor.
+    <!--Widget-->
+    <!--Widget-->
+    <p>
+      Screen 3 - This view will appear when user clicked on
+      <code>Submit</code> from Screen 2. Clicking <code>Cancel</code> will lead
+      user back to Screen 1.
+    </p>
+    <div class="card">
+      <header class="card-header has-background-warning-light">
+        <div class="card-header-title">
+          <label>Funds</label><br />
+          <small>Source: PEFI</small>
+        </div>
+        <button class="card-header-icon" aria-label="more options">
+          <span class="icon">
+            <i class="fal fa-ellipsis-v fa-2x" aria-hidden="true"></i>
+          </span>
+        </button>
+      </header>
+      <div class="card-content">
+        <div class="content">
+          <p>Thanks for letting us know. We will be improving our AI.</p>
+          <button class="button is-light is-fullwidth my-3">
+            Hide this Widget
+          </button>
+          <button class="button is-danger is-fullwidth my-3">Cancel</button>
+        </div>
+      </div>
     </div>
   </div>
 </section>

@@ -13,10 +13,14 @@ path:
         url: /content/widgets/profile.html
   - title: Flows
     subfolderitems:
-      - page: Match Company
-        url: /content/flows/matchcompany.html
+      - page: Fuzzy Results
+        url: /content/flows/fuzzyresults.html
+      - page: Fix Match
+        url: /content/flows/fixmatch.html
   - title: Components
     subfolderitems:
+      - page: Modal
+        url: /content/components/modal.html
       - page: Navbar
         url: /content/components/navbar.html
       - page: Pagination
