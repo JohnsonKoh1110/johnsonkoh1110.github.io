@@ -1,12 +1,12 @@
 ---
-title: Fuzzy Results
+title: Verify Company (System)
 layout: layout-sidenav
-permalink: /content/flows/fuzzyresults.html
-category: Flows/FuzzyResults
+permalink: /content/flows/verifycompanysystem.html
+category: Flows/VerifyCompanySystem
 ---
 
 <section class="section">
-  <h3 class="title has-text-weight-light">Fuzzy Results</h3>
+  <h3 class="title has-text-weight-light">Verify Company (System)</h3>
   <p>
     This flow will trigger when there is no exact company name match from one or
     more data sources. It is to get user's help in creating a relationship for
@@ -25,7 +25,7 @@ category: Flows/FuzzyResults
     </div>
     <div id="anchor-fuzzymatch" class="notification is-warning is-light">
       <p>
-        Select company names that match with <b>Adobe Inc</b>
+        Verify company names that match with <b>Adobe Inc</b>
         <a onclick="modalFunction()"
           ><u class="has-text-danger">(what's this?)</u></a
         >:
@@ -34,11 +34,12 @@ category: Flows/FuzzyResults
         <span class="tag is-link">
           Adobe Systems <button id="test" class="delete is-small"></button>
         </span>
-        <span class="tag">Adobe Systems Incorporated</span>
-        <span class="tag">Padobe</span>
-        <span class="tag">Cradobe Innovations</span>
+        <span class="tag is-link is-light">Adobe Systems Incorporated</span>
+        <span class="tag is-link is-light">Padobe</span>
+        <span class="tag is-link is-light">Cradobe Innovations</span>
+        <span class="tag is-danger is-light">None of the above</span>
       </div>
-      <button class="button is-light">Submit</button>
+      <button class="button">Done</button>
     </div>
     <!--Widget-->
     <div class="tile is-ancestor">
@@ -122,7 +123,7 @@ category: Flows/FuzzyResults
               <a
                 href="#anchor-fuzzymatch"
                 class="button is-light is-fullwidth my-3"
-                >Try another company name</a
+                >Verify company name</a
               >
             </div>
           </div>
@@ -147,7 +148,7 @@ category: Flows/FuzzyResults
               <a
                 href="#anchor-fuzzymatch"
                 class="button is-light is-fullwidth my-3"
-                >Try another company name</a
+                >Verify company name</a
               >
             </div>
           </div>
