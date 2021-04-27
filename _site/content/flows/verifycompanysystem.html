@@ -710,13 +710,37 @@
         >:
       </p>
       <div class="tags are-medium">
-        <span class="tag is-link">
-          Adobe Systems <button id="test" class="delete is-small"></button>
-        </span>
-        <span class="tag is-link is-light">Adobe Systems Incorporated</span>
-        <span class="tag is-link is-light">Padobe</span>
-        <span class="tag is-link is-light">Cradobe Innovations</span>
-        <span class="tag is-danger is-light">None of the above</span>
+        <div class="tags has-addons m-1">
+          <span class="tag"
+            ><a class="icon" onclick="modalInfoFunction()">
+              <i class="fal fa-info-circle" aria-hidden="true"></i> </a
+          ></span>
+          <span class="tag is-link">
+            Adobe Systems <button id="test" class="delete is-small"></button>
+          </span>
+        </div>
+        <div class="tags has-addons m-1">
+          <span class="tag"
+            ><a class="icon" onclick="modalInfoFunction()">
+              <i class="fal fa-info-circle" aria-hidden="true"></i> </a
+          ></span>
+          <span class="tag is-link is-light">Adobe Systems Incorporated</span>
+        </div>
+        <div class="tags has-addons m-1">
+          <span class="tag"
+            ><a class="icon" onclick="modalInfoFunction()">
+              <i class="fal fa-info-circle" aria-hidden="true"></i> </a
+          ></span>
+          <span class="tag is-link is-light">Padobe</span>
+        </div>
+        <div class="tags has-addons m-1">
+          <span class="tag"
+            ><a class="icon" onclick="modalInfoFunction()">
+              <i class="fal fa-info-circle" aria-hidden="true"></i> </a
+          ></span>
+          <span class="tag is-link is-light">Cradobe Innovations</span>
+        </div>
+        <span class="tag is-danger is-light mx-1">None of the above</span>
       </div>
       <button class="button">Done</button>
     </div>
@@ -1334,9 +1358,64 @@
     </footer>
   </div>
 </div>
+<div id="winnowInfoModal" class="modal">
+  <div class="modal-background"></div>
+  <div class="modal-card">
+    <header class="modal-card-head">
+      <p class="modal-card-title">General Info</p>
+      <button
+        class="delete"
+        onclick="modalInfoFunction()"
+        aria-label="close"
+      ></button>
+    </header>
+    <section class="modal-card-body">
+      <div class="columns">
+        <div class="column is-2">
+          <p class="title is-7">Name</p>
+        </div>
+        <div class="column">
+          <p>Adobe Systems</p>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column is-2">
+          <p class="title is-7">Website</p>
+        </div>
+        <div class="column">
+          <p><a href="https://adobe.com" target="_blank">adobe.com</a></p>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column is-2">
+          <p class="title is-7">Description</p>
+        </div>
+        <div class="column">
+          <p>
+            Adobe Systems is an American multinational computer software
+            company. Incorporated in Delaware and headquartered in San Jose,
+            California, it has historically focused upon the creation of
+            multimedia and creativity software products, with a more recent
+            foray towards digital marketing software.
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer class="modal-card-foot">
+      <button class="button" onclick="modalFunction()">Close</button>
+      <button class="button is-success" onclick="modalFunction()">
+        Verified
+      </button>
+    </footer>
+  </div>
+</div>
 <script>
   function modalFunction() {
     var element = document.getElementById("winnowModal");
+    element.classList.toggle("is-active");
+  }
+  function modalInfoFunction() {
+    var element = document.getElementById("winnowInfoModal");
     element.classList.toggle("is-active");
   }
 </script>

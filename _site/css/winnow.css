@@ -1914,6 +1914,8 @@ div.icon-text {
   justify-content: flex-start; }
   .tags .tag {
     margin-bottom: 0.5rem; }
+    .tags .tag a {
+      text-decoration: none !important; }
     .tags .tag:not(:last-child) {
       margin-right: 0.5rem; }
   .tags:last-child {
