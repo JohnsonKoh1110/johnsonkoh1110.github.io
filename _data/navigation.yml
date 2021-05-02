@@ -1,6 +1,8 @@
 path:
   - title: Widgets
     subfolderitems:
+      - page: Complex
+        url: /content/widgets/complex.html
       - page: Documents
         url: /content/widgets/documents.html
       - page: Grid
@@ -19,6 +21,8 @@ path:
         url: /content/flows/verifycompanyuser.html
   - title: Components
     subfolderitems:
+      - page: Complex Modal
+        url: /content/components/complexmodal.html
       - page: Modal
         url: /content/components/modal.html
       - page: Navbar
@@ -29,6 +33,8 @@ path:
     subfolderitems:
       - page: Button
         url: /content/elements/button.html
+      - page: Colors
+        url: /content/elements/colors.html
       - page: Icon
         url: /content/elements/icon.html
       - page: Notification
@@ -37,5 +43,7 @@ path:
         url: /content/elements/input.html
       - page: Table
         url: /content/elements/table.html
+      - page: Tabs
+        url: /content/elements/tabs.html
       - page: Tag
         url: /content/elements/tag.html

@@ -1,0 +1,222 @@
+---
+title: Complex
+layout: layout-sidenav
+permalink: /content/widgets/complex.html
+category: Widgets/Complex
+---
+
+<section class="section">
+  <h3 class="title has-text-weight-light">Complex</h3>
+  <p>
+    This is an example with a combination of several components such as info,
+    table and tags.
+  </p>
+  <div class="content mt-5">
+    <div class="card">
+      <header class="card-header">
+        <div class="card-header-title">
+          <label>Drug Development</label><br />
+          <small>Source: ClinicalTrials</small>
+        </div>
+        <button class="card-header-icon" aria-label="more options">
+          <span class="icon">
+            <i class="fal fa-ellipsis-v fa-2x" aria-hidden="true"></i>
+          </span>
+        </button>
+      </header>
+      <div class="card-content">
+        <div class="content">
+          <!--Section-->
+          <div class="level is-mobile">
+            <div class="level-left">
+              <div
+                id="winnowDropDownLayout"
+                class="dropdown"
+                onclick="dropDownLayoutFunction()"
+              >
+                <div class="dropdown-trigger">
+                  <button
+                    class="button"
+                    aria-haspopup="true"
+                    aria-controls="dropdown-menu"
+                  >
+                    <span>Tislelizumab</span>
+                    <span class="icon is-small">
+                      <i class="fas fa-angle-down" aria-hidden="true"></i>
+                    </span>
+                  </button>
+                </div>
+                <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                  <div class="dropdown-content">
+                    <div class="dropdown-item">
+                      <div class="field has-addons">
+                        <div class="control is-expanded">
+                          <input
+                            type="text"
+                            class="input is-fullwidth"
+                            placeholder="Search drug"
+                          />
+                        </div>
+                        <div class="control">
+                          <a class="button"><i class="fal fa-search"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                    <hr class="dropdown-divider" />
+                    <div class="dropdown-item">
+                      <div class="level is-mobile">
+                        <div class="level-left">
+                          <label class="label is-small">DRUG</label>
+                        </div>
+                        <div class="level-right">
+                          <label class="label is-small">UPDATE</label>
+                        </div>
+                      </div>
+                    </div>
+                    <a href="#" class="dropdown-item">
+                      <div class="level is-mobile">
+                        <div class="level-left">
+                          <span class="level-item">Tislelizumab</span>
+                        </div>
+                        <div class="level-right">
+                          <span class="tag">Phase 2</span>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="#" class="dropdown-item">
+                      <div class="level is-mobile">
+                        <div class="level-left">
+                          <span class="level-item">Pamiparib</span>
+                        </div>
+                        <div class="level-right">
+                          <span class="tag">Phase 1</span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="level-right">
+              <p class="mt-3 mr-3 is-hidden-mobile">
+                <b>1</b> / 18 drugs by BeiGene
+              </p>
+              <a class="pagination-previous" disabled
+                ><span class="icon">
+                  <i class="fal fa-chevron-left" aria-hidden="true"></i> </span
+              ></a>
+              <a class="pagination-next"
+                ><span class="icon">
+                  <i class="fal fa-chevron-right" aria-hidden="true"></i> </span
+              ></a>
+            </div>
+          </div>
+
+          <!--Section-->
+          <div class="column">
+            <span class="title is-6">Tislelizumab</span>
+            <br />
+            <p>
+              Tislelizumab (BGB-A317) is a humanized IgG4 anti-PD-1 monoclonal
+              antibody specifically designed to minimize binding to FcyR on
+              macrophages. In pre-clinical studies, binding to FcyR on
+              macrophages has been shown to compromise the anti-tumor activity
+              of PD-1 antibodies through activation of antibody-dependent
+              macrophage-mediated killing of T effector cells. Tislelizumab is
+              the first drug candidate produced from BeiGene's immuno-oncology
+              biologic program, and we believe it could serve as a key element
+              of our immuno-oncology combination platform.
+            </p>
+          </div>
+          <!--Section-->
+          <hr />
+          <p class="subtitle is-7 is-uppercase pb-3">No. of Clinical Trials</p>
+          <div class="table-container">
+            <table class="table is-bordered">
+              <thead>
+                <tr>
+                  <th>Conditions</th>
+                  <th>P1</th>
+                  <th>P2</th>
+                  <th>P3</th>
+                  <th>P4</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Hepatocellular Carcinoma</td>
+                  <td class="has-background-info has-text-white">2</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Recurrent Hepatocellular Carcinoma</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Colorectal Cancer</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Advanced Solid Tumours</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Hodgkin Lymphoma</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!--Section-->
+          <hr />
+          <p class="subtitle is-7 is-uppercase pb-3">
+            Companies with Similar Drugs
+          </p>
+          <button class="button">
+            <span>Novartis</span>
+          </button>
+          <button class="button">
+            <span>BioGen</span>
+          </button>
+          <button class="button">
+            <span>Celgene Group</span>
+          </button>
+        </div>
+      </div>
+      <footer class="card-footer">
+        <div class="level is-mobile">
+          <div class="level-left">
+            <div class="level-item">
+              <a href="#">Go to ClinicalTrials</a>
+            </div>
+          </div>
+          <div class="level-right">
+            <div class="level-item is-pulled-right">
+              <i class="fal fa-chevron-down icon-resize" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+</section>
+<script>
+  function dropDownLayoutFunction() {
+    var element = document.getElementById("winnowDropDownLayout");
+    element.classList.toggle("is-active");
+  }
+</script>

@@ -3190,7 +3190,6 @@ a.tag:hover {
 
 a.dropdown-item,
 button.dropdown-item {
-  padding-right: 3rem;
   text-align: inherit;
   white-space: nowrap;
   width: 100%; }
@@ -3515,7 +3514,7 @@ button.dropdown-item {
     .modal-card {
       margin: 0 auto;
       max-height: calc(100vh - 40px);
-      width: 640px; } }
+      width: 90%; } }
 
 .modal-close {
   background: none;
