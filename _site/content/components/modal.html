@@ -126,14 +126,6 @@
               
               <li>
                 <a
-                  href="/content/components/complexmodal.html"
-                  class=""
-                  >Complex Modal</a
-                >
-              </li>
-              
-              <li>
-                <a
                   href="/content/components/modal.html"
                   class="is-active"
                   >Modal</a
@@ -322,14 +314,6 @@
           
           <li>
             <a
-              href="/content/components/complexmodal.html"
-              class=""
-              >Complex Modal</a
-            >
-          </li>
-          
-          <li>
-            <a
               href="/content/components/modal.html"
               class="is-active"
               >Modal</a
@@ -429,7 +413,12 @@
   <h3 class="title has-text-weight-light">Modal</h3>
   <p>A classic modal overlay, in which you can include any content you want.</p>
   <div class="content mt-5">
-    <a onclick="modalFunction()" class="button is-light">Launch Modal</a>
+    <div class="block">
+      <h5 class="has-text-link">Basic Modal</h5>
+      <a onclick="modalFunction()" class="button is-light"
+        >Launch Basic Modal</a
+      >
+    </div>
     <div id="winnowModal" class="modal">
       <div class="modal-background"></div>
       <div class="modal-card">
@@ -452,11 +441,170 @@
         </footer>
       </div>
     </div>
+    <!---->
+    <div class="block pt-5">
+      <h5 class="has-text-link">Complex Modal</h5>
+      <a onclick="complexModalFunction()" class="button is-light"
+        >Launch Complex Modal</a
+      >
+    </div>
+    <div id="winnowComplexModal" class="modal is-fullwidth">
+      <div class="modal-background"></div>
+      <div class="modal-card">
+        <header class="modal-card-head">
+          <p class="modal-card-title">Drug: Tislelizumab</p>
+          <button
+            class="delete"
+            onclick="complexModalFunction()"
+            aria-label="close"
+          ></button>
+        </header>
+        <section class="modal-card-body">
+          <div class="box">
+            <div class="columns">
+              <div class="column is-2">
+                <p class="title is-7 is-uppercase has-background-light p-2">
+                  Identifier and Information
+                </p>
+                <div class="px-2">
+                  <p>NCT04215978</p>
+                  <div class="tag mb-5">Phase 1</div>
+                  <p class="title is-7">Status</p>
+                  <p>Recruiting</p>
+                  <p class="title is-7">Study Date</p>
+                  <p>January 30, 2020</p>
+                  <p class="title is-7">E.Completion Date</p>
+                  <p>October 31, 2022</p>
+                  <p class="title is-7">Enrolment Count</p>
+                  <p>68</p>
+                </div>
+              </div>
+              <div class="column">
+                <p class="title is-7 is-uppercase has-background-light p-2">
+                  Study Description
+                </p>
+                <div class="px-2">
+                  <p>
+                    [Brief Title] Safety and Preliminary Effectiveness of
+                    BGB-A445 in Combination with Tislelizumab in Participants
+                    with Advanced Solid Tumors.
+                  </p>
+                  <div class="tabs is-small">
+                    <ul class="is-marginless">
+                      <li class="is-active"><a>Description</a></li>
+                      <li><a>Eligibility Criteria</a></li>
+                      <li><a>Outcomes</a></li>
+                    </ul>
+                  </div>
+                  <p>
+                    [Study Description] The purpose of this study is to assess
+                    the safety and tolerability of BGB-A445 alone and in
+                    combination with Tislelizumab in participants with advanced
+                    solid tumors; and to determine the maximum tolerated dose(s)
+                    (MTD) or maximum administered doses(s) (MAD) and recommended
+                    Phase 2 doses (RP2D) of BGB-A445 alone and in combination
+                    with Tislelizumab.
+                  </p>
+                </div>
+              </div>
+              <div class="column is-3">
+                <p class="title is-7 is-uppercase has-background-light p-2">
+                  Location(s)
+                </p>
+                <div class="px-2">
+                  <img src="https://via.placeholder.com/350x150" />
+                  <p class="title is-7">Australia, Western Australia</p>
+                  <p>Linear Clinical Research</p>
+                  <div class="tag mb-5">Recruiting</div>
+                  <p>
+                    St John of God - Subiaco Hospital - Bendat Family
+                    Comprehensive Cancer Centre
+                  </p>
+                  <div class="tag">Not Yet Recruiting</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="columns">
+              <div class="column is-2">
+                <p class="title is-7 is-uppercase has-background-light p-2">
+                  Identifier and Information
+                </p>
+                <div class="px-2">
+                  <p>NCT04215978</p>
+                  <div class="tag mb-5">Phase 1</div>
+                  <p class="title is-7">Status</p>
+                  <p>Recruiting</p>
+                  <p class="title is-7">Study Date</p>
+                  <p>January 30, 2020</p>
+                  <p class="title is-7">E.Completion Date</p>
+                  <p>October 31, 2022</p>
+                  <p class="title is-7">Enrolment Count</p>
+                  <p>68</p>
+                </div>
+              </div>
+              <div class="column">
+                <p class="title is-7 is-uppercase has-background-light p-2">
+                  Study Description
+                </p>
+                <div class="px-2">
+                  <p>
+                    [Brief Title] Safety and Preliminary Effectiveness of
+                    BGB-A445 in Combination with Tislelizumab in Participants
+                    with Advanced Solid Tumors.
+                  </p>
+                  <div class="tabs is-small">
+                    <ul class="is-marginless">
+                      <li class="is-active"><a>Description</a></li>
+                      <li><a>Eligibility Criteria</a></li>
+                      <li><a>Outcomes</a></li>
+                    </ul>
+                  </div>
+                  <p>
+                    [Study Description] The purpose of this study is to assess
+                    the safety and tolerability of BGB-A445 alone and in
+                    combination with Tislelizumab in participants with advanced
+                    solid tumors; and to determine the maximum tolerated dose(s)
+                    (MTD) or maximum administered doses(s) (MAD) and recommended
+                    Phase 2 doses (RP2D) of BGB-A445 alone and in combination
+                    with Tislelizumab.
+                  </p>
+                </div>
+              </div>
+              <div class="column is-3">
+                <p class="title is-7 is-uppercase has-background-light p-2">
+                  Location(s)
+                </p>
+                <div class="px-2">
+                  <img src="https://via.placeholder.com/350x150" />
+                  <p class="title is-7">Australia, Western Australia</p>
+                  <p>Linear Clinical Research</p>
+                  <div class="tag mb-5">Recruiting</div>
+                  <p>
+                    St John of God - Subiaco Hospital - Bendat Family
+                    Comprehensive Cancer Centre
+                  </p>
+                  <div class="tag">Not Yet Recruiting</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <footer class="modal-card-foot">
+          <button class="button" onclick="modalFunction()">Close</button>
+        </footer>
+      </div>
+    </div>
   </div>
 </section>
 <script>
   function modalFunction() {
     var element = document.getElementById("winnowModal");
+    element.classList.toggle("is-active");
+  }
+  function complexModalFunction() {
+    var element = document.getElementById("winnowComplexModal");
     element.classList.toggle("is-active");
   }
 </script>

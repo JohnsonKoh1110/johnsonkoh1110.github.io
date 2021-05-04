@@ -21,8 +21,6 @@ path:
         url: /content/flows/verifycompanyuser.html
   - title: Components
     subfolderitems:
-      - page: Complex Modal
-        url: /content/components/complexmodal.html
       - page: Modal
         url: /content/components/modal.html
       - page: Navbar
