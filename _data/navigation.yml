@@ -1,5 +1,5 @@
 path:
-  - title: Widgets
+  - title: Widget Templates
     subfolderitems:
       - page: Complex
         url: /content/widgets/complex.html
