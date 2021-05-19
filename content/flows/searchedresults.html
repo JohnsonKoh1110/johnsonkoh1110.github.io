@@ -1,0 +1,332 @@
+---
+title: Searched Results
+layout: layout-sidenav
+permalink: /content/flows/searchedresults.html
+category: Flows/SearchedResults
+---
+
+<section class="section">
+  <h3 class="title has-text-weight-light">Searched Results</h3>
+  <p>
+    User will land up on this page when he chose one or more tags in the search
+    bar.
+  </p>
+</section>
+
+<section class="section">
+  {% include wds-header-tags.html %}
+
+  <!--Mobile Dropdown-->
+
+  <section class="main-content columns is-fullheight is-marginless">
+    <!--Desktop Sidebar-->
+    <aside
+      class="
+        column
+        is-3 is-narrow-mobile is-fullheight
+        section
+        has-background-light
+        is-hidden-touch
+      "
+    >
+      <span class="title is-6">Find companies by tags</span>
+      <div class="field has-addons mt-2">
+        <div class="control is-expanded">
+          <input
+            type="text"
+            class="input is-fullwidth"
+            placeholder="Filter by tag"
+          />
+        </div>
+        <div class="control">
+          <a class="button"><i class="fal fa-search"></i></a>
+        </div>
+      </div>
+      <div class="control">
+        <label class="radio">
+          <input type="radio" name="answer" />
+          Department tag
+        </label>
+        <label class="radio">
+          <input type="radio" name="answer" />
+          Private tag
+        </label>
+      </div>
+      <div class="buttons are-small mt-5">
+        <button class="button is-light is-marginless p-1">A</button>
+        <button class="button is-light is-marginless p-1">B</button>
+        <button class="button is-light is-marginless p-1">C</button>
+        <button class="button is-light is-marginless p-1">D</button>
+        <button class="button is-light is-marginless p-1">E</button>
+        <button class="button is-light is-marginless p-1">F</button>
+        <button class="button is-light is-marginless p-1">G</button>
+        <button class="button is-light is-marginless p-1">H</button>
+        <button class="button is-light is-marginless p-1">I</button>
+        <button class="button is-light is-marginless p-1">J</button>
+        <button class="button is-light is-marginless p-1">K</button>
+        <button class="button is-light is-marginless p-1">L</button>
+        <button class="button is-light is-marginless p-1">M</button>
+        <button class="button is-light is-marginless p-1">N</button>
+        <button class="button is-light is-marginless p-1">O</button>
+        <button class="button is-light is-marginless p-1">P</button>
+        <button class="button is-light is-marginless p-1">Q</button>
+        <button class="button is-light is-marginless p-1">R</button>
+        <button class="button is-light is-marginless p-1">S</button>
+        <button class="button is-light is-marginless p-1">T</button>
+        <button class="button is-light is-marginless p-1">U</button>
+        <button class="button is-light is-marginless p-1">V</button>
+        <button class="button is-light is-marginless p-1">W</button>
+        <button class="button is-light is-marginless p-1">X</button>
+        <button class="button is-light is-marginless p-1">Y</button>
+        <button class="button is-light is-marginless p-1">Z</button>
+      </div>
+      <div class="buttons are-small has-addons is-right">
+        <button class="button is-ghost is-marginless is-right">
+          Manage Tags
+        </button>
+      </div>
+      <hr class="has-background-grey-light" />
+      <p class="menu-label">A</p>
+      <ul class="menu-list">
+        <li>
+          <label class="checkbox">
+            <input type="checkbox" checked="checked" />
+            Adtech
+          </label>
+        </li>
+        <li>
+          <label class="checkbox">
+            <input type="checkbox" />
+            Advanced manufacturing
+          </label>
+        </li>
+        <li>
+          <label class="checkbox">
+            <input type="checkbox" checked="checked" />
+            Agtech
+          </label>
+        </li>
+      </ul>
+      <p class="menu-label">B</p>
+      <ul class="menu-list">
+        <li>
+          <label class="checkbox">
+            <input type="checkbox" />
+            B2B payments
+          </label>
+        </li>
+        <li>
+          <label class="checkbox">
+            <input type="checkbox" />
+            Beauty
+          </label>
+        </li>
+        <li>
+          <label class="checkbox">
+            <input type="checkbox" />
+            Big data
+          </label>
+        </li>
+      </ul>
+      <p class="menu-label">C</p>
+      <ul class="menu-list">
+        <li>
+          <label class="checkbox">
+            <input type="checkbox" />
+            Cannabis
+          </label>
+        </li>
+        <li>
+          <label class="checkbox">
+            <input type="checkbox" />
+            Carsharing
+          </label>
+        </li>
+        <li>
+          <label class="checkbox">
+            <input type="checkbox" />
+            Cleantech
+          </label>
+        </li>
+      </ul>
+    </aside>
+    <!--Body Content-->
+    <div class="column is-fullheight has-background-white">
+      <section class="section">
+        <span class="title is-6"
+          >58 companies found based on your tag(s) selection</span
+        >
+        <p>
+          Please note that selecting a compnay with this icon
+          <span class="icon has-text-danger"
+            ><i class="fas fa-usd-circle"></i
+          ></span>
+          will cost credit from Pitchbook
+        </p>
+        <div class="content mt-5">
+          <ul class="flex-container wrap">
+            <li class="flex-item box">
+              <div class="has-text-centered">
+                <span class="title is-6">Adobe Systems</span><br />
+                <span class="tag is-info is-light mt-2">Adtech</span>
+              </div>
+            </li>
+            <li class="flex-item box">
+              <div class="icon-label">
+                <span class="icon has-text-danger"
+                  ><i class="fas fa-usd-circle"></i
+                ></span>
+              </div>
+              <div class="has-text-centered">
+                <span class="title is-6">B Company</span><br />
+                <span class="tag is-info is-light mt-2">Adtech</span>
+              </div>
+            </li>
+            <li class="flex-item box">
+              <div class="icon-label">
+                <span class="icon has-text-danger"
+                  ><i class="fas fa-usd-circle"></i
+                ></span>
+              </div>
+              <div class="has-text-centered">
+                <span class="title is-6">C Company</span><br />
+                <span class="tag is-info is-light mt-2">Adtech</span>
+              </div>
+            </li>
+            <li class="flex-item box">
+              <div class="has-text-centered">
+                <span class="title is-6">D Company</span><br />
+                <span class="tag is-info is-light mt-2">Adtech</span>
+              </div>
+            </li>
+            <li class="flex-item box">
+              <div class="has-text-centered">
+                <span class="title is-6">E Company</span><br />
+                <span class="tag is-info is-light mt-2">Adtech</span>
+              </div>
+            </li>
+            <li class="flex-item box">
+              <div class="has-text-centered">
+                <span class="title is-6">F Company</span><br />
+                <span class="tag is-info is-light mt-2">Adtech</span>
+              </div>
+            </li>
+            <li class="flex-item box">
+              <div class="has-text-centered">
+                <span class="title is-6">G Company</span><br />
+                <span class="tag is-info is-light mt-2">Adtech</span>
+              </div>
+            </li>
+            <li class="flex-item box">
+              <div class="has-text-centered">
+                <span class="title is-6">H Company</span><br />
+                <span class="tag is-info is-light mt-2">Adtech</span>
+              </div>
+            </li>
+            <li class="flex-item box">
+              <div class="has-text-centered">
+                <span class="title is-6">I Company</span><br />
+                <span class="tag is-info is-light mt-2">Adtech</span>
+              </div>
+            </li>
+            <li class="flex-item box">
+              <div class="has-text-centered">
+                <span class="title is-6">J Company</span><br />
+                <span class="tag is-info is-light mt-2">Adtech</span>
+              </div>
+            </li>
+            <li class="flex-item box">
+              <div class="has-text-centered">
+                <span class="title is-6">K Company</span><br />
+                <span class="tag is-info is-light mt-2">Adtech</span>
+              </div>
+            </li>
+            <li class="flex-item box">
+              <div class="has-text-centered">
+                <span class="title is-6">L Company</span><br />
+                <span class="tag is-info is-light mt-2">Adtech</span>
+              </div>
+            </li>
+            <li class="flex-item box">
+              <div class="icon-label">
+                <span class="icon has-text-danger"
+                  ><i class="fas fa-usd-circle"></i
+                ></span>
+              </div>
+              <div class="has-text-centered">
+                <span class="title is-6">M Company</span><br />
+                <span class="tag is-info is-light mt-2">Adtech</span>
+              </div>
+            </li>
+            <li class="flex-item box">
+              <div class="has-text-centered">
+                <span class="title is-6">N Company</span><br />
+                <span class="tag is-info is-light mt-2">Adtech</span>
+              </div>
+            </li>
+            <li class="flex-item box">
+              <div class="icon-label">
+                <span class="icon has-text-danger"
+                  ><i class="fas fa-usd-circle"></i
+                ></span>
+              </div>
+              <div class="has-text-centered">
+                <span class="title is-6">O Company</span><br />
+                <span class="tag is-info is-light mt-2">Adtech</span>
+              </div>
+            </li>
+            <li class="flex-item box">
+              <div class="has-text-centered">
+                <span class="title is-6">P Company</span><br />
+                <span class="tag is-info is-light mt-2">Adtech</span>
+              </div>
+            </li>
+            <li class="flex-item box">
+              <div class="has-text-centered">
+                <span class="title is-6">Q Company</span><br />
+                <span class="tag is-info is-light mt-2">Adtech</span>
+              </div>
+            </li>
+            <li class="flex-item box">
+              <div class="has-text-centered">
+                <span class="title is-6">R Company</span><br />
+                <span class="tag is-info is-light mt-2">Adtech</span>
+              </div>
+            </li>
+            <li class="flex-item box">
+              <div class="has-text-centered">
+                <span class="title is-6">S Company</span><br />
+                <span class="tag is-info is-light mt-2">Adtech</span>
+              </div>
+            </li>
+            <li class="flex-item box">
+              <div class="has-text-centered">
+                <span class="title is-6">T Company</span><br />
+                <span class="tag is-info is-light mt-2">Adtech</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <nav
+        class="pagination is-centered"
+        role="navigation"
+        aria-label="pagination"
+      >
+        <a class="pagination-next">Next page</a>
+        <ul class="pagination-list">
+          <li><a class="pagination-link is-current">1</a></li>
+          <li><span class="pagination-ellipsis">&hellip;</span></li>
+          <li><a class="pagination-link">4</a></li>
+          <li><a class="pagination-link">5</a></li>
+        </ul>
+      </nav>
+    </div>
+  </section>
+</section>
+<script>
+  function dropDownLayoutFunction() {
+    var element = document.getElementById("winnowTagDropdown");
+    element.classList.toggle("is-active");
+  }
+</script>
