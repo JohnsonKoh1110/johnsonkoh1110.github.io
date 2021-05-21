@@ -47,3 +47,5 @@ path:
         url: /content/elements/tabs.html
       - page: Tag
         url: /content/elements/tag.html
+      - page: Typography
+        url: /content/elements/typography.html
