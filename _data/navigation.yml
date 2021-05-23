@@ -13,6 +13,8 @@ path:
         url: /content/widgets/news.html
       - page: Profile
         url: /content/widgets/profile.html
+      - page: Timeline
+        url: /content/widgets/timeline.html
   - title: Flows
     subfolderitems:
       - page: Searched Results

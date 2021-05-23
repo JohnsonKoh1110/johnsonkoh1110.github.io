@@ -12,7 +12,7 @@
     <meta property="og:url" content="" />
     <link rel="stylesheet" href="/css/winnow.css" />
     <link rel="stylesheet" href="/css/fontawesome.css" />
-    <title>Winnow Design System - Typography</title>
+    <title>Winnow Design System - Timeline</title>
   </head>
   <body>
     <nav
@@ -97,7 +97,7 @@
               <li>
                 <a
                   href="/content/widgets/timeline.html"
-                  class=""
+                  class="is-active"
                   >Timeline</a
                 >
               </li>
@@ -246,7 +246,7 @@
               <li>
                 <a
                   href="/content/elements/typography.html"
-                  class="is-active"
+                  class=""
                   >Typography</a
                 >
               </li>
@@ -321,7 +321,7 @@
           <li>
             <a
               href="/content/widgets/timeline.html"
-              class=""
+              class="is-active"
               >Timeline</a
             >
           </li>
@@ -464,7 +464,7 @@
           <li>
             <a
               href="/content/elements/typography.html"
-              class="is-active"
+              class=""
               >Typography</a
             >
           </li>
@@ -474,65 +474,146 @@
       </aside>
       <div class="column is-10 is-fullheight has-background-white">
         <section class="section">
-  <h3 class="title has-text-weight-light">Typography</h3>
-  <p>Change the size, weight, and other font properties of the text.</p>
+  <h3 class="title has-text-weight-light">Timeline</h3>
+  <p>This widget is for listing events along a timeline.</p>
   <div class="content mt-5">
-    <div class="block">
-      <h5 class="has-text-link">Font Family</h5>
-      <p>
-        Noto Sans is to be used throughout the portal -
-        <a href="https://fonts.google.com/specimen/Noto+Sans" target="_blank"
-          >Download here</a
-        >
-      </p>
+    <p>
+      <b>Vertical Timeline</b> - This can be used when the event description is
+      minimal and user can scroll to reveal more information.
+    </p>
+    <div class="card">
+      <header class="card-header">
+        <div class="card-header-title">
+          <label>Company Timeline</label><br />
+          <small>Source: Pitchbook (Adobe Inc)</small>
+        </div>
+        <button class="card-header-icon" aria-label="more options">
+          <span class="icon">
+            <i class="fal fa-ellipsis-v fa-2x" aria-hidden="true"></i>
+          </span>
+        </button>
+      </header>
+      <div class="card-content">
+        <div class="content">
+          <div class="timeline">
+            <header class="timeline-header">
+              <span class="tag is-medium is-link">Start</span>
+            </header>
+            <div class="timeline-item">
+              <div class="timeline-marker is-icon">
+                <i class="fal fa-flag"></i>
+              </div>
+              <div class="timeline-content">
+                <p class="heading">January 2021</p>
+                <p>Timeline content - Can include any element</p>
+              </div>
+            </div>
+            <header class="timeline-header">
+              <span class="tag is-link">2021</span>
+            </header>
+            <div class="timeline-item">
+              <div class="timeline-marker is-icon">
+                <i class="fal fa-flag"></i>
+              </div>
+              <div class="timeline-content">
+                <p class="heading">April 2022</p>
+                <p>Timeline content - Can include any element</p>
+              </div>
+            </div>
+            <div class="timeline-header">
+              <span class="tag is-medium is-link">End</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <h5 class="has-text-link">Font Sizes</h5>
-    <table class="table is-bordered">
-      <thead>
-        <tr>
-          <th>Font Tag</th>
-          <th>Actual Size</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><span class="is-size-1">H1</span></td>
-          <td>3rem or 48px</td>
-        </tr>
-        <tr>
-          <td><span class="is-size-2">H2</span></td>
-          <td>2.5rem or 40px</td>
-        </tr>
-        <tr>
-          <td><span class="is-size-3">H3</span></td>
-          <td>2rem or 32px</td>
-        </tr>
-        <tr>
-          <td><span class="is-size-4">H4</span></td>
-          <td>1.5rem or 24px</td>
-        </tr>
-        <tr>
-          <td><span class="is-size-5">H5</span></td>
-          <td>1.25rem or 20px</td>
-        </tr>
-        <tr>
-          <td><span class="is-size-6">H6</span></td>
-          <td>1rem or 16px</td>
-        </tr>
-        <tr>
-          <td>Paragraph</td>
-          <td>0.875rem or 14px</td>
-        </tr>
-        <tr>
-          <td><span class="is-size-7">Label</span></td>
-          <td>0.75rem or 12px</td>
-        </tr>
-        <tr>
-          <td><span class="is-size-8">Label Small</span></td>
-          <td>0.625rem or 10px</td>
-        </tr>
-      </tbody>
-    </table>
+    <p>
+      <b>Steps Timeline</b> - This can be used when the event description is
+      long and user can click on each date to reveal more information.
+    </p>
+    <div class="card">
+      <header class="card-header">
+        <div class="card-header-title">
+          <label>Company Timeline</label><br />
+          <small>Source: Pitchbook (Adobe Inc)</small>
+        </div>
+        <button class="card-header-icon" aria-label="more options">
+          <span class="icon">
+            <i class="fal fa-ellipsis-v fa-2x" aria-hidden="true"></i>
+          </span>
+        </button>
+      </header>
+      <div class="card-content">
+        <div class="content">
+          <div class="steps">
+            <div class="step-item is-active is-link">
+              <div class="step-marker">
+                <span class="icon">
+                  <i class="fal fa-flag fa-2x" aria-hidden="true"></i>
+                </span>
+              </div>
+              <div class="step-details">
+                <p class="step-title is-size-7">March 2019</p>
+              </div>
+            </div>
+            <div class="step-item">
+              <div class="step-marker">
+                <span class="icon">
+                  <i class="fal fa-flag fa-2x" aria-hidden="true"></i>
+                </span>
+              </div>
+              <div class="step-details">
+                <p class="step-title is-size-7">January 2020</p>
+              </div>
+            </div>
+            <div class="step-item">
+              <div class="step-marker">
+                <span class="icon">
+                  <i class="fal fa-flag fa-2x" aria-hidden="true"></i>
+                </span>
+              </div>
+              <div class="step-details">
+                <p class="step-title is-size-7">November 2020</p>
+              </div>
+            </div>
+            <div class="step-item">
+              <div class="step-marker">
+                <span class="icon">
+                  <i class="fal fa-flag fa-2x" aria-hidden="true"></i>
+                </span>
+              </div>
+              <div class="step-details">
+                <p class="step-title is-size-7">April 2021</p>
+              </div>
+            </div>
+            <div class="steps-content">
+              <div
+                class="step-content has-background-light p-5 is-active"
+                style="border-radius: 0.5rem"
+              >
+                <!--Content-->
+                <ul class="is-marginless mx-5">
+                  <li>Received the first approvals for BRUKINSA® in China</li>
+                  <li>
+                    Received the second approval for tislelizumab in China
+                  </li>
+                  <li>
+                    Completed a registered direct offering of approx. $2.07
+                    billion
+                  </li>
+                  <li>
+                    Secured national reimbursement in China for tislelizumab,
+                    BRUKINSA®, and XGEVA®**
+                  </li>
+                  <li>Established the Shanghai R&D center</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Widget-->
   </div>
 </section>
 
