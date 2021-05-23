@@ -12,7 +12,7 @@
     <meta property="og:url" content="" />
     <link rel="stylesheet" href="/css/winnow.css" />
     <link rel="stylesheet" href="/css/fontawesome.css" />
-    <title>Winnow Design System - Grid</title>
+    <title>Winnow Design System - Steps</title>
   </head>
   <body>
     <nav
@@ -65,7 +65,7 @@
               <li>
                 <a
                   href="/content/widgets/grid.html"
-                  class="is-active"
+                  class=""
                   >Grid</a
                 >
               </li>
@@ -151,7 +151,7 @@
               <li>
                 <a
                   href="/content/components/steps.html"
-                  class=""
+                  class="is-active"
                   >Steps</a
                 >
               </li>
@@ -281,7 +281,7 @@
           <li>
             <a
               href="/content/widgets/grid.html"
-              class="is-active"
+              class=""
               >Grid</a
             >
           </li>
@@ -363,7 +363,7 @@
           <li>
             <a
               href="/content/components/steps.html"
-              class=""
+              class="is-active"
               >Steps</a
             >
           </li>
@@ -458,111 +458,71 @@
       </aside>
       <div class="column is-10 is-fullheight has-background-white">
         <section class="section">
-  <h3 class="title has-text-weight-light">Grid</h3>
-  <p>This widget is for presenting matrix information from data provider.</p>
+  <h3 class="title has-text-weight-light">Steps</h3>
+  <p>Display steps for a process, in different sizes and states.</p>
   <div class="content mt-5">
-    <div class="card">
-      <header class="card-header">
-        <div class="card-header-title">
-          <label>Company Performance</label><br />
-          <small>Source: AskGini (Adobe)</small>
-        </div>
-        <button class="card-header-icon" aria-label="more options">
+    <div class="steps" id="stepsDemo">
+      <div class="step-item is-active is-link">
+        <div class="step-marker">
           <span class="icon">
-            <i class="fal fa-ellipsis-v fa-2x" aria-hidden="true"></i>
+            <i class="fal fa-flag fa-2x" aria-hidden="true"></i>
           </span>
-        </button>
-      </header>
-      <div class="card-content is-paddingless">
-        <div class="content">
-          <ul class="flex-container wrap">
-            <li class="flex-item">
-              <div class="flex-header py-3">
-                <p>TSR</p>
-              </div>
-              <div class="block mb-1">
-                <p class="title is-7">Year 1</p>
-                <p>10%</p>
-              </div>
-              <div class="block mb-1">
-                <p class="title is-7">Year 3</p>
-                <p>10%</p>
-              </div>
-              <div class="block mb-1">
-                <p class="title is-7">Year 5</p>
-                <p>10%</p>
-              </div>
+        </div>
+        <div class="step-details">
+          <p class="step-title is-size-7">March 2019</p>
+        </div>
+      </div>
+      <div class="step-item">
+        <div class="step-marker">
+          <span class="icon">
+            <i class="fal fa-flag fa-2x" aria-hidden="true"></i>
+          </span>
+        </div>
+        <div class="step-details">
+          <p class="step-title is-size-7">January 2020</p>
+        </div>
+      </div>
+      <div class="step-item">
+        <div class="step-marker">
+          <span class="icon">
+            <i class="fal fa-flag fa-2x" aria-hidden="true"></i>
+          </span>
+        </div>
+        <div class="step-details">
+          <p class="step-title is-size-7">November 2020</p>
+        </div>
+      </div>
+      <div class="step-item">
+        <div class="step-marker">
+          <span class="icon">
+            <i class="fal fa-flag fa-2x" aria-hidden="true"></i>
+          </span>
+        </div>
+        <div class="step-details">
+          <p class="step-title is-size-7">April 2021</p>
+        </div>
+      </div>
+      <div class="steps-content">
+        <div
+          class="step-content has-background-light p-5 is-active"
+          style="border-radius: 0.5rem"
+        >
+          <!--Content-->
+          <ul class="is-marginless mx-5">
+            <li>Received the first approvals for BRUKINSA® in China</li>
+            <li>Received the second approval for tislelizumab in China</li>
+            <li>
+              Completed a registered direct offering of approx. $2.07 billion
             </li>
-            <li class="flex-item">
-              <div class="flex-header py-3">
-                <p>Market Cap</p>
-              </div>
-              <div class="block mb-1">
-                <p class="title is-7">FY2020</p>
-                <p>3.6M</p>
-              </div>
-              <div class="block mb-1">
-                <p class="title is-7">FY2019</p>
-                <p>3.4M</p>
-              </div>
+            <li>
+              Secured national reimbursement in China for tislelizumab,
+              BRUKINSA®, and XGEVA®**
             </li>
-            <li class="flex-item">
-              <div class="flex-header py-3">
-                <p>Dividends Declared</p>
-              </div>
-              <div class="block mb-1">
-                <p class="title is-7">FY2019</p>
-                <p>8,305</p>
-              </div>
-              <div class="block mb-1">
-                <p class="title is-7">FY2018</p>
-                <p>6,995</p>
-              </div>
-            </li>
-            <li class="flex-item">
-              <div class="flex-header py-3">
-                <p>Revenue</p>
-              </div>
-              <div class="block mb-1">
-                <p class="title is-7">FY2019</p>
-                <p>377,289</p>
-              </div>
-              <div class="block mb-1">
-                <p class="title is-7">FY2018</p>
-                <p>312,694</p>
-              </div>
-            </li>
-            <li class="flex-item">
-              <div class="flex-header py-3">
-                <p>PATMI</p>
-              </div>
-              <div class="block mb-1">
-                <p class="title is-7">FY2019</p>
-                <p>93,310</p>
-              </div>
-              <div class="block mb-1">
-                <p class="title is-7">FY2018</p>
-                <p>78,719</p>
-              </div>
-            </li>
-            <li class="flex-item">
-              <div class="flex-header py-3">
-                <p>EVA</p>
-              </div>
-              <div class="block mb-1">
-                <p class="title is-7">FY2019</p>
-                <p>21,287</p>
-              </div>
-              <div class="block mb-1">
-                <p class="title is-7">FY2018</p>
-                <p>23,604</p>
-              </div>
-            </li>
+            <li>Established the Shanghai R&D center</li>
           </ul>
         </div>
       </div>
     </div>
-    <!--Widget-->
   </div>
 </section>
 
