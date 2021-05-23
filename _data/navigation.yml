@@ -17,10 +17,8 @@ path:
     subfolderitems:
       - page: Searched Results
         url: /content/flows/searchedresults.html
-      - page: Verify Company (System)
+      - page: Verify Company
         url: /content/flows/verifycompanysystem.html
-      - page: Verify Company (User)
-        url: /content/flows/verifycompanyuser.html
   - title: Components
     subfolderitems:
       - page: Modal
