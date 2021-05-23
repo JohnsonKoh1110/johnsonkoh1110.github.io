@@ -27,6 +27,8 @@ path:
         url: /content/components/navbar.html
       - page: Pagination
         url: /content/components/pagination.html
+      - page: Timeline
+        url: /content/components/timeline.html
   - title: Elements
     subfolderitems:
       - page: Button
