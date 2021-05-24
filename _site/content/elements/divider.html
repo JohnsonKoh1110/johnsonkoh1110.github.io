@@ -12,7 +12,7 @@
     <meta property="og:url" content="" />
     <link rel="stylesheet" href="/css/winnow.css" />
     <link rel="stylesheet" href="/css/fontawesome.css" />
-    <title>Winnow Design System - Home</title>
+    <title>Winnow Design System - Divider</title>
   </head>
   <body>
     <nav
@@ -199,7 +199,7 @@
               <li>
                 <a
                   href="/content/elements/divider.html"
-                  class=""
+                  class="is-active"
                   >Divider</a
                 >
               </li>
@@ -431,7 +431,7 @@
           <li>
             <a
               href="/content/elements/divider.html"
-              class=""
+              class="is-active"
               >Divider</a
             >
           </li>
@@ -497,88 +497,22 @@
       </aside>
       <div class="column is-10 is-fullheight has-background-white">
         <section class="section">
-  <h3 class="title has-text-weight-light">Winnow Design System</h3>
-  <div class="content">
-    <img src="/assets/img/img_lego.svg" width="150" height="auto" />
-    <p>
-      Design systems are Pattern Libraries: a big box of UI Lego pieces that can
-      be assembled in any ways. All the pieces may be consistent, but that
-      doesn't mean the assembled results will be. It has structure and meaning
-      to every combination.
-    </p>
-    <p>
-      Examples here are meant for communicating responsive designs to Winnow
-      development teams written with Jekyll, SASS and Vanilla JavaScript. You
-      can recreate components according to the framework (e.g. React) used for
-      your application.
-    </p>
-    <ul>
-      <li>
-        <b class="has-text-link">Widgets</b> - Standard layouts for presenting
-        different types of content
-      </li>
-      <li>
-        <b class="has-text-link">Flows</b> - Sequence of screens that users will
-        interact for specific cases
-      </li>
-      <li>
-        <b class="has-text-link">Components</b> - Group of elements to fulfil a
-        certain function
-      </li>
-      <li>
-        <b class="has-text-link">Elements</b> - Basic building blocks of
-        everything
-      </li>
-    </ul>
-  </div>
-</section>
-<section class="section">
-  <h3 class="title has-text-weight-light">Concept for Winnow Dashboard</h3>
-  <div class="content">
-    <p>
-      Winnow Dashboard is made up of tile elements to build 2-dimensional
-      Metro-like, Pinterest-like or whatever-you-like grids. It is responsive
-      and the tiles will stack above one another when displayed in mobile. You
-      can resize this browser to see it live.
-    </p>
-    <p>
-      Each tile below represent a
-      <a href="content/widgets/documents.html">widget</a> where different
-      layouts are available for mix-and-match.
-    </p>
-    <div class="tile is-ancestor">
-      <div class="tile is-vertical is-8">
-        <div class="tile">
-          <div class="tile is-parent">
-            <article class="tile is-child box has-background-light">
-              <p class="has-text-link">1 by 1</p>
-            </article>
-          </div>
-          <div class="tile is-parent">
-            <article class="tile is-child box has-background-light">
-              <p class="has-text-link">1 by 1</p>
-            </article>
-          </div>
-        </div>
-        <div class="tile is-parent">
-          <article class="tile is-child box has-background-light">
-            <p class="has-text-link">2 by 1</p>
-          </article>
-        </div>
-      </div>
-      <div class="tile is-parent">
-        <article class="tile is-child box has-background-light">
-          <div class="content">
-            <p class="has-text-link">1 by 2</p>
-          </div>
-        </article>
-      </div>
+  <h3 class="title has-text-weight-light">Divider</h3>
+  <p>Display a vertical or horizontal divider to segment your design.</p>
+  <div class="content mt-5">
+    <div class="block">
+      <h5 class="has-text-link">Horizontal Divider</h5>
+      <div class="is-divider" data-content="OR"></div>
     </div>
-    <div class="tile is-ancestor">
-      <div class="tile is-parent">
-        <article class="tile is-child box has-background-light">
-          <p class="has-text-link">3 by 1</p>
-        </article>
+    <div class="block">
+      <h5 class="has-text-link">Vertical Divider</h5>
+      <div class="columns">
+        <div class="column">Column 1</div>
+        <div class="is-divider-vertical" data-content="OR"></div>
+        <div class="column">
+          Column 2 <br />
+          Note: divider stretches to parent's height.
+        </div>
       </div>
     </div>
   </div>

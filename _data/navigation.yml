@@ -39,6 +39,8 @@ path:
         url: /content/elements/button.html
       - page: Colors
         url: /content/elements/colors.html
+      - page: Divider
+        url: /content/elements/divider.html
       - page: Icon
         url: /content/elements/icon.html
       - page: Notification
