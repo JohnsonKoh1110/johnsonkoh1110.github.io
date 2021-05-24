@@ -8,5 +8,44 @@ category: Demo/Landing
 <section class="section">
   <div class="is-divider" data-content="DEMO STARTS HERE"></div>
   {% include wds-header.html %}
-  <div class="section has-background-light"></div>
+  <div class="section has-background-light" style="min-height: 600px">
+    <div class="column is-three-fifths is-offset-one-fifth has-text-centered">
+      <h3 class="title mt-5">Discover more about a company.</h3>
+      <p>
+        Winnow consolidates company research on a single pane of glass for you.
+      </p>
+      <div class="box mt-5">
+        <div class="field has-addons">
+          <div class="control is-expanded">
+            <input
+              type="text"
+              class="input is-fullwidth"
+              placeholder="Enter a company or tag..."
+            />
+          </div>
+          <div class="control">
+            <a class="button"><i class="fal fa-search"></i></a>
+          </div>
+        </div>
+        <hr class="mb-4" />
+        <div class="has-text-left">
+          <span class="is-size-7 has-text-weight-bold">DISCOVER TAGS</span>
+          <div class="tags mt-2">
+            <span class="tag is-info is-light"> Tag A </span>
+            <span class="tag is-info is-light"> Tag B </span>
+            <span class="tag is-info is-light"> Tag C </span>
+            <span class="tag is-info is-light"> Tag D </span>
+            <span class="tag is-info is-light"> Tag E </span>
+          </div>
+        </div>
+      </div>
+      <p class="mt-5">
+        Please note that selecting a company with this icon
+        <span class="icon has-text-danger">
+          <i class="fas fa-usd-circle"></i>
+        </span>
+        will cost credit from Pitchbook
+      </p>
+    </div>
+  </div>
 </section>
