@@ -12,7 +12,7 @@
     <meta property="og:url" content="" />
     <link rel="stylesheet" href="/css/winnow.css" />
     <link rel="stylesheet" href="/css/fontawesome.css" />
-    <title>Winnow Design System - Landing</title>
+    <title>Winnow Design System - Expand Widget</title>
   </head>
   <body>
     <nav
@@ -273,99 +273,64 @@
     </nav>
     <section class="main-content columns is-fullheight is-marginless">
       <div class="column is-fullheight has-background-white"><section class="section">
-  <div class="is-divider" data-content="DEMO STARTS HERE"></div>
+  <div class="is-divider" data-content="EXPANDED WIDGET PAGE"></div>
   <nav class="navbar has-shadow" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
-    <a class="navbar-item" href="/demo/landing.html">
-      <img src="../../assets/img/logo_winnow.svg" width="145" height="35" />
+    <a class="navbar-item is-paddingless" href="/demo/company.html">
+      <div
+        style="border-right: 1px solid #dbdbdb; height: 100%; padding: 0 16px"
+      >
+        <span class="icon" style="height: 100%; vertical-align: middle">
+          <i class="fal fa-chevron-left"></i>
+        </span>
+      </div>
     </a>
-  </div>
-</nav>
-
-  <div class="section has-background-light" style="min-height: 600px">
-    <div class="column is-three-fifths is-offset-one-fifth has-text-centered">
-      <h3 class="title mt-5">Discover more about a company.</h3>
-      <p>
-        Winnow consolidates company research on a single pane of glass for you.
-      </p>
-      <div class="box mt-5">
+    <a class="navbar-item" href="/demo/landing.html">
+      <img
+        src="../../assets/img/logo_winnow_small.svg"
+        width="52"
+        height="35"
+      />
+    </a>
+    <div class="navbar-minimal">
+      <div class="navbar-item">
         <div class="field has-addons">
           <div class="control is-expanded">
             <input
               type="text"
               class="input is-fullwidth"
-              placeholder="Enter a company or tag..."
-              onfocus="showSuggestions()"
+              placeholder="Enter company name"
             />
           </div>
           <div class="control">
             <a class="button"><i class="fal fa-search"></i></a>
           </div>
         </div>
-        <div
-          class="box suggestions"
-          style="
-            position: absolute;
-            width: calc(100% - 40px);
-            visibility: hidden;
-          "
-        >
-          <div class="has-text-left">
-            <span class="is-size-7 has-text-weight-bold">TAGS</span>
-            <hr class="is-marginless" />
-            <div class="tags mt-2">
-              <span class="tag is-info is-light"
-                ><a href="/demo/searchedtags.html">Tag A</a></span
-              >
-
-              <span class="tag is-info is-light"
-                ><a href="/demo/searchedtags.html">Tag B</a></span
-              >
-              <span class="tag is-info is-light"
-                ><a href="/demo/searchedtags.html">Tag C</a></span
-              >
-            </div>
-            <span class="is-size-7 has-text-weight-bold">COMPANIES</span>
-            <hr class="is-marginless" />
-            <p class="pt-3">
-              <a href="/demo/company.html"
-                ><span class="icon has-text-danger">
-                  <i class="fas fa-usd-circle"></i>
-                </span>
-                Company A</a
-              >
-            </p>
-            <p class="pt-3"><a href="/demo/company.html">Company B</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="field has-addons" style="width: 500px">
+          <div class="control is-expanded">
+            <input
+              type="text"
+              class="input is-fullwidth"
+              placeholder="Enter company name"
+            />
           </div>
-        </div>
-        <hr class="mb-4" />
-        <div class="has-text-left">
-          <span class="is-size-7 has-text-weight-bold">DISCOVER TAGS</span>
-          <div class="tags mt-2">
-            <span class="tag is-info is-light"> Tag A </span>
-            <span class="tag is-info is-light"> Tag B </span>
-            <span class="tag is-info is-light"> Tag C </span>
-            <span class="tag is-info is-light"> Tag D </span>
-            <span class="tag is-info is-light"> Tag E </span>
+          <div class="control">
+            <a class="button"><i class="fal fa-search"></i></a>
           </div>
         </div>
       </div>
-      <p class="mt-5">
-        Please note that selecting a company with this icon
-        <span class="icon has-text-danger">
-          <i class="fas fa-usd-circle"></i>
-        </span>
-        will cost credit from Pitchbook
-      </p>
     </div>
   </div>
+</nav>
+
+  <div class="section has-background-light" style="min-height: 600px"></div>
 </section>
-<script>
-  function showSuggestions() {
-    document.getElementsByClassName("suggestions")[0].style.visibility =
-      "visible";
-  }
-</script>
 </div>
     </section>
     <script>
