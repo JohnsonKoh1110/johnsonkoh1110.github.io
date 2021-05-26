@@ -17,8 +17,6 @@ path:
         url: /content/widgets/timeline.html
   - title: Flows
     subfolderitems:
-      - page: Searched Results
-        url: /content/flows/searchedresults.html
       - page: Verify Company
         url: /content/flows/verifycompanysystem.html
   - title: Components
