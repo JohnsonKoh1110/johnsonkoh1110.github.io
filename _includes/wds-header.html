@@ -1,7 +1,14 @@
 <nav class="navbar has-shadow" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
-    <a class="navbar-item" href="/demo/landing.html">
+    <a class="navbar-item is-hidden-mobile" href="/demo/landing.html">
       <img src="../../assets/img/logo_winnow.svg" width="145" height="35" />
+    </a>
+    <a class="navbar-item is-hidden-tablet" href="/demo/landing.html">
+      <img
+        src="../../assets/img/logo_winnow_small.svg"
+        width="50"
+        height="35"
+      />
     </a>
     <div class="navbar-minimal">
       <div class="navbar-item">
@@ -154,6 +161,15 @@
           </div>
         </div>
       </div>
+      <div class="navbar-item">
+        <button
+          class="button"
+          data-show="quickview"
+          data-target="quickviewDefault"
+        >
+          <i class="fal fa-tag"></i>
+        </button>
+      </div>
     </div>
   </div>
   <div class="navbar-menu">
@@ -298,10 +314,18 @@
           </div>
         </div>
       </div>
+      <div class="navbar-item">
+        <button
+          class="button"
+          data-show="quickview"
+          data-target="quickviewDefault"
+        >
+          <i class="fal fa-tag"></i>
+        </button>
+      </div>
     </div>
   </div>
 </nav>
-
 <script>
   function dropDownLayoutFunction() {
     var element = document.getElementById("winnowDropDownLayout");

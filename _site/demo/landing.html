@@ -280,6 +280,19 @@
       <img src="../../assets/img/logo_winnow.svg" width="145" height="35" />
     </a>
   </div>
+  <div class="navbar-menu">
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <button
+          class="button"
+          data-show="quickview"
+          data-target="quickviewDefault"
+        >
+          <i class="fal fa-tag"></i>
+        </button>
+      </div>
+    </div>
+  </div>
 </nav>
 
   <div class="section has-background-light" style="min-height: 600px">
@@ -368,6 +381,17 @@
 </script>
 </div>
     </section>
+    <div id="quickviewDefault" class="quickview">
+      <header class="quickview-header">
+        <p class="title">Quickview Title</p>
+        <span class="delete" data-dismiss="quickview"></span>
+      </header>
+      <div class="quickview-body">
+        <div class="quickview-block">...</div>
+      </div>
+      <footer class="quickview-footer"></footer>
+    </div>
+    <script type="text/javascript" src="/js/quickview.min.js"></script>
     <script>
       document.addEventListener("DOMContentLoaded", () => {
         const $navbarBurgers = Array.prototype.slice.call(
