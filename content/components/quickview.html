@@ -9,18 +9,6 @@ category: Components/Quickview
   <h3 class="title has-text-weight-light">Quickview</h3>
   <p>Display a quick view of data without leaving the current page.</p>
   <div class="content mt-5">
-    <div id="quickviewDefault" class="quickview">
-      <header class="quickview-header">
-        <p class="title">Quickview Title</p>
-        <span class="delete" data-dismiss="quickview"></span>
-      </header>
-
-      <div class="quickview-body">
-        <div class="quickview-block">...</div>
-      </div>
-
-      <footer class="quickview-footer"></footer>
-    </div>
     <div class="block">
       <h5 class="has-text-link">Right-Side Panel</h5>
       <button
@@ -33,3 +21,20 @@ category: Components/Quickview
     </div>
   </div>
 </section>
+<div id="quickviewDefault" class="quickview">
+  <header class="quickview-header" style="border: 0">
+    <p class="title has-text-weight-bold">Manage Tags</p>
+    <span class="delete" data-dismiss="quickview"></span>
+  </header>
+
+  <div class="quickview-body">
+    <div class="quickview-block p-4">
+      <!--Tags Assigned-->
+      {% include wds-tags-assigned.html %}
+      <!--Assign New Tag-->
+      {% include wds-tags-new.html %}
+      <!--Tag Selector-->
+      {% include wds-tags-selector.html %}
+    </div>
+  </div>
+</div>
