@@ -97,6 +97,14 @@
               
               <li>
                 <a
+                  href="/content/widgets/tags.html"
+                  class=""
+                  >Tags</a
+                >
+              </li>
+              
+              <li>
+                <a
                   href="/content/widgets/timeline.html"
                   class=""
                   >Timeline</a
@@ -329,126 +337,183 @@
         is-hidden-touch
       "
     >
-      <span class="title is-6">Find companies by tags</span>
-      <div class="field has-addons mt-2">
-        <div class="control is-expanded">
-          <input
-            type="text"
-            class="input is-fullwidth"
-            placeholder="Filter by tag"
-          />
-        </div>
-        <div class="control">
-          <a class="button"><i class="fal fa-search"></i></a>
-        </div>
-      </div>
-      <div class="control">
-        <label class="radio">
-          <input type="radio" name="answer" />
-          <span class="is-size-7">Department tag</span>
-        </label>
-        <label class="radio">
-          <input type="radio" name="answer" />
-          <span class="is-size-7">Private tag</span>
-        </label>
-      </div>
-      <div class="buttons are-small mt-5">
-        <button class="button is-light is-marginless p-1">A</button>
-        <button class="button is-light is-marginless p-1">B</button>
-        <button class="button is-light is-marginless p-1">C</button>
-        <button class="button is-light is-marginless p-1">D</button>
-        <button class="button is-light is-marginless p-1">E</button>
-        <button class="button is-light is-marginless p-1">F</button>
-        <button class="button is-light is-marginless p-1">G</button>
-        <button class="button is-light is-marginless p-1">H</button>
-        <button class="button is-light is-marginless p-1">I</button>
-        <button class="button is-light is-marginless p-1">J</button>
-        <button class="button is-light is-marginless p-1">K</button>
-        <button class="button is-light is-marginless p-1">L</button>
-        <button class="button is-light is-marginless p-1">M</button>
-        <button class="button is-light is-marginless p-1">N</button>
-        <button class="button is-light is-marginless p-1">O</button>
-        <button class="button is-light is-marginless p-1">P</button>
-        <button class="button is-light is-marginless p-1">Q</button>
-        <button class="button is-light is-marginless p-1">R</button>
-        <button class="button is-light is-marginless p-1">S</button>
-        <button class="button is-light is-marginless p-1">T</button>
-        <button class="button is-light is-marginless p-1">U</button>
-        <button class="button is-light is-marginless p-1">V</button>
-        <button class="button is-light is-marginless p-1">W</button>
-        <button class="button is-light is-marginless p-1">X</button>
-        <button class="button is-light is-marginless p-1">Y</button>
-        <button class="button is-light is-marginless p-1">Z</button>
-      </div>
-      <div class="buttons are-small has-addons is-right is-marginless">
-        <button class="button is-ghost is-marginless is-paddingless is-right">
-          Manage Tags
+      <!--Tag Selector-->
+      <section>
+  <div class="tabs is-small mb-2">
+    <ul class="is-marginless">
+      <li class="is-active"><a>Department Tags</a></li>
+      <li><a>Private Tags</a></li>
+    </ul>
+  </div>
+  <div class="buttons are-small mb-2">
+    <button class="button is-marginless is-ghost p-1" style="border: 0">
+      A
+    </button>
+    <button class="button is-marginless is-ghost p-1" style="border: 0">
+      B
+    </button>
+    <button class="button is-marginless is-ghost p-1" style="border: 0">
+      C
+    </button>
+    <button class="button is-marginless is-ghost p-1" style="border: 0">
+      D
+    </button>
+    <button class="button is-marginless is-ghost p-1" style="border: 0">
+      E
+    </button>
+    <button class="button is-marginless is-ghost p-1" style="border: 0">
+      F
+    </button>
+    <button class="button is-marginless is-ghost p-1" style="border: 0">
+      G
+    </button>
+    <button class="button is-marginless is-ghost p-1" style="border: 0">
+      H
+    </button>
+    <button class="button is-marginless is-ghost p-1" style="border: 0">
+      I
+    </button>
+    <button class="button is-marginless is-ghost p-1" style="border: 0">
+      J
+    </button>
+    <button class="button is-marginless is-ghost p-1" style="border: 0">
+      K
+    </button>
+    <button class="button is-marginless is-ghost p-1" style="border: 0">
+      L
+    </button>
+    <button class="button is-marginless is-ghost p-1" style="border: 0">
+      M
+    </button>
+    <button class="button is-marginless is-ghost p-1" style="border: 0">
+      N
+    </button>
+    <button class="button is-marginless is-ghost p-1" style="border: 0">
+      O
+    </button>
+    <button class="button is-marginless is-ghost p-1" style="border: 0">
+      P
+    </button>
+    <button class="button is-marginless is-ghost p-1" style="border: 0">
+      Q
+    </button>
+    <button class="button is-marginless is-ghost p-1" style="border: 0">
+      R
+    </button>
+    <button class="button is-marginless is-ghost p-1" style="border: 0">
+      S
+    </button>
+    <button class="button is-marginless is-ghost p-1" style="border: 0">
+      T
+    </button>
+    <button class="button is-marginless is-ghost p-1" style="border: 0">
+      U
+    </button>
+    <button class="button is-marginless is-ghost p-1" style="border: 0">
+      V
+    </button>
+    <button class="button is-marginless is-ghost p-1" style="border: 0">
+      W
+    </button>
+    <button class="button is-marginless is-ghost p-1" style="border: 0">
+      X
+    </button>
+    <button class="button is-marginless is-ghost p-1" style="border: 0">
+      Y
+    </button>
+    <button class="button is-marginless is-ghost p-1" style="border: 0">
+      Z
+    </button>
+  </div>
+  <nav class="level is-mobile is-marginless">
+    <div class="level-left">
+      <div class="level-item">
+        <button
+          class="
+            button
+            is-small is-ghost
+            has-text-danger
+            is-marginless is-paddingless
+          "
+        >
+          Delete Selected
         </button>
       </div>
-      <hr class="has-background-grey-light is-marginless" />
-      <p class="menu-label">A</p>
-      <ul class="menu-list">
-        <li>
-          <label class="checkbox">
-            <input type="checkbox" checked="checked" />
-            Adtech
-          </label>
-        </li>
-        <li>
-          <label class="checkbox">
-            <input type="checkbox" />
-            Advanced manufacturing
-          </label>
-        </li>
-        <li>
-          <label class="checkbox">
-            <input type="checkbox" checked="checked" />
-            Agtech
-          </label>
-        </li>
-      </ul>
-      <p class="menu-label">B</p>
-      <ul class="menu-list">
-        <li>
-          <label class="checkbox">
-            <input type="checkbox" />
-            B2B payments
-          </label>
-        </li>
-        <li>
-          <label class="checkbox">
-            <input type="checkbox" />
-            Beauty
-          </label>
-        </li>
-        <li>
-          <label class="checkbox">
-            <input type="checkbox" />
-            Big data
-          </label>
-        </li>
-      </ul>
-      <p class="menu-label">C</p>
-      <ul class="menu-list">
-        <li>
-          <label class="checkbox">
-            <input type="checkbox" />
-            Cannabis
-          </label>
-        </li>
-        <li>
-          <label class="checkbox">
-            <input type="checkbox" />
-            Carsharing
-          </label>
-        </li>
-        <li>
-          <label class="checkbox">
-            <input type="checkbox" />
-            Cleantech
-          </label>
-        </li>
-      </ul>
+    </div>
+    <div class="level-right">
+      <p class="level-item">
+        <button class="button is-small is-ghost is-marginless is-paddingless">
+          Create New Tags
+        </button>
+      </p>
+    </div>
+  </nav>
+  <hr class="has-background-grey-light is-marginless" />
+  <p class="menu-label">A</p>
+  <ul class="menu-list">
+    <li>
+      <label class="checkbox">
+        <input type="checkbox" />
+        Adtech
+      </label>
+    </li>
+    <li>
+      <label class="checkbox">
+        <input type="checkbox" />
+        Advanced manufacturing
+      </label>
+    </li>
+    <li>
+      <label class="checkbox">
+        <input type="checkbox" />
+        Agtech
+      </label>
+    </li>
+  </ul>
+  <p class="menu-label">B</p>
+  <ul class="menu-list">
+    <li>
+      <label class="checkbox">
+        <input type="checkbox" />
+        B2B payments
+      </label>
+    </li>
+    <li>
+      <label class="checkbox">
+        <input type="checkbox" />
+        Beauty
+      </label>
+    </li>
+    <li>
+      <label class="checkbox">
+        <input type="checkbox" />
+        Big data
+      </label>
+    </li>
+  </ul>
+  <p class="menu-label">C</p>
+  <ul class="menu-list">
+    <li>
+      <label class="checkbox">
+        <input type="checkbox" />
+        Cannabis
+      </label>
+    </li>
+    <li>
+      <label class="checkbox">
+        <input type="checkbox" />
+        Carsharing
+      </label>
+    </li>
+    <li>
+      <label class="checkbox">
+        <input type="checkbox" />
+        Cleantech
+      </label>
+    </li>
+  </ul>
+</section>
+
     </aside>
     <!--Body Content-->
     <div class="column is-fullheight has-background-white">
@@ -626,18 +691,199 @@
     </div>
   </section>
 </section>
-</div>
-    </section>
-    <div id="quickviewDefault" class="quickview">
-      <header class="quickview-header">
-        <p class="title">Quickview Title</p>
-        <span class="delete" data-dismiss="quickview"></span>
-      </header>
-      <div class="quickview-body">
-        <div class="quickview-block">...</div>
+<div id="quickviewDefault" class="quickview">
+  <header class="quickview-header" style="border: 0">
+    <p class="title has-text-weight-bold">Manage Tags</p>
+    <span class="delete" data-dismiss="quickview"></span>
+  </header>
+  <div class="quickview-body">
+    <div class="quickview-block p-4">
+      <!--Manage Tags-->
+      <section class="mb-5">
+  <p>Add or delete tag(s) to use in Winnow.</p>
+</section>
+
+      <!--Tag Selector-->
+      <section>
+  <div class="tabs is-small mb-2">
+    <ul class="is-marginless">
+      <li class="is-active"><a>Department Tags</a></li>
+      <li><a>Private Tags</a></li>
+    </ul>
+  </div>
+  <div class="buttons are-small mb-2">
+    <button class="button is-marginless is-ghost p-1" style="border: 0">
+      A
+    </button>
+    <button class="button is-marginless is-ghost p-1" style="border: 0">
+      B
+    </button>
+    <button class="button is-marginless is-ghost p-1" style="border: 0">
+      C
+    </button>
+    <button class="button is-marginless is-ghost p-1" style="border: 0">
+      D
+    </button>
+    <button class="button is-marginless is-ghost p-1" style="border: 0">
+      E
+    </button>
+    <button class="button is-marginless is-ghost p-1" style="border: 0">
+      F
+    </button>
+    <button class="button is-marginless is-ghost p-1" style="border: 0">
+      G
+    </button>
+    <button class="button is-marginless is-ghost p-1" style="border: 0">
+      H
+    </button>
+    <button class="button is-marginless is-ghost p-1" style="border: 0">
+      I
+    </button>
+    <button class="button is-marginless is-ghost p-1" style="border: 0">
+      J
+    </button>
+    <button class="button is-marginless is-ghost p-1" style="border: 0">
+      K
+    </button>
+    <button class="button is-marginless is-ghost p-1" style="border: 0">
+      L
+    </button>
+    <button class="button is-marginless is-ghost p-1" style="border: 0">
+      M
+    </button>
+    <button class="button is-marginless is-ghost p-1" style="border: 0">
+      N
+    </button>
+    <button class="button is-marginless is-ghost p-1" style="border: 0">
+      O
+    </button>
+    <button class="button is-marginless is-ghost p-1" style="border: 0">
+      P
+    </button>
+    <button class="button is-marginless is-ghost p-1" style="border: 0">
+      Q
+    </button>
+    <button class="button is-marginless is-ghost p-1" style="border: 0">
+      R
+    </button>
+    <button class="button is-marginless is-ghost p-1" style="border: 0">
+      S
+    </button>
+    <button class="button is-marginless is-ghost p-1" style="border: 0">
+      T
+    </button>
+    <button class="button is-marginless is-ghost p-1" style="border: 0">
+      U
+    </button>
+    <button class="button is-marginless is-ghost p-1" style="border: 0">
+      V
+    </button>
+    <button class="button is-marginless is-ghost p-1" style="border: 0">
+      W
+    </button>
+    <button class="button is-marginless is-ghost p-1" style="border: 0">
+      X
+    </button>
+    <button class="button is-marginless is-ghost p-1" style="border: 0">
+      Y
+    </button>
+    <button class="button is-marginless is-ghost p-1" style="border: 0">
+      Z
+    </button>
+  </div>
+  <nav class="level is-mobile is-marginless">
+    <div class="level-left">
+      <div class="level-item">
+        <button
+          class="
+            button
+            is-small is-ghost
+            has-text-danger
+            is-marginless is-paddingless
+          "
+        >
+          Delete Selected
+        </button>
       </div>
-      <footer class="quickview-footer"></footer>
     </div>
+    <div class="level-right">
+      <p class="level-item">
+        <button class="button is-small is-ghost is-marginless is-paddingless">
+          Create New Tags
+        </button>
+      </p>
+    </div>
+  </nav>
+  <hr class="has-background-grey-light is-marginless" />
+  <p class="menu-label">A</p>
+  <ul class="menu-list">
+    <li>
+      <label class="checkbox">
+        <input type="checkbox" />
+        Adtech
+      </label>
+    </li>
+    <li>
+      <label class="checkbox">
+        <input type="checkbox" />
+        Advanced manufacturing
+      </label>
+    </li>
+    <li>
+      <label class="checkbox">
+        <input type="checkbox" />
+        Agtech
+      </label>
+    </li>
+  </ul>
+  <p class="menu-label">B</p>
+  <ul class="menu-list">
+    <li>
+      <label class="checkbox">
+        <input type="checkbox" />
+        B2B payments
+      </label>
+    </li>
+    <li>
+      <label class="checkbox">
+        <input type="checkbox" />
+        Beauty
+      </label>
+    </li>
+    <li>
+      <label class="checkbox">
+        <input type="checkbox" />
+        Big data
+      </label>
+    </li>
+  </ul>
+  <p class="menu-label">C</p>
+  <ul class="menu-list">
+    <li>
+      <label class="checkbox">
+        <input type="checkbox" />
+        Cannabis
+      </label>
+    </li>
+    <li>
+      <label class="checkbox">
+        <input type="checkbox" />
+        Carsharing
+      </label>
+    </li>
+    <li>
+      <label class="checkbox">
+        <input type="checkbox" />
+        Cleantech
+      </label>
+    </li>
+  </ul>
+</section>
+
+    </div>
+  </div>
+</div></div>
+    </section>
     <script type="text/javascript" src="/js/quickview.min.js"></script>
     <script>
       document.addEventListener("DOMContentLoaded", () => {

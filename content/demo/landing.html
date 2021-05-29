@@ -86,6 +86,20 @@ category: Demo/Landing
     </div>
   </div>
 </section>
+<div id="quickviewDefault" class="quickview">
+  <header class="quickview-header" style="border: 0">
+    <p class="title has-text-weight-bold">Manage Tags</p>
+    <span class="delete" data-dismiss="quickview"></span>
+  </header>
+  <div class="quickview-body">
+    <div class="quickview-block p-4">
+      <!--Manage Tags-->
+      {% include wds-tags-manage.html %}
+      <!--Tag Selector-->
+      {% include wds-tags-selector.html %}
+    </div>
+  </div>
+</div>
 <script>
   function showSuggestions() {
     document.getElementsByClassName("suggestions")[0].style.visibility =
