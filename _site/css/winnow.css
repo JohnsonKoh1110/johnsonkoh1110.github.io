@@ -309,6 +309,8 @@ a {
     color: currentColor; }
   a:hover {
     color: #363636; }
+  a:visited {
+    color: inherit; }
 
 code {
   background-color: whitesmoke;

@@ -1,0 +1,78 @@
+<div class="card tile is-child">
+  <header class="card-header">
+    <div class="card-header-title">
+      <label>Tags</label><br />
+      <small>Source: Winnow</small>
+    </div>
+    <div
+      id="winnowDropDownTags"
+      class="dropdown is-right"
+      onclick="dropDownWidgetFunction('winnowDropDownTags')"
+    >
+      <div class="dropdown-trigger">
+        <button class="card-header-icon" aria-label="more options">
+          <span class="icon mt-3">
+            <i class="fal fa-ellipsis-v fa-2x" aria-hidden="true"></i>
+          </span>
+        </button>
+      </div>
+      <!--Dropdown Menu-->
+      <div class="dropdown-menu" id="dropdown-menu" role="menu">
+        <div class="dropdown-content">
+          <a href="#" class="dropdown-item">
+            <div class="level">
+              <div class="level-item level-left">
+                <span class="icon mr-3"> <i class="fal fa-flag"></i></span>
+                <span>Fix Company Name</span>
+              </div>
+            </div>
+          </a>
+          <a href="/demo/expandwidget.html" class="dropdown-item">
+            <div class="level">
+              <div class="level-item level-left">
+                <span class="icon mr-3"> <i class="fal fa-expand"></i></span>
+                <span>Expand Widget</span>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="dropdown-item">
+            <div class="level">
+              <div class="level-item level-left">
+                <span class="icon mr-3"> <i class="fal fa-eye-slash"></i></span>
+                <span>Hide Widget</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="card-content">
+    <div class="content">
+      <button
+        class="button is-fullwidth mb-5"
+        data-show="quickview"
+        data-target="quickviewAssign"
+      >
+        <span class="icon has-text-link">
+          <i class="fal fa-tag"></i>
+        </span>
+        <span>Assign Tags to Company</span>
+      </button>
+      <div class="tags has-addons">
+        <span class="tag is-info is-light mr-2"
+          ><a href="/demo/searchedtags.html">Department Tag</a>
+        </span>
+        <span class="tag is-info is-light mr-2"
+          ><a href="/demo/searchedtags.html">Department Tag</a>
+        </span>
+        <span class="tag is-success is-light mr-2"
+          ><a href="/demo/searchedtags.html">Private Tag</a>
+        </span>
+        <span class="tag is-success is-light mr-2"
+          ><a href="/demo/searchedtags.html">Private Tag</a>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>

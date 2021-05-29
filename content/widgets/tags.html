@@ -8,42 +8,7 @@ category: Widgets/Tags
 <section class="section">
   <h3 class="title has-text-weight-light">Tags</h3>
   <p>This widget is for listing document links shared by users.</p>
-  <div class="content mt-5">
-    <div class="card">
-      <header class="card-header">
-        <div class="card-header-title">
-          <label>Tags</label><br />
-          <small>Source: Winnow</small>
-        </div>
-        <button class="card-header-icon" aria-label="more options">
-          <span class="icon">
-            <i class="fal fa-ellipsis-v fa-2x" aria-hidden="true"></i>
-          </span>
-        </button>
-      </header>
-      <div class="card-content">
-        <div class="content">
-          <button
-            class="button is-fullwidth mb-5"
-            data-show="quickview"
-            data-target="quickviewDefault"
-          >
-            <span class="icon has-text-link">
-              <i class="fal fa-tag"></i>
-            </span>
-            <span>Assign Tags to Company</span>
-          </button>
-          <div class="tags has-addons">
-            <span class="tag is-info is-light mr-2"> Department Tag </span>
-            <span class="tag is-info is-light mr-2"> Department Tag </span>
-            <span class="tag is-success is-light mr-2"> Private Tag </span>
-            <span class="tag is-success is-light mr-2"> Private Tag </span>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--Widget-->
-  </div>
+  <div class="content mt-5">{% include wds-widget-tags.html %}</div>
 </section>
 <div id="quickviewDefault" class="quickview">
   <header class="quickview-header" style="border: 0">

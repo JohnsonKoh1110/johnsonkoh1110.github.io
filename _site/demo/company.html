@@ -280,7 +280,7 @@
       </div>
     </nav>
     <section class="main-content columns is-fullheight is-marginless">
-      <div class="column is-fullheight has-background-white"><section class="section">
+      <div class="column is-fullheight has-background-white"><section class="section content">
   <div class="is-divider" data-content="SINGLE PANE OF GLASS FOR COMPANY"></div>
   <nav class="navbar has-shadow" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
@@ -633,157 +633,913 @@
   }
 </script>
 
-  <div class="section has-background-light" style="min-height: 600px">
+  <div class="section has-background-light py-5" style="min-height: 600px">
+    <div id="anchor-fuzzymatch" class="notification is-warning is-light">
+  <p>
+    Verify company names that match with <b>Adobe Inc</b>
+    <a onclick="modalFunction()"
+      ><u class="has-text-danger">(what's this?)</u></a
+    >:
+  </p>
+  <div class="tags">
+    <div class="tags has-addons m-1">
+      <span class="tag"
+        ><a class="icon">
+          <i class="fal fa-info-circle" aria-hidden="true"></i> </a
+      ></span>
+      <span class="tag is-link is-light">Adobe Systems<span class="is-small ml-2">
+        <i class="fas fa-minus-circle" aria-hidden="true"></i></span
+    ></span></span>
+    </div>
+    <div class="tags has-addons m-1">
+      <span class="tag"
+        ><a class="icon" onclick="modalInfoFunction()">
+          <i class="fal fa-info-circle" aria-hidden="true"></i> </a
+      ></span>
+      <span class="tag is-link is-light">Adobe Systems Incorporated</span>
+    </div>
+    <div class="tags has-addons m-1">
+      <span class="tag"
+        ><a class="icon" onclick="modalInfoFunction()">
+          <i class="fal fa-info-circle" aria-hidden="true"></i> </a
+      ></span>
+      <span class="tag is-link is-light">Padobe</span>
+    </div>
+    <div class="tags has-addons m-1">
+      <span class="tag"
+        ><a class="icon" onclick="modalInfoFunction()">
+          <i class="fal fa-info-circle" aria-hidden="true"></i> </a
+      ></span>
+      <span class="tag is-link is-light">Cradobe Innovations</span>
+    </div>
+    <span class="tag is-danger is-light mx-1">None of the above</span>
+  </div>
+  <button class="button">Done Verification</button>
+</div>
     <div class="tile is-ancestor">
-      <div class="tile is-parent">
-        <div class="tile is-child card">
-          <header class="card-header">
-            <div class="card-header-title">
-              <label>Company Info</label><br />
-              <small>Source: Pitchbook (Adobe Inc)</small>
-            </div>
-            <button class="card-header-icon" aria-label="more options">
-              <span class="icon">
-                <i class="fal fa-ellipsis-v fa-2x" aria-hidden="true"></i>
-              </span>
-            </button>
-          </header>
-          <div class="card-content">
-            <div class="content">
-              <div class="logo-container mb-5">
-                <img src="../../assets/img/img_adobelogo.png" />
-              </div>
-              <div class="columns">
-                <div class="column is-2">
-                  <p class="title is-7">Name</p>
-                </div>
-                <div class="column">
-                  <p>Adobe Inc</p>
-                </div>
-              </div>
-              <div class="columns">
-                <div class="column is-2">
-                  <p class="title is-7">Description</p>
-                </div>
-                <div class="column">
-                  <p>
-                    Adobe Inc. is an American multinational computer software
-                    company. Incorporated in Delaware and headquartered in San
-                    Jose, California, it has historically focused upon the
-                    creation of multimedia and creativity software products,
-                    with a more recent foray towards digital marketing software.
-                  </p>
-                </div>
+      <div class="tile is-parent"><div class="card tile is-child">
+  <header class="card-header">
+    <div class="card-header-title">
+      <label>Company Info</label><br />
+      <small>Source: Pitchbook (Adobe Inc)</small>
+    </div>
+    <div
+      id="winnowDropDownInfo"
+      class="dropdown is-right"
+      onclick="dropDownWidgetFunction('winnowDropDownInfo')"
+    >
+      <div class="dropdown-trigger">
+        <button class="card-header-icon" aria-label="more options">
+          <span class="icon mt-3">
+            <i class="fal fa-ellipsis-v fa-2x" aria-hidden="true"></i>
+          </span>
+        </button>
+      </div>
+      <!--Dropdown Menu-->
+      <div class="dropdown-menu" id="dropdown-menu" role="menu">
+        <div class="dropdown-content">
+          <a href="#" class="dropdown-item">
+            <div class="level">
+              <div class="level-item level-left">
+                <span class="icon mr-3"> <i class="fal fa-flag"></i></span>
+                <span>Fix Company Name</span>
               </div>
             </div>
-          </div>
-          <footer class="card-footer">
-            <div class="level is-mobile">
-              <div class="level-left">
-                <div class="level-item">
-                  <a href="#">Go to External Link</a>
-                </div>
-              </div>
-              <div class="level-right">
-                <div class="level-item is-pulled-right">
-                  <i
-                    class="fal fa-chevron-down icon-resize"
-                    aria-hidden="true"
-                  ></i>
-                </div>
+          </a>
+          <a href="/demo/expandwidget.html" class="dropdown-item">
+            <div class="level">
+              <div class="level-item level-left">
+                <span class="icon mr-3"> <i class="fal fa-expand"></i></span>
+                <span>Expand Widget</span>
               </div>
             </div>
-          </footer>
+          </a>
+          <a href="#" class="dropdown-item">
+            <div class="level">
+              <div class="level-item level-left">
+                <span class="icon mr-3"> <i class="fal fa-eye-slash"></i></span>
+                <span>Hide Widget</span>
+              </div>
+            </div>
+          </a>
         </div>
       </div>
-      <div class="tile is-parent">
-        <div class="card tile is-child">
-          <header class="card-header">
-            <div class="card-header-title">
-              <label>News & Activities</label><br />
-              <small>Source: TechCrunch</small>
+    </div>
+  </header>
+  <div class="card-content">
+    <div class="content">
+      <div class="logo-container mb-5">
+        <img src="../../assets/img/img_adobelogo.png" />
+      </div>
+      <div class="columns">
+        <div class="column is-2">
+          <p class="title is-7">Name</p>
+        </div>
+        <div class="column">
+          <p>Adobe Inc</p>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column is-2">
+          <p class="title is-7">Description</p>
+        </div>
+        <div class="column">
+          <p>
+            Adobe Inc. is an American multinational computer software company.
+            Incorporated in Delaware and headquartered in San Jose, California,
+            it has historically focused upon the creation of multimedia and
+            creativity software products, with a more recent foray towards
+            digital marketing software.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="card-footer">
+    <div class="level is-mobile">
+      <div class="level-left">
+        <div class="level-item">
+          <a href="#">Go to External Link</a>
+        </div>
+      </div>
+      <div class="level-right">
+        <div class="level-item is-pulled-right">
+          <i class="fal fa-chevron-down icon-resize" aria-hidden="true"></i>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+</div>
+      <div class="tile is-parent"><div class="card tile is-child">
+  <header class="card-header">
+    <div class="card-header-title">
+      <label>Tags</label><br />
+      <small>Source: Winnow</small>
+    </div>
+    <div
+      id="winnowDropDownTags"
+      class="dropdown is-right"
+      onclick="dropDownWidgetFunction('winnowDropDownTags')"
+    >
+      <div class="dropdown-trigger">
+        <button class="card-header-icon" aria-label="more options">
+          <span class="icon mt-3">
+            <i class="fal fa-ellipsis-v fa-2x" aria-hidden="true"></i>
+          </span>
+        </button>
+      </div>
+      <!--Dropdown Menu-->
+      <div class="dropdown-menu" id="dropdown-menu" role="menu">
+        <div class="dropdown-content">
+          <a href="#" class="dropdown-item">
+            <div class="level">
+              <div class="level-item level-left">
+                <span class="icon mr-3"> <i class="fal fa-flag"></i></span>
+                <span>Fix Company Name</span>
+              </div>
             </div>
-            <button class="card-header-icon" aria-label="more options">
-              <span class="icon">
-                <i class="fal fa-ellipsis-v fa-2x" aria-hidden="true"></i>
-              </span>
-            </button>
-          </header>
-          <div class="card-content">
-            <div class="content">
-              <p><b>Adobe Inc</b> was not found.</p>
-              <a
-                href="#anchor-fuzzymatch"
-                class="button is-light is-fullwidth my-3"
-                >Verify company name</a
-              >
+          </a>
+          <a href="/demo/expandwidget.html" class="dropdown-item">
+            <div class="level">
+              <div class="level-item level-left">
+                <span class="icon mr-3"> <i class="fal fa-expand"></i></span>
+                <span>Expand Widget</span>
+              </div>
             </div>
+          </a>
+          <a href="#" class="dropdown-item">
+            <div class="level">
+              <div class="level-item level-left">
+                <span class="icon mr-3"> <i class="fal fa-eye-slash"></i></span>
+                <span>Hide Widget</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="card-content">
+    <div class="content">
+      <button
+        class="button is-fullwidth mb-5"
+        data-show="quickview"
+        data-target="quickviewAssign"
+      >
+        <span class="icon has-text-link">
+          <i class="fal fa-tag"></i>
+        </span>
+        <span>Assign Tags to Company</span>
+      </button>
+      <div class="tags has-addons">
+        <span class="tag is-info is-light mr-2"
+          ><a href="/demo/searchedtags.html">Department Tag</a>
+        </span>
+        <span class="tag is-info is-light mr-2"
+          ><a href="/demo/searchedtags.html">Department Tag</a>
+        </span>
+        <span class="tag is-success is-light mr-2"
+          ><a href="/demo/searchedtags.html">Private Tag</a>
+        </span>
+        <span class="tag is-success is-light mr-2"
+          ><a href="/demo/searchedtags.html">Private Tag</a>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+      <div class="tile is-parent"><div class="card tile is-child">
+  <header class="card-header has-background-warning-light">
+    <div class="card-header-title">
+      <label>Company Performance</label><br />
+      <small>Source: AskGini</small>
+    </div>
+    <div
+      id="winnowDropDownVerify"
+      class="dropdown is-right"
+      onclick="dropDownWidgetFunction('winnowDropDownVerify')"
+    >
+      <div class="dropdown-trigger">
+        <button class="card-header-icon" aria-label="more options">
+          <span class="icon mt-3">
+            <i class="fal fa-ellipsis-v fa-2x" aria-hidden="true"></i>
+          </span>
+        </button>
+      </div>
+      <!--Dropdown Menu-->
+      <div class="dropdown-menu" id="dropdown-menu" role="menu">
+        <div class="dropdown-content">
+          <a href="#" class="dropdown-item">
+            <div class="level">
+              <div class="level-item level-left">
+                <span class="icon mr-3"> <i class="fal fa-flag"></i></span>
+                <span>Fix Company Name</span>
+              </div>
+            </div>
+          </a>
+          <a href="/demo/expandwidget.html" class="dropdown-item">
+            <div class="level">
+              <div class="level-item level-left">
+                <span class="icon mr-3"> <i class="fal fa-expand"></i></span>
+                <span>Expand Widget</span>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="dropdown-item">
+            <div class="level">
+              <div class="level-item level-left">
+                <span class="icon mr-3"> <i class="fal fa-eye-slash"></i></span>
+                <span>Hide Widget</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="card-content">
+    <div class="content">
+      <p><b>Adobe Inc</b> was not found.</p>
+      <a href="#anchor-fuzzymatch" class="button is-light is-fullwidth my-3"
+        >Verify company name</a
+      >
+    </div>
+  </div>
+</div>
+</div>
+    </div>
+    <div class="tile is-ancestor">
+      <div class="tile is-parent"><div class="card tile is-child">
+  <header class="card-header">
+    <div class="card-header-title">
+      <label>External References</label><br />
+      <small>Source: Winnow</small>
+    </div>
+    <div
+      id="winnowDropDownDocuments"
+      class="dropdown is-right"
+      onclick="dropDownWidgetFunction('winnowDropDownDocuments')"
+    >
+      <div class="dropdown-trigger">
+        <button class="card-header-icon" aria-label="more options">
+          <span class="icon mt-3">
+            <i class="fal fa-ellipsis-v fa-2x" aria-hidden="true"></i>
+          </span>
+        </button>
+      </div>
+      <!--Dropdown Menu-->
+      <div class="dropdown-menu" id="dropdown-menu" role="menu">
+        <div class="dropdown-content">
+          <a href="#" class="dropdown-item">
+            <div class="level">
+              <div class="level-item level-left">
+                <span class="icon mr-3"> <i class="fal fa-flag"></i></span>
+                <span>Fix Company Name</span>
+              </div>
+            </div>
+          </a>
+          <a href="/demo/expandwidget.html" class="dropdown-item">
+            <div class="level">
+              <div class="level-item level-left">
+                <span class="icon mr-3"> <i class="fal fa-expand"></i></span>
+                <span>Expand Widget</span>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="dropdown-item">
+            <div class="level">
+              <div class="level-item level-left">
+                <span class="icon mr-3"> <i class="fal fa-eye-slash"></i></span>
+                <span>Hide Widget</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="card-content">
+    <div class="content">
+      <button class="button is-fullwidth mb-5">
+        <span class="icon has-text-link">
+          <i class="fal fa-file-plus"></i>
+        </span>
+        <span>Add New Link</span>
+      </button>
+      <div class="columns is-mobile">
+        <div class="column">
+          <span class="title is-6">Project X Research PPT</span><br />
+          <small class="is-size-7 has-text-link"
+            >Richard Bhamb - 4:42 AM GMT+8•January 1, 2021
+          </small>
+          <p class="is-size-7 has-text-danger mt-4">Remove</p>
+        </div>
+        <div class="column is-2 has-text-right">
+          <span class="icon">
+            <i class="fal fa-external-link-alt"></i>
+          </span>
+        </div>
+      </div>
+      <div class="columns is-mobile">
+        <div class="column">
+          <span class="title is-6">Project X Research PPT</span><br />
+          <small class="is-size-7 has-text-link"
+            >Richard Bhamb - 4:42 AM GMT+8•January 1, 2021
+          </small>
+          <p class="is-size-7 has-text-danger mt-4">Remove</p>
+        </div>
+        <div class="column is-2 has-text-right">
+          <span class="icon">
+            <i class="fal fa-external-link-alt"></i>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+      <div class="tile is-parent"><div class="card tile is-child">
+  <header class="card-header">
+    <div class="card-header-title">
+      <label>News & Activities</label><br />
+      <small>Source: TechCrunch (Adobe)</small>
+    </div>
+    <div
+      id="winnowDropDownNews"
+      class="dropdown is-right"
+      onclick="dropDownWidgetFunction('winnowDropDownNews')"
+    >
+      <div class="dropdown-trigger">
+        <button class="card-header-icon" aria-label="more options">
+          <span class="icon mt-3">
+            <i class="fal fa-ellipsis-v fa-2x" aria-hidden="true"></i>
+          </span>
+        </button>
+      </div>
+      <!--Dropdown Menu-->
+      <div class="dropdown-menu" id="dropdown-menu" role="menu">
+        <div class="dropdown-content">
+          <a href="#" class="dropdown-item">
+            <div class="level">
+              <div class="level-item level-left">
+                <span class="icon mr-3"> <i class="fal fa-flag"></i></span>
+                <span>Fix Company Name</span>
+              </div>
+            </div>
+          </a>
+          <a href="/demo/expandwidget.html" class="dropdown-item">
+            <div class="level">
+              <div class="level-item level-left">
+                <span class="icon mr-3"> <i class="fal fa-expand"></i></span>
+                <span>Expand Widget</span>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="dropdown-item">
+            <div class="level">
+              <div class="level-item level-left">
+                <span class="icon mr-3"> <i class="fal fa-eye-slash"></i></span>
+                <span>Hide Widget</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="card-content">
+    <div class="content">
+      <div class="columns is-mobile is-centered">
+        <div class="column is-2">
+          <div class="img-container">
+            <img src="../../assets/img/img_placeholder1.png" />
+          </div>
+        </div>
+        <div class="column is-10">
+          <span class="title is-6">Goodby Flash, goodbye FarmVille</span><br />
+          <small class="is-size-7 has-text-link"
+            >Anthony Ha - 4:42 AM GMT+8•January 1, 2021</small
+          >
+          <br />
+          <p>
+            While much of what made 2020 such an absolute nightmare will still
+            be with us on January 1 (sorry!), we will really, truly be leaving
+            Adobe Flash and FarmVille behind as we enter the …
+          </p>
+        </div>
+      </div>
+      <div class="columns is-mobile is-centered">
+        <div class="column is-2">
+          <div class="img-container">
+            <img src="../../assets/img/img_placeholder2.png" />
+          </div>
+        </div>
+        <div class="column is-10">
+          <span class="title is-6"
+            >Walnut raises $3.5M from Ron Conway to stop remote sales pitches
+            breaking</span
+          ><br />
+          <small class="is-size-7 has-text-link"
+            >Mike Butcher - 1:37 AM GMT+8•December 18, 2020</small
+          >
+          <br />
+          <p>
+            Amid the rise of remote selling due to the pandemic, Walnut, billing
+            itself as a “Wix for Sales teams,” has raised $3.5 million from SV
+            Angel (Ron and Topher Conway) and A.Capital …
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+      <div class="tile is-parent"><div class="card tile is-child">
+  <header class="card-header">
+    <div class="card-header-title">
+      <label>Management Team</label><br />
+      <small>Source: Pitchbook (Adobe Inc)</small>
+    </div>
+    <div
+      id="winnowDropDownProfile"
+      class="dropdown is-right"
+      onclick="dropDownWidgetFunction('winnowDropDownProfile')"
+    >
+      <div class="dropdown-trigger">
+        <button class="card-header-icon" aria-label="more options">
+          <span class="icon mt-3">
+            <i class="fal fa-ellipsis-v fa-2x" aria-hidden="true"></i>
+          </span>
+        </button>
+      </div>
+      <!--Dropdown Menu-->
+      <div class="dropdown-menu" id="dropdown-menu" role="menu">
+        <div class="dropdown-content">
+          <a href="#" class="dropdown-item">
+            <div class="level">
+              <div class="level-item level-left">
+                <span class="icon mr-3"> <i class="fal fa-flag"></i></span>
+                <span>Fix Company Name</span>
+              </div>
+            </div>
+          </a>
+          <a href="/demo/expandwidget.html" class="dropdown-item">
+            <div class="level">
+              <div class="level-item level-left">
+                <span class="icon mr-3"> <i class="fal fa-expand"></i></span>
+                <span>Expand Widget</span>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="dropdown-item">
+            <div class="level">
+              <div class="level-item level-left">
+                <span class="icon mr-3"> <i class="fal fa-eye-slash"></i></span>
+                <span>Hide Widget</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="card-content">
+    <div class="content">
+      <p
+        class="
+          is-size-8 is-uppercase
+          has-text-weight-bold has-text-grey-light
+          is-marginless
+        "
+      >
+        Primary Contact
+      </p>
+      <hr class="mt-0 mb-2" />
+      <div class="columns">
+        <div class="column is-2">
+          <p class="title is-7">Name</p>
+        </div>
+        <div class="column is-8">
+          <p>Ann Lewnes</p>
+        </div>
+        <div class="column is-2 has-text-right"></div>
+      </div>
+      <div class="columns">
+        <div class="column is-2">
+          <p class="title is-7">Title</p>
+        </div>
+        <div class="column is-8">
+          <p>Chief Marketing Officer, Marketing & Executive Vice President</p>
+        </div>
+        <div class="column is-2 has-text-right"></div>
+      </div>
+      <div class="columns">
+        <div class="column is-2">
+          <p class="title is-7">Email</p>
+        </div>
+        <div class="column is-8">
+          <p>name@adobe.com</p>
+        </div>
+        <div class="column is-2 has-text-right">
+          <span class="icon">
+            <i class="fal fa-envelope" aria-hidden="true"></i>
+          </span>
+        </div>
+      </div>
+      <button class="button is-fullwidth mt-5">
+        <span class="icon has-text-danger">
+          <i class="fas fa-usd-circle"></i>
+        </span>
+        <span>Get Contact Details</span>
+      </button>
+    </div>
+  </div>
+</div>
+</div>
+    </div>
+    <div class="tile is-ancestor">
+      <div class="tile is-parent"><div class="card tile is-child">
+  <header class="card-header">
+    <div class="card-header-title">
+      <label>Company Timeline</label><br />
+      <small>Source: Pitchbook (Adobe Inc)</small>
+    </div>
+    <div
+      id="winnowDropDownSteps"
+      class="dropdown is-right"
+      onclick="dropDownWidgetFunction('winnowDropDownSteps')"
+    >
+      <div class="dropdown-trigger">
+        <button class="card-header-icon" aria-label="more options">
+          <span class="icon mt-3">
+            <i class="fal fa-ellipsis-v fa-2x" aria-hidden="true"></i>
+          </span>
+        </button>
+      </div>
+      <!--Dropdown Menu-->
+      <div class="dropdown-menu" id="dropdown-menu" role="menu">
+        <div class="dropdown-content">
+          <a href="#" class="dropdown-item">
+            <div class="level">
+              <div class="level-item level-left">
+                <span class="icon mr-3"> <i class="fal fa-flag"></i></span>
+                <span>Fix Company Name</span>
+              </div>
+            </div>
+          </a>
+          <a href="/demo/expandwidget.html" class="dropdown-item">
+            <div class="level">
+              <div class="level-item level-left">
+                <span class="icon mr-3"> <i class="fal fa-expand"></i></span>
+                <span>Expand Widget</span>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="dropdown-item">
+            <div class="level">
+              <div class="level-item level-left">
+                <span class="icon mr-3"> <i class="fal fa-eye-slash"></i></span>
+                <span>Hide Widget</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="card-content">
+    <div class="content">
+      <div class="steps">
+        <div class="step-item is-active is-link">
+          <div class="step-marker">
+            <span class="icon">
+              <i class="fal fa-flag fa-2x" aria-hidden="true"></i>
+            </span>
+          </div>
+          <div class="step-details">
+            <p class="step-title is-size-7">March 2019</p>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-marker">
+            <span class="icon">
+              <i class="fal fa-flag fa-2x" aria-hidden="true"></i>
+            </span>
+          </div>
+          <div class="step-details">
+            <p class="step-title is-size-7">January 2020</p>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-marker">
+            <span class="icon">
+              <i class="fal fa-flag fa-2x" aria-hidden="true"></i>
+            </span>
+          </div>
+          <div class="step-details">
+            <p class="step-title is-size-7">November 2020</p>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-marker">
+            <span class="icon">
+              <i class="fal fa-flag fa-2x" aria-hidden="true"></i>
+            </span>
+          </div>
+          <div class="step-details">
+            <p class="step-title is-size-7">April 2021</p>
+          </div>
+        </div>
+        <div class="steps-content">
+          <div
+            class="step-content has-background-light p-5 is-active"
+            style="border-radius: 0.5rem"
+          >
+            <!--Content-->
+            <ul class="is-marginless mx-5">
+              <li>Received the first approvals for BRUKINSA® in China</li>
+              <li>Received the second approval for tislelizumab in China</li>
+              <li>
+                Completed a registered direct offering of approx. $2.07 billion
+              </li>
+              <li>
+                Secured national reimbursement in China for tislelizumab,
+                BRUKINSA®, and XGEVA®**
+              </li>
+              <li>Established the Shanghai R&D center</li>
+            </ul>
           </div>
         </div>
       </div>
-      <div class="tile is-parent">
-        <div class="card tile is-child">
-          <header class="card-header">
-            <div class="card-header-title">
-              <label>Company Performance</label><br />
-              <small>Source: AskGini</small>
-            </div>
-            <div class="dropdown is-active is-right">
-              <div class="dropdown-trigger">
-                <button class="card-header-icon" aria-label="more options">
-                  <span class="icon mt-3">
-                    <i class="fal fa-ellipsis-v fa-2x" aria-hidden="true"></i>
-                  </span>
-                </button>
-              </div>
-              <div class="dropdown-menu" id="dropdown-menu" role="menu">
-                <div class="dropdown-content">
-                  <a href="#" class="dropdown-item">
-                    <div class="level">
-                      <div class="level-item level-left">
-                        <span class="icon mr-3">
-                          <i class="fal fa-flag"></i
-                        ></span>
-                        <span>Fix Company Name</span>
-                      </div>
-                    </div>
-                  </a>
-                  <a href="/demo/expandwidget.html" class="dropdown-item">
-                    <div class="level">
-                      <div class="level-item level-left">
-                        <span class="icon mr-3">
-                          <i class="fal fa-expand"></i
-                        ></span>
-                        <span>Expand Widget</span>
-                      </div>
-                    </div>
-                  </a>
-                  <a href="#" class="dropdown-item">
-                    <div class="level">
-                      <div class="level-item level-left">
-                        <span class="icon mr-3">
-                          <i class="fal fa-eye-slash"></i
-                        ></span>
-                        <span>Hide Widget</span>
-                      </div>
-                    </div>
-                  </a>
-                </div>
+    </div>
+  </div>
+</div>
+</div>
+      <div class="tile is-parent"><div class="card tile is-child">
+  <header class="card-header">
+    <div class="card-header-title">
+      <label>Company Timeline</label><br />
+      <small>Source: Pitchbook (Adobe Inc)</small>
+    </div>
+    <div
+      id="winnowDropDownTimeline"
+      class="dropdown is-right"
+      onclick="dropDownWidgetFunction('winnowDropDownTimeline')"
+    >
+      <div class="dropdown-trigger">
+        <button class="card-header-icon" aria-label="more options">
+          <span class="icon mt-3">
+            <i class="fal fa-ellipsis-v fa-2x" aria-hidden="true"></i>
+          </span>
+        </button>
+      </div>
+      <!--Dropdown Menu-->
+      <div class="dropdown-menu" id="dropdown-menu" role="menu">
+        <div class="dropdown-content">
+          <a href="#" class="dropdown-item">
+            <div class="level">
+              <div class="level-item level-left">
+                <span class="icon mr-3"> <i class="fal fa-flag"></i></span>
+                <span>Fix Company Name</span>
               </div>
             </div>
-          </header>
-          <div class="card-content">
-            <div class="content">
-              <p><b>Adobe Inc</b> was not found.</p>
-              <a
-                href="#anchor-fuzzymatch"
-                class="button is-light is-fullwidth my-3"
-                >Verify company name</a
-              >
+          </a>
+          <a href="/demo/expandwidget.html" class="dropdown-item">
+            <div class="level">
+              <div class="level-item level-left">
+                <span class="icon mr-3"> <i class="fal fa-expand"></i></span>
+                <span>Expand Widget</span>
+              </div>
             </div>
-          </div>
+          </a>
+          <a href="#" class="dropdown-item">
+            <div class="level">
+              <div class="level-item level-left">
+                <span class="icon mr-3"> <i class="fal fa-eye-slash"></i></span>
+                <span>Hide Widget</span>
+              </div>
+            </div>
+          </a>
         </div>
       </div>
+    </div>
+  </header>
+  <div class="card-content">
+    <div class="content">
+      <div class="timeline">
+        <header class="timeline-header">
+          <span class="tag is-medium is-link">Start</span>
+        </header>
+        <div class="timeline-item">
+          <div class="timeline-marker is-icon">
+            <i class="fal fa-flag"></i>
+          </div>
+          <div class="timeline-content">
+            <p class="heading">January 2021</p>
+            <p>Timeline content - Can include any element</p>
+          </div>
+        </div>
+        <header class="timeline-header">
+          <span class="tag is-link">2021</span>
+        </header>
+        <div class="timeline-item">
+          <div class="timeline-marker is-icon">
+            <i class="fal fa-flag"></i>
+          </div>
+          <div class="timeline-content">
+            <p class="heading">April 2022</p>
+            <p>Timeline content - Can include any element</p>
+          </div>
+        </div>
+        <div class="timeline-header">
+          <span class="tag is-medium is-link">End</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+      <div class="tile is-parent"><div class="card tile is-child">
+  <header class="card-header">
+    <div class="card-header-title">
+      <label>Company Performance</label><br />
+      <small>Source: AskGini (Adobe)</small>
+    </div>
+    <div
+      id="winnowDropDownGrid"
+      class="dropdown is-right"
+      onclick="dropDownWidgetFunction('winnowDropDownGrid')"
+    >
+      <div class="dropdown-trigger">
+        <button class="card-header-icon" aria-label="more options">
+          <span class="icon mt-3">
+            <i class="fal fa-ellipsis-v fa-2x" aria-hidden="true"></i>
+          </span>
+        </button>
+      </div>
+      <!--Dropdown Menu-->
+      <div class="dropdown-menu" id="dropdown-menu" role="menu">
+        <div class="dropdown-content">
+          <a href="#" class="dropdown-item">
+            <div class="level">
+              <div class="level-item level-left">
+                <span class="icon mr-3"> <i class="fal fa-flag"></i></span>
+                <span>Fix Company Name</span>
+              </div>
+            </div>
+          </a>
+          <a href="/demo/expandwidget.html" class="dropdown-item">
+            <div class="level">
+              <div class="level-item level-left">
+                <span class="icon mr-3"> <i class="fal fa-expand"></i></span>
+                <span>Expand Widget</span>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="dropdown-item">
+            <div class="level">
+              <div class="level-item level-left">
+                <span class="icon mr-3"> <i class="fal fa-eye-slash"></i></span>
+                <span>Hide Widget</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="card-content is-paddingless">
+    <div class="content">
+      <ul class="flex-container wrap">
+        <li class="flex-item">
+          <div class="flex-header py-3">
+            <p>TSR</p>
+          </div>
+          <div class="block mb-1">
+            <p class="title is-7">Year 1</p>
+            <p>10%</p>
+          </div>
+          <div class="block mb-1">
+            <p class="title is-7">Year 3</p>
+            <p>10%</p>
+          </div>
+          <div class="block mb-1">
+            <p class="title is-7">Year 5</p>
+            <p>10%</p>
+          </div>
+        </li>
+        <li class="flex-item">
+          <div class="flex-header py-3">
+            <p>Market Cap</p>
+          </div>
+          <div class="block mb-1">
+            <p class="title is-7">FY2020</p>
+            <p>3.6M</p>
+          </div>
+          <div class="block mb-1">
+            <p class="title is-7">FY2019</p>
+            <p>3.4M</p>
+          </div>
+        </li>
+        <li class="flex-item">
+          <div class="flex-header py-3">
+            <p>Dividends Declared</p>
+          </div>
+          <div class="block mb-1">
+            <p class="title is-7">FY2019</p>
+            <p>8,305</p>
+          </div>
+          <div class="block mb-1">
+            <p class="title is-7">FY2018</p>
+            <p>6,995</p>
+          </div>
+        </li>
+        <li class="flex-item">
+          <div class="flex-header py-3">
+            <p>Revenue</p>
+          </div>
+          <div class="block mb-1">
+            <p class="title is-7">FY2019</p>
+            <p>377,289</p>
+          </div>
+          <div class="block mb-1">
+            <p class="title is-7">FY2018</p>
+            <p>312,694</p>
+          </div>
+        </li>
+        <li class="flex-item">
+          <div class="flex-header py-3">
+            <p>PATMI</p>
+          </div>
+          <div class="block mb-1">
+            <p class="title is-7">FY2019</p>
+            <p>93,310</p>
+          </div>
+          <div class="block mb-1">
+            <p class="title is-7">FY2018</p>
+            <p>78,719</p>
+          </div>
+        </li>
+        <li class="flex-item">
+          <div class="flex-header py-3">
+            <p>EVA</p>
+          </div>
+          <div class="block mb-1">
+            <p class="title is-7">FY2019</p>
+            <p>21,287</p>
+          </div>
+          <div class="block mb-1">
+            <p class="title is-7">FY2018</p>
+            <p>23,604</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+</div>
     </div>
   </div>
 </section>
@@ -979,10 +1735,241 @@
     </div>
   </div>
 </div>
+<div id="quickviewAssign" class="quickview">
+  <header class="quickview-header" style="border: 0">
+    <p class="title has-text-weight-bold">Assign Tags to Company</p>
+    <span class="delete" data-dismiss="quickview"></span>
+  </header>
+  <div class="quickview-body">
+    <div class="quickview-block p-4">
+      <!--Tags Assigned-->
+      <section class="mb-5">
+  <p class="is-size-8 is-uppercase has-text-weight-bold has-text-grey-light">
+    Tags assigned to Company
+  </p>
+  <hr class="mt-0 mb-2" />
+  <div class="tags has-addons">
+    <span class="tag is-info is-light mr-2">
+      Department Tag
+      <span class="is-small ml-2">
+        <i class="fas fa-minus-circle" aria-hidden="true"></i></span
+    ></span>
+    <span class="tag is-info is-light mr-2">
+      Department Tag
+      <span class="is-small ml-2">
+        <i class="fas fa-minus-circle" aria-hidden="true"></i></span
+    ></span>
+    <span class="tag is-success is-light mr-2">
+      Private Tag
+      <span class="is-small ml-2">
+        <i class="fas fa-minus-circle" aria-hidden="true"></i></span
+    ></span>
+    <span class="tag is-success is-light mr-2">
+      Private Tag
+      <span class="is-small ml-2">
+        <i class="fas fa-minus-circle" aria-hidden="true"></i></span
+    ></span>
+  </div>
+</section>
+
+      <!--Assign New Tag-->
+      <section class="mb-5">
+  <p class="is-size-8 is-uppercase has-text-weight-bold has-text-grey-light">
+    Assign new tags
+  </p>
+  <hr class="mt-0 mb-2" />
+  <p>Select tag(s) below to assign to Company.</p>
+</section>
+
+      <!--Tag Selector-->
+      <section>
+  <div class="tabs is-small mb-2">
+    <ul class="is-marginless">
+      <li class="is-active"><a>Department Tags</a></li>
+      <li><a>Private Tags</a></li>
+    </ul>
+  </div>
+  <div class="buttons are-small mb-2">
+    <button class="button is-marginless is-ghost p-1" style="border: 0">
+      A
+    </button>
+    <button class="button is-marginless is-ghost p-1" style="border: 0">
+      B
+    </button>
+    <button class="button is-marginless is-ghost p-1" style="border: 0">
+      C
+    </button>
+    <button class="button is-marginless is-ghost p-1" style="border: 0">
+      D
+    </button>
+    <button class="button is-marginless is-ghost p-1" style="border: 0">
+      E
+    </button>
+    <button class="button is-marginless is-ghost p-1" style="border: 0">
+      F
+    </button>
+    <button class="button is-marginless is-ghost p-1" style="border: 0">
+      G
+    </button>
+    <button class="button is-marginless is-ghost p-1" style="border: 0">
+      H
+    </button>
+    <button class="button is-marginless is-ghost p-1" style="border: 0">
+      I
+    </button>
+    <button class="button is-marginless is-ghost p-1" style="border: 0">
+      J
+    </button>
+    <button class="button is-marginless is-ghost p-1" style="border: 0">
+      K
+    </button>
+    <button class="button is-marginless is-ghost p-1" style="border: 0">
+      L
+    </button>
+    <button class="button is-marginless is-ghost p-1" style="border: 0">
+      M
+    </button>
+    <button class="button is-marginless is-ghost p-1" style="border: 0">
+      N
+    </button>
+    <button class="button is-marginless is-ghost p-1" style="border: 0">
+      O
+    </button>
+    <button class="button is-marginless is-ghost p-1" style="border: 0">
+      P
+    </button>
+    <button class="button is-marginless is-ghost p-1" style="border: 0">
+      Q
+    </button>
+    <button class="button is-marginless is-ghost p-1" style="border: 0">
+      R
+    </button>
+    <button class="button is-marginless is-ghost p-1" style="border: 0">
+      S
+    </button>
+    <button class="button is-marginless is-ghost p-1" style="border: 0">
+      T
+    </button>
+    <button class="button is-marginless is-ghost p-1" style="border: 0">
+      U
+    </button>
+    <button class="button is-marginless is-ghost p-1" style="border: 0">
+      V
+    </button>
+    <button class="button is-marginless is-ghost p-1" style="border: 0">
+      W
+    </button>
+    <button class="button is-marginless is-ghost p-1" style="border: 0">
+      X
+    </button>
+    <button class="button is-marginless is-ghost p-1" style="border: 0">
+      Y
+    </button>
+    <button class="button is-marginless is-ghost p-1" style="border: 0">
+      Z
+    </button>
+  </div>
+  <nav class="level is-mobile is-marginless">
+    <div class="level-left">
+      <div class="level-item">
+        <button
+          class="
+            button
+            is-small is-ghost
+            has-text-danger
+            is-marginless is-paddingless
+          "
+        >
+          Delete Selected
+        </button>
+      </div>
+    </div>
+    <div class="level-right">
+      <p class="level-item">
+        <button class="button is-small is-ghost is-marginless is-paddingless">
+          Create New Tags
+        </button>
+      </p>
+    </div>
+  </nav>
+  <hr class="has-background-grey-light is-marginless" />
+  <p class="menu-label">A</p>
+  <ul class="menu-list">
+    <li>
+      <label class="checkbox">
+        <input type="checkbox" />
+        Adtech
+      </label>
+    </li>
+    <li>
+      <label class="checkbox">
+        <input type="checkbox" />
+        Advanced manufacturing
+      </label>
+    </li>
+    <li>
+      <label class="checkbox">
+        <input type="checkbox" />
+        Agtech
+      </label>
+    </li>
+  </ul>
+  <p class="menu-label">B</p>
+  <ul class="menu-list">
+    <li>
+      <label class="checkbox">
+        <input type="checkbox" />
+        B2B payments
+      </label>
+    </li>
+    <li>
+      <label class="checkbox">
+        <input type="checkbox" />
+        Beauty
+      </label>
+    </li>
+    <li>
+      <label class="checkbox">
+        <input type="checkbox" />
+        Big data
+      </label>
+    </li>
+  </ul>
+  <p class="menu-label">C</p>
+  <ul class="menu-list">
+    <li>
+      <label class="checkbox">
+        <input type="checkbox" />
+        Cannabis
+      </label>
+    </li>
+    <li>
+      <label class="checkbox">
+        <input type="checkbox" />
+        Carsharing
+      </label>
+    </li>
+    <li>
+      <label class="checkbox">
+        <input type="checkbox" />
+        Cleantech
+      </label>
+    </li>
+  </ul>
+</section>
+
+    </div>
+  </div>
+</div>
 </div>
     </section>
     <script type="text/javascript" src="/js/quickview.min.js"></script>
     <script>
+      function dropDownWidgetFunction(target) {
+        var element = document.getElementById(target);
+        element.classList.toggle("is-active");
+      }
+
       document.addEventListener("DOMContentLoaded", () => {
         const $navbarBurgers = Array.prototype.slice.call(
           document.querySelectorAll(".navbar-burger"),

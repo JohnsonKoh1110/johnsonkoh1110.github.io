@@ -8,58 +8,5 @@ category: Widgets/Documents
 <section class="section">
   <h3 class="title has-text-weight-light">Documents</h3>
   <p>This widget is for listing document links shared by users.</p>
-  <div class="content mt-5">
-    <div class="card">
-      <header class="card-header">
-        <div class="card-header-title">
-          <label>External References</label><br />
-          <small>Source: Winnow</small>
-        </div>
-        <button class="card-header-icon" aria-label="more options">
-          <span class="icon">
-            <i class="fal fa-ellipsis-v fa-2x" aria-hidden="true"></i>
-          </span>
-        </button>
-      </header>
-      <div class="card-content">
-        <div class="content">
-          <button class="button is-fullwidth mb-5">
-            <span class="icon has-text-link">
-              <i class="fal fa-file-plus"></i>
-            </span>
-            <span>Add New Link</span>
-          </button>
-          <div class="columns is-mobile">
-            <div class="column">
-              <span class="title is-6">Project X Research PPT</span><br />
-              <small class="is-size-7 has-text-link"
-                >Richard Bhamb - 4:42 AM GMT+8•January 1, 2021
-              </small>
-              <p class="is-size-7 has-text-danger mt-4">Remove</p>
-            </div>
-            <div class="column is-2 has-text-right">
-              <span class="icon">
-                <i class="fal fa-external-link-alt"></i>
-              </span>
-            </div>
-          </div>
-          <div class="columns is-mobile">
-            <div class="column">
-              <span class="title is-6">Project X Research PPT</span><br />
-              <small class="is-size-7 has-text-link"
-                >Richard Bhamb - 4:42 AM GMT+8•January 1, 2021
-              </small>
-              <p class="is-size-7 has-text-danger mt-4">Remove</p>
-            </div>
-            <div class="column is-2 has-text-right">
-              <span class="icon">
-                <i class="fal fa-external-link-alt"></i>
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--Widget-->
-  </div>
+  <div class="content mt-5">{% include wds-widget-documents.html %}</div>
 </section>

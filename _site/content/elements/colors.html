@@ -601,6 +601,11 @@
     </footer>
     <script type="text/javascript" src="/js/quickview.min.js"></script>
     <script>
+      function dropDownWidgetFunction(target) {
+        var element = document.getElementById(target);
+        element.classList.toggle("is-active");
+      }
+
       document.addEventListener("DOMContentLoaded", () => {
         const $navbarBurgers = Array.prototype.slice.call(
           document.querySelectorAll(".navbar-burger"),

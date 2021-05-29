@@ -518,67 +518,102 @@
     This widget is for listing news or anything that has a mix of thumbnails and
     text summary.
   </p>
-  <div class="content mt-5">
-    <div class="card">
-      <header class="card-header">
-        <div class="card-header-title">
-          <label>News & Activities</label><br />
-          <small>Source: TechCrunch (Adobe)</small>
-        </div>
+  <div class="content mt-5"><div class="card tile is-child">
+  <header class="card-header">
+    <div class="card-header-title">
+      <label>News & Activities</label><br />
+      <small>Source: TechCrunch (Adobe)</small>
+    </div>
+    <div
+      id="winnowDropDownNews"
+      class="dropdown is-right"
+      onclick="dropDownWidgetFunction('winnowDropDownNews')"
+    >
+      <div class="dropdown-trigger">
         <button class="card-header-icon" aria-label="more options">
-          <span class="icon">
+          <span class="icon mt-3">
             <i class="fal fa-ellipsis-v fa-2x" aria-hidden="true"></i>
           </span>
         </button>
-      </header>
-      <div class="card-content">
-        <div class="content">
-          <div class="columns is-mobile is-centered">
-            <div class="column is-2">
-              <div class="img-container">
-                <img src="../../assets/img/img_placeholder1.png" />
+      </div>
+      <!--Dropdown Menu-->
+      <div class="dropdown-menu" id="dropdown-menu" role="menu">
+        <div class="dropdown-content">
+          <a href="#" class="dropdown-item">
+            <div class="level">
+              <div class="level-item level-left">
+                <span class="icon mr-3"> <i class="fal fa-flag"></i></span>
+                <span>Fix Company Name</span>
               </div>
             </div>
-            <div class="column is-10">
-              <span class="title is-6">Goodby Flash, goodbye FarmVille</span
-              ><br />
-              <small class="is-size-7 has-text-link"
-                >Anthony Ha - 4:42 AM GMT+8•January 1, 2021</small
-              >
-              <br />
-              <p>
-                While much of what made 2020 such an absolute nightmare will
-                still be with us on January 1 (sorry!), we will really, truly be
-                leaving Adobe Flash and FarmVille behind as we enter the …
-              </p>
-            </div>
-          </div>
-          <div class="columns is-mobile is-centered">
-            <div class="column is-2">
-              <div class="img-container">
-                <img src="../../assets/img/img_placeholder2.png" />
+          </a>
+          <a href="/demo/expandwidget.html" class="dropdown-item">
+            <div class="level">
+              <div class="level-item level-left">
+                <span class="icon mr-3"> <i class="fal fa-expand"></i></span>
+                <span>Expand Widget</span>
               </div>
             </div>
-            <div class="column is-10">
-              <span class="title is-6"
-                >Walnut raises $3.5M from Ron Conway to stop remote sales
-                pitches breaking</span
-              ><br />
-              <small class="is-size-7 has-text-link"
-                >Mike Butcher - 1:37 AM GMT+8•December 18, 2020</small
-              >
-              <br />
-              <p>
-                Amid the rise of remote selling due to the pandemic, Walnut,
-                billing itself as a “Wix for Sales teams,” has raised $3.5
-                million from SV Angel (Ron and Topher Conway) and A.Capital …
-              </p>
+          </a>
+          <a href="#" class="dropdown-item">
+            <div class="level">
+              <div class="level-item level-left">
+                <span class="icon mr-3"> <i class="fal fa-eye-slash"></i></span>
+                <span>Hide Widget</span>
+              </div>
             </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="card-content">
+    <div class="content">
+      <div class="columns is-mobile is-centered">
+        <div class="column is-2">
+          <div class="img-container">
+            <img src="../../assets/img/img_placeholder1.png" />
           </div>
+        </div>
+        <div class="column is-10">
+          <span class="title is-6">Goodby Flash, goodbye FarmVille</span><br />
+          <small class="is-size-7 has-text-link"
+            >Anthony Ha - 4:42 AM GMT+8•January 1, 2021</small
+          >
+          <br />
+          <p>
+            While much of what made 2020 such an absolute nightmare will still
+            be with us on January 1 (sorry!), we will really, truly be leaving
+            Adobe Flash and FarmVille behind as we enter the …
+          </p>
+        </div>
+      </div>
+      <div class="columns is-mobile is-centered">
+        <div class="column is-2">
+          <div class="img-container">
+            <img src="../../assets/img/img_placeholder2.png" />
+          </div>
+        </div>
+        <div class="column is-10">
+          <span class="title is-6"
+            >Walnut raises $3.5M from Ron Conway to stop remote sales pitches
+            breaking</span
+          ><br />
+          <small class="is-size-7 has-text-link"
+            >Mike Butcher - 1:37 AM GMT+8•December 18, 2020</small
+          >
+          <br />
+          <p>
+            Amid the rise of remote selling due to the pandemic, Walnut, billing
+            itself as a “Wix for Sales teams,” has raised $3.5 million from SV
+            Angel (Ron and Topher Conway) and A.Capital …
+          </p>
         </div>
       </div>
     </div>
   </div>
+</div>
+</div>
 </section>
 
       </div>
@@ -596,6 +631,11 @@
     </footer>
     <script type="text/javascript" src="/js/quickview.min.js"></script>
     <script>
+      function dropDownWidgetFunction(target) {
+        var element = document.getElementById(target);
+        element.classList.toggle("is-active");
+      }
+
       document.addEventListener("DOMContentLoaded", () => {
         const $navbarBurgers = Array.prototype.slice.call(
           document.querySelectorAll(".navbar-burger"),
