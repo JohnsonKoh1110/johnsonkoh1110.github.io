@@ -1009,9 +1009,50 @@
         </div>
       </div>
     </div>
+    <div id="ModalShareLink" class="modal">
+      <div class="modal-background"></div>
+      <div class="modal-card">
+        <header class="modal-card-head">
+          <p class="modal-card-title">Share Link</p>
+          <button
+            class="delete"
+            onclick="modalFunction('ModalShareLink')"
+            aria-label="close"
+          ></button>
+        </header>
+        <section class="modal-card-body">
+          <div class="field has-addons">
+            <div class="control is-expanded">
+              <input
+                type="text"
+                class="input is-fullwidth"
+                placeholder="https://winnow.onetemasek.local/companyname"
+              />
+            </div>
+            <div class="control">
+              <a class="button"><i class="fal fa-copy"></i></a>
+            </div>
+          </div>
+          <p>
+            You can share this link with people you want to discuss the company
+            with. Your layout is preserved in the link.
+          </p>
+        </section>
+        <footer class="modal-card-foot">
+          <button class="button" onclick="modalFunction('ModalShareLink')">
+            Close
+          </button>
+        </footer>
+      </div>
+    </div>
     <script type="text/javascript" src="/js/quickview.min.js"></script>
     <script>
       function dropDownWidgetFunction(target) {
+        var element = document.getElementById(target);
+        element.classList.toggle("is-active");
+      }
+
+      function dropDownMenuFunction(target) {
         var element = document.getElementById(target);
         element.classList.toggle("is-active");
       }

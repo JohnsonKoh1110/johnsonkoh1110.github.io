@@ -7,7 +7,7 @@
   <div class="navbar-menu">
     <div class="navbar-end">
       <div class="navbar-item">
-        <div class="field has-addons" style="width: 500px">
+        <div class="field has-addons">
           <div class="control is-expanded">
             <div class="field is-grouped input">
               <div class="control" data-tag="Tag1">
@@ -30,13 +30,51 @@
         </div>
       </div>
       <div class="navbar-item">
-        <button
-          class="button"
-          data-show="quickview"
-          data-target="quickviewDefault"
-        >
-          <i class="fal fa-tag"></i>
-        </button>
+        <div class="field">
+          <div
+            id="winnowDropDownSettingsMini"
+            class="dropdown is-right"
+            onclick="dropDownMenuFunction('winnowDropDownSettingsMini')"
+          >
+            <div class="dropdown-trigger">
+              <button class="button"><i class="fal fa-cog"></i></button>
+            </div>
+            <div class="dropdown-menu" id="dropdown-menu" role="menu">
+              <div class="dropdown-content">
+                <div class="m-4">
+                  <i class="fas fa-user-circle fa-5x"></i>
+                  <p class="mt-2 has-text-weight-bold">Full Name</p>
+                  <p class="is-size-7">Designation , Department</p>
+                </div>
+                <hr class="dropdown-divider" />
+                <a
+                  href="#"
+                  class="dropdown-item"
+                  onclick="modalFunction('ModalShareLink')"
+                >
+                  <i class="fal fa-share"></i> Share Link
+                </a>
+                <a
+                  href="#"
+                  class="dropdown-item"
+                  data-show="quickview"
+                  data-target="quickviewDefault"
+                >
+                  <i class="fal fa-tags"></i> Manage Tags
+                </a>
+                <hr class="dropdown-divider" />
+                <a
+                  href="#"
+                  class="dropdown-item"
+                  data-show="quickview"
+                  data-target="quickviewDefault"
+                >
+                  <i class="fal fa-sign-out-alt"></i> Logout
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
