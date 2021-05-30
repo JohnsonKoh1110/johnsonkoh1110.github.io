@@ -114,21 +114,6 @@
             </ul>
             
             <p class="pl-3 pt-3 is-size-7 is-uppercase has-text-grey-light">
-              Flows
-            </p>
-            <ul class="menu-list">
-              
-              <li>
-                <a
-                  href="/content/flows/verifycompanysystem.html"
-                  class=""
-                  >Verify Company</a
-                >
-              </li>
-              
-            </ul>
-            
-            <p class="pl-3 pt-3 is-size-7 is-uppercase has-text-grey-light">
               Components
             </p>
             <ul class="menu-list">
@@ -354,19 +339,6 @@
               href="/content/widgets/timeline.html"
               class=""
               >Timeline</a
-            >
-          </li>
-          
-        </ul>
-        
-        <p class="menu-label">Flows</p>
-        <ul class="menu-list">
-          
-          <li>
-            <a
-              href="/content/flows/verifycompanysystem.html"
-              class=""
-              >Verify Company</a
             >
           </li>
           
@@ -693,6 +665,7 @@
       </div>
     </div>
   </div>
+  <!--Default-->
   <div class="navbar-menu">
     <div class="navbar-end">
       <div class="navbar-item">
@@ -709,6 +682,7 @@
           </div>
         </div>
       </div>
+
       <div class="navbar-item">
         <div class="field">
           <div
@@ -799,54 +773,74 @@
       <div class="navbar-item">
         <div class="field">
           <div
-            id="winnowDropDownShare"
+            id="winnowDropDownSettings"
             class="dropdown is-right"
-            onclick="dropDownShareFunction()"
+            onclick="winnowDropDownSettings()"
           >
             <div class="dropdown-trigger">
-              <button class="button"><i class="fal fa-share"></i></button>
+              <button class="button"><i class="fal fa-cog"></i></button>
             </div>
             <div class="dropdown-menu" id="dropdown-menu" role="menu">
               <div class="dropdown-content">
-                <div class="dropdown-item">
-                  <label class="label is-small">SHARE LINK</label>
-                  <div class="field has-addons">
-                    <div class="control is-expanded">
-                      <input
-                        type="text"
-                        class="input is-fullwidth"
-                        placeholder="https://winnow.onetemasek.local/companyname"
-                      />
-                    </div>
-                    <div class="control">
-                      <a class="button"><i class="fal fa-copy"></i></a>
-                    </div>
-                  </div>
-                </div>
-                <hr class="dropdown-divider" />
-                <div class="dropdown-item">
-                  <p>
-                    You can share this link with people you want to discuss the
-                    company with. Your layout is preserved in the link.
-                  </p>
-                </div>
+                <a
+                  href="#"
+                  class="dropdown-item"
+                  onclick="modalFunction('ModalShareLink')"
+                >
+                  <i class="fal fa-share"></i> Share Link
+                </a>
+                <a
+                  href="#"
+                  class="dropdown-item"
+                  data-show="quickview"
+                  data-target="quickviewDefault"
+                >
+                  <i class="fal fa-tags"></i> Manage Tags
+                </a>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="navbar-item">
-        <button
-          class="button"
-          data-show="quickview"
-          data-target="quickviewDefault"
-        >
-          <i class="fal fa-tag"></i>
-        </button>
-      </div>
     </div>
   </div>
 </nav>
+<div id="ModalShareLink" class="modal">
+  <div class="modal-background"></div>
+  <div class="modal-card">
+    <header class="modal-card-head">
+      <p class="modal-card-title">Share Link</p>
+      <button
+        class="delete"
+        onclick="modalFunction('ModalShareLink')"
+        aria-label="close"
+      ></button>
+    </header>
+    <section class="modal-card-body">
+      <div class="field has-addons">
+        <div class="control is-expanded">
+          <input
+            type="text"
+            class="input is-fullwidth"
+            placeholder="https://winnow.onetemasek.local/companyname"
+          />
+        </div>
+        <div class="control">
+          <a class="button"><i class="fal fa-copy"></i></a>
+        </div>
+      </div>
+      <p>
+        You can share this link with people you want to discuss the company
+        with. Your layout is preserved in the link.
+      </p>
+    </section>
+    <footer class="modal-card-foot">
+      <button class="button" onclick="modalFunction('ModalShareLink')">
+        Close
+      </button>
+    </footer>
+  </div>
+</div>
 <script>
   function dropDownLayoutFunction() {
     var element = document.getElementById("winnowDropDownLayout");
@@ -866,6 +860,10 @@
   }
   function dropDownSearchFunction() {
     var element = document.getElementById("winnowDropDownSearch");
+    element.classList.toggle("is-active");
+  }
+  function winnowDropDownSettings() {
+    var element = document.getElementById("winnowDropDownSettings");
     element.classList.toggle("is-active");
   }
 </script>
@@ -1306,6 +1304,11 @@
     <script type="text/javascript" src="/js/quickview.min.js"></script>
     <script>
       function dropDownWidgetFunction(target) {
+        var element = document.getElementById(target);
+        element.classList.toggle("is-active");
+      }
+
+      function modalFunction(target) {
         var element = document.getElementById(target);
         element.classList.toggle("is-active");
       }

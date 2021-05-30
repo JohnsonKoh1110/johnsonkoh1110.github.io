@@ -114,21 +114,6 @@
             </ul>
             
             <p class="pl-3 pt-3 is-size-7 is-uppercase has-text-grey-light">
-              Flows
-            </p>
-            <ul class="menu-list">
-              
-              <li>
-                <a
-                  href="/content/flows/verifycompanysystem.html"
-                  class=""
-                  >Verify Company</a
-                >
-              </li>
-              
-            </ul>
-            
-            <p class="pl-3 pt-3 is-size-7 is-uppercase has-text-grey-light">
               Components
             </p>
             <ul class="menu-list">
@@ -354,19 +339,6 @@
               href="/content/widgets/timeline.html"
               class=""
               >Timeline</a
-            >
-          </li>
-          
-        </ul>
-        
-        <p class="menu-label">Flows</p>
-        <ul class="menu-list">
-          
-          <li>
-            <a
-              href="/content/flows/verifycompanysystem.html"
-              class=""
-              >Verify Company</a
             >
           </li>
           
@@ -1040,6 +1012,11 @@
     <script type="text/javascript" src="/js/quickview.min.js"></script>
     <script>
       function dropDownWidgetFunction(target) {
+        var element = document.getElementById(target);
+        element.classList.toggle("is-active");
+      }
+
+      function modalFunction(target) {
         var element = document.getElementById(target);
         element.classList.toggle("is-active");
       }

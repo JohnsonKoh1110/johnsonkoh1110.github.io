@@ -10,19 +10,61 @@ category: Components/Modal
   <p>A classic modal overlay, in which you can include any content you want.</p>
   <div class="content mt-5">
     <div class="block">
+      <h5 class="has-text-link">Changelog Modal</h5>
+      <a onclick="modalFunction('ModalChangelog')" class="button is-light"
+        >Launch Changelog Modal</a
+      >
+    </div>
+    <div id="ModalChangelog" class="modal">
+      <div class="modal-background"></div>
+      <div class="modal-card">
+        <header class="modal-card-head">
+          <p class="modal-card-title">Changelog</p>
+          <button
+            class="delete"
+            onclick="modalFunction('ModalChangelog')"
+            aria-label="close"
+          ></button>
+        </header>
+        <section class="modal-card-body">
+          <p class="title is-size-6">Version 1.0.5 changelog (30 May 2021)</p>
+          <ul>
+            <li>
+              You can now save layouts using the new main navigation control.
+            </li>
+            <li>
+              Added Changelog Popup, so you can see what we are adding, changing
+              or improving.
+            </li>
+          </ul>
+          <p class="title is-size-6">Version 1.0.4 changelog (28 May 2021)</p>
+          <ul>
+            <li>Small bug fixes.</li>
+            <li>Added more analytics to help us detect potential issues.</li>
+          </ul>
+        </section>
+        <footer class="modal-card-foot">
+          <button class="button" onclick="modalFunction('ModalChangelog')">
+            Close
+          </button>
+        </footer>
+      </div>
+    </div>
+    <!---->
+    <div class="block">
       <h5 class="has-text-link">Basic Modal</h5>
-      <a onclick="modalFunction()" class="button is-light"
+      <a onclick="modalFunction('ModalBasic')" class="button is-light"
         >Launch Basic Modal</a
       >
     </div>
-    <div id="winnowModal" class="modal">
+    <div id="ModalBasic" class="modal">
       <div class="modal-background"></div>
       <div class="modal-card">
         <header class="modal-card-head">
           <p class="modal-card-title">Help us improve</p>
           <button
             class="delete"
-            onclick="modalFunction()"
+            onclick="modalFunction('ModalBasic')"
             aria-label="close"
           ></button>
         </header>
@@ -33,25 +75,27 @@ category: Components/Modal
           </p>
         </section>
         <footer class="modal-card-foot">
-          <button class="button" onclick="modalFunction()">Close</button>
+          <button class="button" onclick="modalFunction('ModalBasic')">
+            Close
+          </button>
         </footer>
       </div>
     </div>
     <!---->
-    <div class="block pt-5">
+    <div class="block">
       <h5 class="has-text-link">Complex Modal</h5>
-      <a onclick="complexModalFunction()" class="button is-light"
+      <a onclick="modalFunction('ModalComplex')" class="button is-light"
         >Launch Complex Modal</a
       >
     </div>
-    <div id="winnowComplexModal" class="modal is-fullwidth">
+    <div id="ModalComplex" class="modal is-fullwidth">
       <div class="modal-background"></div>
       <div class="modal-card">
         <header class="modal-card-head">
           <p class="modal-card-title">Drug: Tislelizumab</p>
           <button
             class="delete"
-            onclick="complexModalFunction()"
+            onclick="modalFunction('ModalComplex')"
             aria-label="close"
           ></button>
         </header>
@@ -188,19 +232,11 @@ category: Components/Modal
           </div>
         </section>
         <footer class="modal-card-foot">
-          <button class="button" onclick="modalFunction()">Close</button>
+          <button class="button" onclick="modalFunction('ModalComplex')">
+            Close
+          </button>
         </footer>
       </div>
     </div>
   </div>
 </section>
-<script>
-  function modalFunction() {
-    var element = document.getElementById("winnowModal");
-    element.classList.toggle("is-active");
-  }
-  function complexModalFunction() {
-    var element = document.getElementById("winnowComplexModal");
-    element.classList.toggle("is-active");
-  }
-</script>
