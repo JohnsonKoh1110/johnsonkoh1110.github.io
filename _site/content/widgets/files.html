@@ -12,7 +12,7 @@
     <meta property="og:url" content="" />
     <link rel="stylesheet" href="/css/fontawesome.css" />
     <link rel="stylesheet" href="/css/winnow.css" />
-    <title>Winnow Design System - Documents</title>
+    <title>Winnow Design System - Files</title>
   </head>
   <body>
     <nav
@@ -58,7 +58,7 @@
               <li>
                 <a
                   href="/content/widgets/documents.html"
-                  class="is-active"
+                  class=""
                   >Documents</a
                 >
               </li>
@@ -66,7 +66,7 @@
               <li>
                 <a
                   href="/content/widgets/files.html"
-                  class=""
+                  class="is-active"
                   >Files</a
                 >
               </li>
@@ -297,7 +297,7 @@
           <li>
             <a
               href="/content/widgets/documents.html"
-              class="is-active"
+              class=""
               >Documents</a
             >
           </li>
@@ -305,7 +305,7 @@
           <li>
             <a
               href="/content/widgets/files.html"
-              class=""
+              class="is-active"
               >Files</a
             >
           </li>
@@ -501,18 +501,22 @@
       </aside>
       <div class="column is-10 is-fullheight has-background-white">
         <section class="section">
-  <h3 class="title has-text-weight-light">Documents</h3>
-  <p>This widget is for listing document links shared by users.</p>
-  <div class="content mt-5"><div class="card tile is-child">
+  <h3 class="title has-text-weight-light">Files</h3>
+  <p>
+    This widget is to display files shared on LOOP and related to the Company.
+  </p>
+  <div class="content mt-5">
+    <h5 class="has-text-link">Level 1 Navigation</h5>
+    <div class="card tile is-child">
   <header class="card-header">
     <div class="card-header-title">
-      <label>External References</label><br />
-      <small>Source: Winnow</small>
+      <label>Related Files</label><br />
+      <small>Source: LOOP (Beigene)</small>
     </div>
     <div
-      id="winnowDropDownDocuments"
+      id="winnowDropDownFiles"
       class="dropdown is-right"
-      onclick="dropDownWidgetFunction('winnowDropDownDocuments')"
+      onclick="dropDownWidgetFunction('winnowDropDownFiles')"
     >
       <div class="dropdown-trigger">
         <button class="card-header-icon" aria-label="more options">
@@ -554,19 +558,192 @@
   </header>
   <div class="card-content">
     <div class="content">
-      <button class="button is-fullwidth mb-5">
-        <span class="icon has-text-link">
-          <i class="fal fa-file-plus"></i>
-        </span>
-        <span>Add New Link</span>
+      <p class="is-size-7">Find files related to <b>Beigene</b></p>
+      <div class="field has-addons">
+        <div class="control is-expanded">
+          <input
+            type="text"
+            class="input is-fullwidth"
+            placeholder="Search file"
+          />
+        </div>
+        <div class="control">
+          <a class="button"><i class="fal fa-search"></i></a>
+        </div>
+      </div>
+      <div class="tabs is-small">
+        <ul class="is-marginless">
+          <li class="is-active"><a>Companies</a></li>
+          <li><a>SDIC Decks</a></li>
+          <li><a>Others</a></li>
+        </ul>
+      </div>
+      <section class="accordions">
+        <article class="accordion is-active">
+          <div class="accordion-header">
+            <span>
+              <i class="fal fa-folder mr-2" aria-hidden="true"></i>Companies
+              (Portfolio) / Beigene
+            </span>
+            <button class="toggle" aria-label="toggle"></button>
+          </div>
+          <div class="accordion-body">
+            <div class="accordion-content">
+              <ul class="is-marginless">
+                <li><a href="">Financials</a></li>
+                <li><a href="">IE Notes</a></li>
+                <li><a href="">Legal Docs</a></li>
+                <li><a href="">Notes</a></li>
+                <li><a href="">Press Releases</a></li>
+              </ul>
+            </div>
+          </div>
+        </article>
+        <article class="accordion">
+          <div class="accordion-header">
+            <span style="color: #05988e">
+              <i class="fal fa-folder mr-2" aria-hidden="true"></i>Companies /
+              Beigene Pharmaceuticals (Guangzhou)
+            </span>
+            <button class="toggle" aria-label="toggle"></button>
+          </div>
+          <div class="accordion-body">
+            <div class="accordion-content">
+              <ul class="is-marginless">
+                <li><a href="">Financials</a></li>
+                <li><a href="">IE Notes</a></li>
+                <li><a href="">Legal Docs</a></li>
+                <li><a href="">Notes</a></li>
+                <li><a href="">Press Releases</a></li>
+              </ul>
+            </div>
+          </div>
+        </article>
+        <article class="accordion">
+          <div class="accordion-header">
+            <span style="color: #05988e">
+              <i class="fal fa-folder mr-2" aria-hidden="true"></i>Companies /
+              Beigene Pharmaceuticals (Shanghai)
+            </span>
+            <button class="toggle" aria-label="toggle"></button>
+          </div>
+          <div class="accordion-body">
+            <div class="accordion-content">
+              <ul class="is-marginless">
+                <li><a href="">Financials</a></li>
+                <li><a href="">IE Notes</a></li>
+                <li><a href="">Legal Docs</a></li>
+                <li><a href="">Notes</a></li>
+                <li><a href="">Press Releases</a></li>
+              </ul>
+            </div>
+          </div>
+        </article>
+      </section>
+    </div>
+  </div>
+</div>
+
+    <hr />
+    <h5 class="has-text-link">Level 2 Navigation</h5>
+    <div class="card tile is-child">
+  <header class="card-header">
+    <div class="card-header-title">
+      <label>Related Files</label><br />
+      <small>Source: LOOP (Beigene)</small>
+    </div>
+    <div
+      id="winnowDropDownFilesInner"
+      class="dropdown is-right"
+      onclick="dropDownWidgetFunction('winnowDropDownFilesInner')"
+    >
+      <div class="dropdown-trigger">
+        <button class="card-header-icon" aria-label="more options">
+          <span class="icon mt-3">
+            <i class="fal fa-ellipsis-v fa-2x" aria-hidden="true"></i>
+          </span>
+        </button>
+      </div>
+      <!--Dropdown Menu-->
+      <div class="dropdown-menu" id="dropdown-menu" role="menu">
+        <div class="dropdown-content">
+          <a href="#" class="dropdown-item">
+            <div class="level">
+              <div class="level-item level-left">
+                <span class="icon mr-3"> <i class="fal fa-flag"></i></span>
+                <span>Fix Company Name</span>
+              </div>
+            </div>
+          </a>
+          <a href="/demo/expandwidget.html" class="dropdown-item">
+            <div class="level">
+              <div class="level-item level-left">
+                <span class="icon mr-3"> <i class="fal fa-expand"></i></span>
+                <span>Expand Widget</span>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="dropdown-item">
+            <div class="level">
+              <div class="level-item level-left">
+                <span class="icon mr-3"> <i class="fal fa-eye-slash"></i></span>
+                <span>Hide Widget</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="card-content">
+    <div class="content">
+      <p class="is-size-7">Find files related to <b>Beigene</b></p>
+      <div class="field has-addons">
+        <div class="control is-expanded">
+          <input
+            type="text"
+            class="input is-fullwidth"
+            placeholder="Search file"
+          />
+        </div>
+        <div class="control">
+          <a class="button"><i class="fal fa-search"></i></a>
+        </div>
+      </div>
+      <div class="tabs is-small">
+        <ul class="is-marginless">
+          <li class="is-active"><a>Companies</a></li>
+          <li><a>SDIC Decks</a></li>
+          <li><a>Others</a></li>
+        </ul>
+      </div>
+      <nav class="breadcrumb is-small" aria-label="breadcrumbs">
+        <ul
+          class="is-marginless p-2"
+          style="background-color: #d9e5e6; border-radius: 4px"
+        >
+          <li>
+            <a href="#"
+              ><i class="fal fa-folder mr-2 mt-1" aria-hidden="true"></i>..</a
+            >
+          </li>
+          <li><a href="#">Beigene</a></li>
+          <li><a href="#">Financials</a></li>
+        </ul>
+      </nav>
+      <button class="button is-ghost is-pulled-right is-small">
+        Or view in LOOP
       </button>
+      <ul class="is-marginless mb-5 inner">
+        <li>In Depth Financial Reviews</li>
+        <li>Reports</li>
+      </ul>
       <div class="columns is-mobile">
         <div class="column">
           <span class="title is-6">Project X Research PPT</span><br />
           <small class="is-size-7 has-text-link"
             >Richard Bhamb - 4:42 AM GMT+8•January 1, 2021
           </small>
-          <p class="is-size-7 has-text-danger mt-4">Remove</p>
         </div>
         <div class="column is-2 has-text-right">
           <span class="icon">
@@ -580,7 +757,19 @@
           <small class="is-size-7 has-text-link"
             >Richard Bhamb - 4:42 AM GMT+8•January 1, 2021
           </small>
-          <p class="is-size-7 has-text-danger mt-4">Remove</p>
+        </div>
+        <div class="column is-2 has-text-right">
+          <span class="icon">
+            <i class="fal fa-external-link-alt"></i>
+          </span>
+        </div>
+      </div>
+      <div class="columns is-mobile">
+        <div class="column">
+          <span class="title is-6">Project X Research PPT</span><br />
+          <small class="is-size-7 has-text-link"
+            >Richard Bhamb - 4:42 AM GMT+8•January 1, 2021
+          </small>
         </div>
         <div class="column is-2 has-text-right">
           <span class="icon">
@@ -591,7 +780,8 @@
     </div>
   </div>
 </div>
-</div>
+
+  </div>
 </section>
 
       </div>

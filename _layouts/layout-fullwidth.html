@@ -10,8 +10,8 @@
     <meta property="og:title" content="{{site.title}}" />
     <meta property="og:description" content="{{site.description}}" />
     <meta property="og:url" content="{{site.baseurl}}" />
-    <link rel="stylesheet" href="/css/winnow.css" />
     <link rel="stylesheet" href="/css/fontawesome.css" />
+    <link rel="stylesheet" href="/css/winnow.css" />
     <title>Winnow Design System - {{ page.title }}</title>
   </head>
   <body>
@@ -137,7 +137,8 @@
         </footer>
       </div>
     </div>
-    <script type="text/javascript" src="/js/quickview.min.js"></script>
+    <script type="text/javascript" src="/js/accordion.js"></script>
+    <script type="text/javascript" src="/js/quickview.js"></script>
     <script>
       function dropDownWidgetFunction(target) {
         var element = document.getElementById(target);
@@ -170,6 +171,7 @@
           });
         }
         var quickviews = winnowQuickview.attach();
+        var accordions = winnowAccordion.attach();
       });
     </script>
   </body>

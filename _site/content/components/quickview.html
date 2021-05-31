@@ -10,8 +10,8 @@
     <meta property="og:title" content="Winnow Design System" />
     <meta property="og:description" content="Examples here are meant for communicating responsive designs to Winnow development teams." />
     <meta property="og:url" content="" />
-    <link rel="stylesheet" href="/css/winnow.css" />
     <link rel="stylesheet" href="/css/fontawesome.css" />
+    <link rel="stylesheet" href="/css/winnow.css" />
     <title>Winnow Design System - Quickview</title>
   </head>
   <body>
@@ -60,6 +60,14 @@
                   href="/content/widgets/documents.html"
                   class=""
                   >Documents</a
+                >
+              </li>
+              
+              <li>
+                <a
+                  href="/content/widgets/files.html"
+                  class=""
+                  >Files</a
                 >
               </li>
               
@@ -291,6 +299,14 @@
               href="/content/widgets/documents.html"
               class=""
               >Documents</a
+            >
+          </li>
+          
+          <li>
+            <a
+              href="/content/widgets/files.html"
+              class=""
+              >Files</a
             >
           </li>
           
@@ -1194,7 +1210,8 @@
         </footer>
       </div>
     </div>
-    <script type="text/javascript" src="/js/quickview.min.js"></script>
+    <script type="text/javascript" src="/js/accordion.js"></script>
+    <script type="text/javascript" src="/js/quickview.js"></script>
     <script>
       function dropDownWidgetFunction(target) {
         var element = document.getElementById(target);
@@ -1227,6 +1244,7 @@
           });
         }
         var quickviews = winnowQuickview.attach();
+        var accordions = winnowAccordion.attach();
       });
     </script>
   </body>

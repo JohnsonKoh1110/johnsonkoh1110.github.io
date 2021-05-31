@@ -1,0 +1,136 @@
+<div class="card tile is-child">
+  <header class="card-header">
+    <div class="card-header-title">
+      <label>Related Files</label><br />
+      <small>Source: LOOP (Beigene)</small>
+    </div>
+    <div
+      id="winnowDropDownFiles"
+      class="dropdown is-right"
+      onclick="dropDownWidgetFunction('winnowDropDownFiles')"
+    >
+      <div class="dropdown-trigger">
+        <button class="card-header-icon" aria-label="more options">
+          <span class="icon mt-3">
+            <i class="fal fa-ellipsis-v fa-2x" aria-hidden="true"></i>
+          </span>
+        </button>
+      </div>
+      <!--Dropdown Menu-->
+      <div class="dropdown-menu" id="dropdown-menu" role="menu">
+        <div class="dropdown-content">
+          <a href="#" class="dropdown-item">
+            <div class="level">
+              <div class="level-item level-left">
+                <span class="icon mr-3"> <i class="fal fa-flag"></i></span>
+                <span>Fix Company Name</span>
+              </div>
+            </div>
+          </a>
+          <a href="/demo/expandwidget.html" class="dropdown-item">
+            <div class="level">
+              <div class="level-item level-left">
+                <span class="icon mr-3"> <i class="fal fa-expand"></i></span>
+                <span>Expand Widget</span>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="dropdown-item">
+            <div class="level">
+              <div class="level-item level-left">
+                <span class="icon mr-3"> <i class="fal fa-eye-slash"></i></span>
+                <span>Hide Widget</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="card-content">
+    <div class="content">
+      <p class="is-size-7">Find files related to <b>Beigene</b></p>
+      <div class="field has-addons">
+        <div class="control is-expanded">
+          <input
+            type="text"
+            class="input is-fullwidth"
+            placeholder="Search file"
+          />
+        </div>
+        <div class="control">
+          <a class="button"><i class="fal fa-search"></i></a>
+        </div>
+      </div>
+      <div class="tabs is-small">
+        <ul class="is-marginless">
+          <li class="is-active"><a>Companies</a></li>
+          <li><a>SDIC Decks</a></li>
+          <li><a>Others</a></li>
+        </ul>
+      </div>
+      <section class="accordions">
+        <article class="accordion is-active">
+          <div class="accordion-header">
+            <span>
+              <i class="fal fa-folder mr-2" aria-hidden="true"></i>Companies
+              (Portfolio) / Beigene
+            </span>
+            <button class="toggle" aria-label="toggle"></button>
+          </div>
+          <div class="accordion-body">
+            <div class="accordion-content">
+              <ul class="is-marginless">
+                <li><a href="">Financials</a></li>
+                <li><a href="">IE Notes</a></li>
+                <li><a href="">Legal Docs</a></li>
+                <li><a href="">Notes</a></li>
+                <li><a href="">Press Releases</a></li>
+              </ul>
+            </div>
+          </div>
+        </article>
+        <article class="accordion">
+          <div class="accordion-header">
+            <span style="color: #05988e">
+              <i class="fal fa-folder mr-2" aria-hidden="true"></i>Companies /
+              Beigene Pharmaceuticals (Guangzhou)
+            </span>
+            <button class="toggle" aria-label="toggle"></button>
+          </div>
+          <div class="accordion-body">
+            <div class="accordion-content">
+              <ul class="is-marginless">
+                <li><a href="">Financials</a></li>
+                <li><a href="">IE Notes</a></li>
+                <li><a href="">Legal Docs</a></li>
+                <li><a href="">Notes</a></li>
+                <li><a href="">Press Releases</a></li>
+              </ul>
+            </div>
+          </div>
+        </article>
+        <article class="accordion">
+          <div class="accordion-header">
+            <span style="color: #05988e">
+              <i class="fal fa-folder mr-2" aria-hidden="true"></i>Companies /
+              Beigene Pharmaceuticals (Shanghai)
+            </span>
+            <button class="toggle" aria-label="toggle"></button>
+          </div>
+          <div class="accordion-body">
+            <div class="accordion-content">
+              <ul class="is-marginless">
+                <li><a href="">Financials</a></li>
+                <li><a href="">IE Notes</a></li>
+                <li><a href="">Legal Docs</a></li>
+                <li><a href="">Notes</a></li>
+                <li><a href="">Press Releases</a></li>
+              </ul>
+            </div>
+          </div>
+        </article>
+      </section>
+    </div>
+  </div>
+</div>

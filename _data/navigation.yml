@@ -5,6 +5,8 @@ path:
         url: /content/widgets/complex.html
       - page: Documents
         url: /content/widgets/documents.html
+      - page: Files
+        url: /content/widgets/files.html
       - page: Grid
         url: /content/widgets/grid.html
       - page: Info
