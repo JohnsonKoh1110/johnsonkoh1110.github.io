@@ -5,10 +5,10 @@ permalink: /demo/company.html
 category: Demo/Company
 ---
 
-<section class="section content py-5">
+<section class="section content is-paddingless is-marginless pt-5">
   <div class="is-divider" data-content="SINGLE PANE OF GLASS FOR COMPANY"></div>
   {% include wds-header.html %}
-  <div class="section has-background-light py-5" style="min-height: 600px">
+  <div class="section has-background-light py-5" style="min-height: 650px">
     {% include wds-banner-verify.html %}
     <div class="tile is-ancestor">
       <div class="tile is-parent">{% include wds-widget-info.html %}</div>
@@ -16,14 +16,12 @@ category: Demo/Company
       <div class="tile is-parent">{% include wds-widget-verify.html %}</div>
     </div>
     <div class="tile is-ancestor">
+      <div class="tile is-parent">{% include wds-widget-compare.html %}</div>
+    </div>
+    <div class="tile is-ancestor">
       <div class="tile is-parent">{% include wds-widget-documents.html %}</div>
       <div class="tile is-parent">{% include wds-widget-news.html %}</div>
       <div class="tile is-parent">{% include wds-widget-profile.html %}</div>
-    </div>
-    <div class="tile is-ancestor">
-      <div class="tile is-parent">{% include wds-widget-steps.html %}</div>
-      <div class="tile is-parent">{% include wds-widget-timeline.html %}</div>
-      <div class="tile is-parent">{% include wds-widget-grid.html %}</div>
     </div>
   </div>
 </section>
