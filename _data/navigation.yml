@@ -23,8 +23,6 @@ path:
     subfolderitems:
       - page: Modal
         url: /content/components/modal.html
-      - page: Navbar
-        url: /content/components/navbar.html
       - page: Pagination
         url: /content/components/pagination.html
       - page: Quickview
