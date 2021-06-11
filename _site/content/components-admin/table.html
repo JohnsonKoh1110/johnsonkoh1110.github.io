@@ -12,7 +12,8 @@
     <meta property="og:url" content="" />
     <link rel="stylesheet" href="/css/fontawesome.css" />
     <link rel="stylesheet" href="/css/winnow.css" />
-    <title>Winnow Design System - Searched Tags</title>
+    <link rel="stylesheet" href="/css/winnow-admin.css" />
+    <title>Winnow Design System - Table</title>
   </head>
   <body>
     <nav
@@ -38,8 +39,29 @@
       </div>
       <div id="winnowNav" class="navbar-menu">
         <div class="navbar-start">
-          <a class="navbar-item" href="/"> Home </a>
-          <a class="navbar-item" href="/demo/landing.html"> Demo </a>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link"> User App </a>
+            <div class="navbar-dropdown">
+              <a href="/" class="navbar-item"> Design System </a>
+              <a href="/demo-user/landing.html" class="navbar-item">
+                Demo Screens
+              </a>
+            </div>
+          </div>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link"> Admin Portal </a>
+            <div class="navbar-dropdown">
+              <a
+                href="/content/components-admin/sidebar.html"
+                class="navbar-item"
+              >
+                Design System
+              </a>
+              <a href="/demo-admin/landing.html" class="navbar-item">
+                Demo Screens
+              </a>
+            </div>
+          </div>
           <div class="is-hidden-desktop">
             
             <p class="pl-3 pt-3 is-size-7 is-uppercase has-text-grey-light">
@@ -223,6 +245,14 @@
               
               <li>
                 <a
+                  href="/content/elements/radio.html"
+                  class=""
+                  >Radio</a
+                >
+              </li>
+              
+              <li>
+                <a
                   href="/content/elements/input.html"
                   class=""
                   >Input</a
@@ -273,650 +303,108 @@
       </div>
     </nav>
     <section class="main-content columns is-fullheight is-marginless">
-      <div class="column is-paddingless is-fullheight has-background-white">
-        <section class="section content is-marginless is-paddingless pt-5">
-  <div class="is-divider" data-content="SEARCHED TAGS PAGE"></div>
-  <nav class="navbar has-shadow" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand">
-    <a class="navbar-item" href="/demo/landing.html">
-      <img src="../../assets/img/logo_winnow.svg" width="145" height="35" />
-    </a>
-  </div>
-  <div class="navbar-menu">
-    <div class="navbar-end">
-      <div class="navbar-item">
-        <div class="field has-addons">
-          <div class="control is-expanded">
-            <div class="field is-grouped input">
-              <div class="control" data-tag="Tag1">
-                <div class="tags has-addons">
-                  <span class="tag is-info is-light">Adtech</span
-                  ><a class="tag is-info is-delete"></a>
-                </div>
-              </div>
-              <div class="control" data-tag="Tag2">
-                <div class="tags has-addons">
-                  <span class="tag is-info is-light">Agtech</span
-                  ><a class="tag is-info is-delete"></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="control">
-            <a class="button"><i class="fal fa-search"></i></a>
-          </div>
-        </div>
-      </div>
-      <div class="navbar-item">
-        <div class="field">
-          <div
-            id="winnowDropDownSettingsMini"
-            class="dropdown is-right"
-            onclick="dropDownMenuFunction('winnowDropDownSettingsMini')"
-          >
-            <div class="dropdown-trigger">
-              <button class="button"><i class="fal fa-cog"></i></button>
-            </div>
-            <div class="dropdown-menu" id="dropdown-menu" role="menu">
-              <div class="dropdown-content">
-                <div class="m-4">
-                  <i class="fas fa-user-circle fa-5x"></i>
-                  <p class="mt-2 has-text-weight-bold">Full Name</p>
-                  <p class="is-size-7">Designation , Department</p>
-                </div>
-                <hr class="dropdown-divider" />
-                <a
-                  href="#"
-                  class="dropdown-item"
-                  onclick="modalFunction('ModalShareLink')"
-                >
-                  <i class="fal fa-share"></i> Share Link
-                </a>
-                <a
-                  href="#"
-                  class="dropdown-item"
-                  data-show="quickview"
-                  data-target="quickviewDefault"
-                >
-                  <i class="fal fa-tags"></i> Manage Tags
-                </a>
-                <hr class="dropdown-divider" />
-                <a
-                  href="#"
-                  class="dropdown-item"
-                  data-show="quickview"
-                  data-target="quickviewDefault"
-                >
-                  <i class="fal fa-sign-out-alt"></i> Logout
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</nav>
-
-  <section class="main-content columns is-fullheight is-marginless">
-    <!--Desktop Sidebar-->
-    <aside
-      class="
-        column
-        is-3 is-narrow-mobile is-fullheight
-        section
-        has-background-light
-        is-hidden-touch
-      "
-    >
-      <!--Tag Selector-->
-      <section>
-  <div class="tabs is-small mb-2">
-    <ul class="is-marginless">
-      <li class="is-active"><a>Department Tags</a></li>
-      <li><a>Private Tags</a></li>
-    </ul>
-  </div>
-  <div class="buttons are-small mb-2">
-    <button class="button is-marginless is-ghost p-1" style="border: 0">
-      A
-    </button>
-    <button class="button is-marginless is-ghost p-1" style="border: 0">
-      B
-    </button>
-    <button class="button is-marginless is-ghost p-1" style="border: 0">
-      C
-    </button>
-    <button class="button is-marginless is-ghost p-1" style="border: 0">
-      D
-    </button>
-    <button class="button is-marginless is-ghost p-1" style="border: 0">
-      E
-    </button>
-    <button class="button is-marginless is-ghost p-1" style="border: 0">
-      F
-    </button>
-    <button class="button is-marginless is-ghost p-1" style="border: 0">
-      G
-    </button>
-    <button class="button is-marginless is-ghost p-1" style="border: 0">
-      H
-    </button>
-    <button class="button is-marginless is-ghost p-1" style="border: 0">
-      I
-    </button>
-    <button class="button is-marginless is-ghost p-1" style="border: 0">
-      J
-    </button>
-    <button class="button is-marginless is-ghost p-1" style="border: 0">
-      K
-    </button>
-    <button class="button is-marginless is-ghost p-1" style="border: 0">
-      L
-    </button>
-    <button class="button is-marginless is-ghost p-1" style="border: 0">
-      M
-    </button>
-    <button class="button is-marginless is-ghost p-1" style="border: 0">
-      N
-    </button>
-    <button class="button is-marginless is-ghost p-1" style="border: 0">
-      O
-    </button>
-    <button class="button is-marginless is-ghost p-1" style="border: 0">
-      P
-    </button>
-    <button class="button is-marginless is-ghost p-1" style="border: 0">
-      Q
-    </button>
-    <button class="button is-marginless is-ghost p-1" style="border: 0">
-      R
-    </button>
-    <button class="button is-marginless is-ghost p-1" style="border: 0">
-      S
-    </button>
-    <button class="button is-marginless is-ghost p-1" style="border: 0">
-      T
-    </button>
-    <button class="button is-marginless is-ghost p-1" style="border: 0">
-      U
-    </button>
-    <button class="button is-marginless is-ghost p-1" style="border: 0">
-      V
-    </button>
-    <button class="button is-marginless is-ghost p-1" style="border: 0">
-      W
-    </button>
-    <button class="button is-marginless is-ghost p-1" style="border: 0">
-      X
-    </button>
-    <button class="button is-marginless is-ghost p-1" style="border: 0">
-      Y
-    </button>
-    <button class="button is-marginless is-ghost p-1" style="border: 0">
-      Z
-    </button>
-  </div>
-  <nav class="level is-mobile is-marginless">
-    <div class="level-left">
-      <div class="level-item">
-        <button
-          class="
-            button
-            is-small is-ghost
-            has-text-danger
-            is-marginless is-paddingless
-          "
-        >
-          Delete Selected
-        </button>
-      </div>
-    </div>
-    <div class="level-right">
-      <p class="level-item">
-        <button class="button is-small is-ghost is-marginless is-paddingless">
-          Create New Tags
-        </button>
-      </p>
-    </div>
-  </nav>
-  <hr class="has-background-grey-light is-marginless" />
-  <p class="menu-label">A</p>
-  <ul class="menu-list is-marginless" style="list-style: none">
-    <li>
-      <label class="checkbox">
-        <input type="checkbox" />
-        Adtech
-      </label>
-    </li>
-    <li>
-      <label class="checkbox">
-        <input type="checkbox" />
-        Advanced manufacturing
-      </label>
-    </li>
-    <li>
-      <label class="checkbox">
-        <input type="checkbox" />
-        Agtech
-      </label>
-    </li>
-  </ul>
-  <p class="menu-label">B</p>
-  <ul class="menu-list is-marginless" style="list-style: none">
-    <li>
-      <label class="checkbox">
-        <input type="checkbox" />
-        B2B payments
-      </label>
-    </li>
-    <li>
-      <label class="checkbox">
-        <input type="checkbox" />
-        Beauty
-      </label>
-    </li>
-    <li>
-      <label class="checkbox">
-        <input type="checkbox" />
-        Big data
-      </label>
-    </li>
-  </ul>
-  <p class="menu-label">C</p>
-  <ul class="menu-list is-marginless" style="list-style: none">
-    <li>
-      <label class="checkbox">
-        <input type="checkbox" />
-        Cannabis
-      </label>
-    </li>
-    <li>
-      <label class="checkbox">
-        <input type="checkbox" />
-        Carsharing
-      </label>
-    </li>
-    <li>
-      <label class="checkbox">
-        <input type="checkbox" />
-        Cleantech
-      </label>
-    </li>
-  </ul>
-</section>
-
-    </aside>
-    <!--Body Content-->
-    <div class="column is-fullheight has-background-white">
-      <section class="section">
-        <span class="title is-6"
-          >58 companies found based on your tag(s) selection</span
-        >
-        <p>
-          Please note that selecting a compnay with this icon
-          <span class="icon has-text-danger"
-            ><i class="fas fa-usd-circle"></i
-          ></span>
-          will cost credit from Pitchbook
-        </p>
-        <div class="content mt-5">
-          <ul class="flex-container wrap">
-            <li class="flex-item box">
-              <a href="/demo/company.html"">
-                <div class="has-text-centered">
-                  <span class="title is-6">Adobe Systems</span><br />
-                  <span class="tag is-info is-light mt-2">Adtech</span>
-                </div>
-              </a>
-            </li>
-            <li class="flex-item box">
-              <div class="icon-label">
-                <span class="icon has-text-danger"
-                  ><i class="fas fa-usd-circle"></i
-                ></span>
-              </div>
-              <div class="has-text-centered">
-                <span class="title is-6">B Company</span><br />
-                <span class="tag is-info is-light mt-2">Adtech</span>
-              </div>
-            </li>
-            <li class="flex-item box">
-              <div class="icon-label">
-                <span class="icon has-text-danger"
-                  ><i class="fas fa-usd-circle"></i
-                ></span>
-              </div>
-              <div class="has-text-centered">
-                <span class="title is-6">C Company</span><br />
-                <span class="tag is-info is-light mt-2">Adtech</span>
-              </div>
-            </li>
-            <li class="flex-item box">
-              <div class="has-text-centered">
-                <span class="title is-6">D Company</span><br />
-                <span class="tag is-info is-light mt-2">Adtech</span>
-              </div>
-            </li>
-            <li class="flex-item box">
-              <div class="has-text-centered">
-                <span class="title is-6">E Company</span><br />
-                <span class="tag is-info is-light mt-2">Adtech</span>
-              </div>
-            </li>
-            <li class="flex-item box">
-              <div class="has-text-centered">
-                <span class="title is-6">F Company</span><br />
-                <span class="tag is-info is-light mt-2">Adtech</span>
-              </div>
-            </li>
-            <li class="flex-item box">
-              <div class="has-text-centered">
-                <span class="title is-6">G Company</span><br />
-                <span class="tag is-info is-light mt-2">Adtech</span>
-              </div>
-            </li>
-            <li class="flex-item box">
-              <div class="has-text-centered">
-                <span class="title is-6">H Company</span><br />
-                <span class="tag is-info is-light mt-2">Adtech</span>
-              </div>
-            </li>
-            <li class="flex-item box">
-              <div class="has-text-centered">
-                <span class="title is-6">I Company</span><br />
-                <span class="tag is-info is-light mt-2">Adtech</span>
-              </div>
-            </li>
-            <li class="flex-item box">
-              <div class="has-text-centered">
-                <span class="title is-6">J Company</span><br />
-                <span class="tag is-info is-light mt-2">Adtech</span>
-              </div>
-            </li>
-            <li class="flex-item box">
-              <div class="has-text-centered">
-                <span class="title is-6">K Company</span><br />
-                <span class="tag is-info is-light mt-2">Adtech</span>
-              </div>
-            </li>
-            <li class="flex-item box">
-              <div class="has-text-centered">
-                <span class="title is-6">L Company</span><br />
-                <span class="tag is-info is-light mt-2">Adtech</span>
-              </div>
-            </li>
-            <li class="flex-item box">
-              <div class="icon-label">
-                <span class="icon has-text-danger"
-                  ><i class="fas fa-usd-circle"></i
-                ></span>
-              </div>
-              <div class="has-text-centered">
-                <span class="title is-6">M Company</span><br />
-                <span class="tag is-info is-light mt-2">Adtech</span>
-              </div>
-            </li>
-            <li class="flex-item box">
-              <div class="has-text-centered">
-                <span class="title is-6">N Company</span><br />
-                <span class="tag is-info is-light mt-2">Adtech</span>
-              </div>
-            </li>
-            <li class="flex-item box">
-              <div class="icon-label">
-                <span class="icon has-text-danger"
-                  ><i class="fas fa-usd-circle"></i
-                ></span>
-              </div>
-              <div class="has-text-centered">
-                <span class="title is-6">O Company</span><br />
-                <span class="tag is-info is-light mt-2">Adtech</span>
-              </div>
-            </li>
-            <li class="flex-item box">
-              <div class="has-text-centered">
-                <span class="title is-6">P Company</span><br />
-                <span class="tag is-info is-light mt-2">Adtech</span>
-              </div>
-            </li>
-            <li class="flex-item box">
-              <div class="has-text-centered">
-                <span class="title is-6">Q Company</span><br />
-                <span class="tag is-info is-light mt-2">Adtech</span>
-              </div>
-            </li>
-            <li class="flex-item box">
-              <div class="has-text-centered">
-                <span class="title is-6">R Company</span><br />
-                <span class="tag is-info is-light mt-2">Adtech</span>
-              </div>
-            </li>
-            <li class="flex-item box">
-              <div class="has-text-centered">
-                <span class="title is-6">S Company</span><br />
-                <span class="tag is-info is-light mt-2">Adtech</span>
-              </div>
-            </li>
-            <li class="flex-item box">
-              <div class="has-text-centered">
-                <span class="title is-6">T Company</span><br />
-                <span class="tag is-info is-light mt-2">Adtech</span>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <nav
-        class="pagination is-centered"
-        role="navigation"
-        aria-label="pagination"
+      <aside
+        class="
+          column
+          is-2 is-narrow-mobile is-fullheight
+          section
+          has-background-light
+          is-hidden-touch
+        "
       >
-        <a class="pagination-next">Next page</a>
-        <ul class="pagination-list">
-          <li><a class="pagination-link is-current">1</a></li>
-          <li><span class="pagination-ellipsis">&hellip;</span></li>
-          <li><a class="pagination-link">4</a></li>
-          <li><a class="pagination-link">5</a></li>
+        
+        <p class="menu-label">Components</p>
+        <ul class="menu-list">
+          
+          <li>
+            <a
+              href="/content/components-admin/sidebar.html"
+              class=""
+              >Sidebar</a
+            >
+          </li>
+          
         </ul>
-      </nav>
-    </div>
-  </section>
-</section>
-<div id="quickviewDefault" class="quickview">
-  <header class="quickview-header" style="border: 0">
-    <p class="title has-text-weight-bold">Manage Tags</p>
-    <span class="delete" data-dismiss="quickview"></span>
-  </header>
-  <div class="quickview-body">
-    <div class="quickview-block p-4">
-      <!--Manage Tags-->
-      <section class="mb-5">
-  <p>Add or delete tag(s) to use in Winnow.</p>
-</section>
-
-      <!--Tag Selector-->
-      <section>
-  <div class="tabs is-small mb-2">
-    <ul class="is-marginless">
-      <li class="is-active"><a>Department Tags</a></li>
-      <li><a>Private Tags</a></li>
-    </ul>
+        
+        <p class="menu-label">Elements</p>
+        <ul class="menu-list">
+          
+          <li>
+            <a
+              href="/content/components-admin/table.html"
+              class="is-active"
+              >Table</a
+            >
+          </li>
+          
+        </ul>
+        
+      </aside>
+      <div
+        class="admin-content column is-10 is-fullheight"
+        style="background-color: #f2f2f5"
+      >
+        <section class="section">
+  <h3 class="title has-text-weight-light">Table</h3>
+  <p class="mb-5">A simple menu, for any type of vertical navigation</p>
+  <div class="table-container">
+    <table class="table is-fullwidth">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Department</th>
+          <th>Published Widgets</th>
+          <th>Tag Controls</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>2</td>
+          <td>
+            <span class="has-text-weight-bold"
+              >IG-Telecom/Media/Technology</span
+            >
+          </td>
+          <td>9</td>
+          <td>Unassigned</td>
+          <td>
+            <a href="/demo-admin/edittag.html"
+              ><i class="fal fa-edit mr-1" aria-hidden="true"></i> Edit</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>
+            <span class="has-text-weight-bold">IG-Life Sciences</span>
+          </td>
+          <td>7</td>
+          <td>Assigned</td>
+          <td>
+            <a href="/demo-admin/edittag.html"
+              ><i class="fal fa-edit mr-1" aria-hidden="true"></i> Edit</a
+            >
+          </td>
+        </tr>
+      </tbody>
+    </table>
   </div>
-  <div class="buttons are-small mb-2">
-    <button class="button is-marginless is-ghost p-1" style="border: 0">
-      A
-    </button>
-    <button class="button is-marginless is-ghost p-1" style="border: 0">
-      B
-    </button>
-    <button class="button is-marginless is-ghost p-1" style="border: 0">
-      C
-    </button>
-    <button class="button is-marginless is-ghost p-1" style="border: 0">
-      D
-    </button>
-    <button class="button is-marginless is-ghost p-1" style="border: 0">
-      E
-    </button>
-    <button class="button is-marginless is-ghost p-1" style="border: 0">
-      F
-    </button>
-    <button class="button is-marginless is-ghost p-1" style="border: 0">
-      G
-    </button>
-    <button class="button is-marginless is-ghost p-1" style="border: 0">
-      H
-    </button>
-    <button class="button is-marginless is-ghost p-1" style="border: 0">
-      I
-    </button>
-    <button class="button is-marginless is-ghost p-1" style="border: 0">
-      J
-    </button>
-    <button class="button is-marginless is-ghost p-1" style="border: 0">
-      K
-    </button>
-    <button class="button is-marginless is-ghost p-1" style="border: 0">
-      L
-    </button>
-    <button class="button is-marginless is-ghost p-1" style="border: 0">
-      M
-    </button>
-    <button class="button is-marginless is-ghost p-1" style="border: 0">
-      N
-    </button>
-    <button class="button is-marginless is-ghost p-1" style="border: 0">
-      O
-    </button>
-    <button class="button is-marginless is-ghost p-1" style="border: 0">
-      P
-    </button>
-    <button class="button is-marginless is-ghost p-1" style="border: 0">
-      Q
-    </button>
-    <button class="button is-marginless is-ghost p-1" style="border: 0">
-      R
-    </button>
-    <button class="button is-marginless is-ghost p-1" style="border: 0">
-      S
-    </button>
-    <button class="button is-marginless is-ghost p-1" style="border: 0">
-      T
-    </button>
-    <button class="button is-marginless is-ghost p-1" style="border: 0">
-      U
-    </button>
-    <button class="button is-marginless is-ghost p-1" style="border: 0">
-      V
-    </button>
-    <button class="button is-marginless is-ghost p-1" style="border: 0">
-      W
-    </button>
-    <button class="button is-marginless is-ghost p-1" style="border: 0">
-      X
-    </button>
-    <button class="button is-marginless is-ghost p-1" style="border: 0">
-      Y
-    </button>
-    <button class="button is-marginless is-ghost p-1" style="border: 0">
-      Z
-    </button>
-  </div>
-  <nav class="level is-mobile is-marginless">
-    <div class="level-left">
-      <div class="level-item">
-        <button
-          class="
-            button
-            is-small is-ghost
-            has-text-danger
-            is-marginless is-paddingless
-          "
-        >
-          Delete Selected
-        </button>
-      </div>
-    </div>
-    <div class="level-right">
-      <p class="level-item">
-        <button class="button is-small is-ghost is-marginless is-paddingless">
-          Create New Tags
-        </button>
-      </p>
-    </div>
-  </nav>
-  <hr class="has-background-grey-light is-marginless" />
-  <p class="menu-label">A</p>
-  <ul class="menu-list is-marginless" style="list-style: none">
-    <li>
-      <label class="checkbox">
-        <input type="checkbox" />
-        Adtech
-      </label>
-    </li>
-    <li>
-      <label class="checkbox">
-        <input type="checkbox" />
-        Advanced manufacturing
-      </label>
-    </li>
-    <li>
-      <label class="checkbox">
-        <input type="checkbox" />
-        Agtech
-      </label>
-    </li>
-  </ul>
-  <p class="menu-label">B</p>
-  <ul class="menu-list is-marginless" style="list-style: none">
-    <li>
-      <label class="checkbox">
-        <input type="checkbox" />
-        B2B payments
-      </label>
-    </li>
-    <li>
-      <label class="checkbox">
-        <input type="checkbox" />
-        Beauty
-      </label>
-    </li>
-    <li>
-      <label class="checkbox">
-        <input type="checkbox" />
-        Big data
-      </label>
-    </li>
-  </ul>
-  <p class="menu-label">C</p>
-  <ul class="menu-list is-marginless" style="list-style: none">
-    <li>
-      <label class="checkbox">
-        <input type="checkbox" />
-        Cannabis
-      </label>
-    </li>
-    <li>
-      <label class="checkbox">
-        <input type="checkbox" />
-        Carsharing
-      </label>
-    </li>
-    <li>
-      <label class="checkbox">
-        <input type="checkbox" />
-        Cleantech
-      </label>
-    </li>
-  </ul>
 </section>
 
-    </div>
-  </div>
-</div>
       </div>
     </section>
+    <footer class="footer has-background-black">
+      <div class="content has-text-centered has-text-light">
+        <p>
+          This design system was designed for Winnow by Digital Technology Team.
+        </p>
+        <p class="has-text-grey">
+          Noticed a typo? Or something unclear? Please connect with Johnson Koh
+          or Jynn Lyi.
+        </p>
+      </div>
+    </footer>
     <div id="quickviewDefault" class="quickview">
       <header class="quickview-header" style="border: 0">
         <p class="title has-text-weight-bold">Manage Tags</p>

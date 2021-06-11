@@ -12,7 +12,8 @@
     <meta property="og:url" content="" />
     <link rel="stylesheet" href="/css/fontawesome.css" />
     <link rel="stylesheet" href="/css/winnow.css" />
-    <title>Winnow Design System - Navbar</title>
+    <link rel="stylesheet" href="/css/winnow-admin.css" />
+    <title>Winnow Design System - Sidebar</title>
   </head>
   <body>
     <nav
@@ -38,8 +39,29 @@
       </div>
       <div id="winnowNav" class="navbar-menu">
         <div class="navbar-start">
-          <a class="navbar-item" href="/"> Home </a>
-          <a class="navbar-item" href="/demo/landing.html"> Demo </a>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link"> User App </a>
+            <div class="navbar-dropdown">
+              <a href="/" class="navbar-item"> Design System </a>
+              <a href="/demo-user/landing.html" class="navbar-item">
+                Demo Screens
+              </a>
+            </div>
+          </div>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link"> Admin Portal </a>
+            <div class="navbar-dropdown">
+              <a
+                href="/content/components-admin/sidebar.html"
+                class="navbar-item"
+              >
+                Design System
+              </a>
+              <a href="/demo-admin/landing.html" class="navbar-item">
+                Demo Screens
+              </a>
+            </div>
+          </div>
           <div class="is-hidden-desktop">
             
             <p class="pl-3 pt-3 is-size-7 is-uppercase has-text-grey-light">
@@ -137,7 +159,7 @@
               <li>
                 <a
                   href="/content/components/navbar.html"
-                  class="is-active"
+                  class=""
                   >Navbar</a
                 >
               </li>
@@ -223,6 +245,14 @@
               
               <li>
                 <a
+                  href="/content/elements/radio.html"
+                  class=""
+                  >Radio</a
+                >
+              </li>
+              
+              <li>
+                <a
                   href="/content/elements/input.html"
                   class=""
                   >Input</a
@@ -283,131 +313,14 @@
         "
       >
         
-        <p class="menu-label">Widget Templates</p>
-        <ul class="menu-list">
-          
-          <li>
-            <a
-              href="/content/widgets/complex.html"
-              class=""
-              >Complex</a
-            >
-          </li>
-          
-          <li>
-            <a
-              href="/content/widgets/documents.html"
-              class=""
-              >Documents</a
-            >
-          </li>
-          
-          <li>
-            <a
-              href="/content/widgets/files.html"
-              class=""
-              >Files</a
-            >
-          </li>
-          
-          <li>
-            <a
-              href="/content/widgets/grid.html"
-              class=""
-              >Grid</a
-            >
-          </li>
-          
-          <li>
-            <a
-              href="/content/widgets/info.html"
-              class=""
-              >Info</a
-            >
-          </li>
-          
-          <li>
-            <a
-              href="/content/widgets/news.html"
-              class=""
-              >News</a
-            >
-          </li>
-          
-          <li>
-            <a
-              href="/content/widgets/profile.html"
-              class=""
-              >Profile</a
-            >
-          </li>
-          
-          <li>
-            <a
-              href="/content/widgets/tags.html"
-              class=""
-              >Tags</a
-            >
-          </li>
-          
-          <li>
-            <a
-              href="/content/widgets/timeline.html"
-              class=""
-              >Timeline</a
-            >
-          </li>
-          
-        </ul>
-        
         <p class="menu-label">Components</p>
         <ul class="menu-list">
           
           <li>
             <a
-              href="/content/components/modal.html"
-              class=""
-              >Modal</a
-            >
-          </li>
-          
-          <li>
-            <a
-              href="/content/components/navbar.html"
+              href="/content/components-admin/sidebar.html"
               class="is-active"
-              >Navbar</a
-            >
-          </li>
-          
-          <li>
-            <a
-              href="/content/components/pagination.html"
-              class=""
-              >Pagination</a
-            >
-          </li>
-          
-          <li>
-            <a
-              href="/content/components/quickview.html"
-              class=""
-              >Quickview</a
-            >
-          </li>
-          
-          <li>
-            <a
-              href="/content/components/steps.html"
-              class=""
-              >Steps</a
-            >
-          </li>
-          
-          <li>
-            <a
-              href="/content/components/timeline.html"
-              class=""
-              >Timeline</a
+              >Sidebar</a
             >
           </li>
           
@@ -418,426 +331,39 @@
           
           <li>
             <a
-              href="/content/elements/button.html"
-              class=""
-              >Button</a
-            >
-          </li>
-          
-          <li>
-            <a
-              href="/content/elements/colors.html"
-              class=""
-              >Colors</a
-            >
-          </li>
-          
-          <li>
-            <a
-              href="/content/elements/divider.html"
-              class=""
-              >Divider</a
-            >
-          </li>
-          
-          <li>
-            <a
-              href="/content/elements/icon.html"
-              class=""
-              >Icon</a
-            >
-          </li>
-          
-          <li>
-            <a
-              href="/content/elements/notification.html"
-              class=""
-              >Notification</a
-            >
-          </li>
-          
-          <li>
-            <a
-              href="/content/elements/input.html"
-              class=""
-              >Input</a
-            >
-          </li>
-          
-          <li>
-            <a
-              href="/content/elements/table.html"
+              href="/content/components-admin/table.html"
               class=""
               >Table</a
-            >
-          </li>
-          
-          <li>
-            <a
-              href="/content/elements/tabs.html"
-              class=""
-              >Tabs</a
-            >
-          </li>
-          
-          <li>
-            <a
-              href="/content/elements/tag.html"
-              class=""
-              >Tag</a
-            >
-          </li>
-          
-          <li>
-            <a
-              href="/content/elements/typography.html"
-              class=""
-              >Typography</a
             >
           </li>
           
         </ul>
         
       </aside>
-      <div class="column is-10 is-fullheight has-background-white">
+      <div
+        class="admin-content column is-10 is-fullheight"
+        style="background-color: #f2f2f5"
+      >
         <section class="section">
-  <h3 class="title has-text-weight-light">Navbar</h3>
-  <p>
-    Basic responsive horizontal navbar that can support icons, links, buttons
-    and dropdowns.
-  </p>
-  <div class="block"></div>
-  <nav class="navbar has-shadow" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand">
-    <a class="navbar-item is-hidden-mobile" href="/demo/landing.html">
-      <img src="../../assets/img/logo_winnow.svg" width="145" height="35" />
-    </a>
-    <a class="navbar-item is-hidden-tablet" href="/demo/landing.html">
-      <img
-        src="../../assets/img/logo_winnow_small.svg"
-        width="50"
-        height="35"
-      />
-    </a>
-    <div class="navbar-minimal">
-      <div class="navbar-item">
-        <div
-          id="winnowDropDownSearch"
-          class="dropdown is-fullwidth is-right"
-          onclick="dropDownMenuFunction('winnowDropDownSearch')"
+  <h3 class="title has-text-weight-light">Sidebar</h3>
+  <p class="mb-5">A simple menu, for any type of vertical navigation</p>
+  <aside
+    class="column is-2 is-narrow-mobile section is-hidden-touch py-5"
+    style="background-color: #312a6d; height: 100vh"
+  >
+    <img src="../../assets/img/logo_winnowadmin.svg" width="145" height="35" />
+    <ul class="menu-list mt-5">
+      <li>
+        <a href="#" class="is-active"
+          ><i class="fal fa-window-restore mr-1" aria-hidden="true"></i>
+          Widgets</a
         >
-          <div class="dropdown-trigger">
-            <button class="button"><i class="fal fa-search"></i></button>
-          </div>
-          <div class="dropdown-menu" id="dropdown-menu" role="menu">
-            <div class="dropdown-content">
-              <div class="dropdown-item">
-                <div class="field has-addons">
-                  <div class="control is-expanded">
-                    <input
-                      type="text"
-                      class="input is-fullwidth"
-                      placeholder="Enter company name"
-                    />
-                  </div>
-                  <div class="control">
-                    <a class="button"><i class="fal fa-search"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="navbar-item">
-        <div
-          id="winnowDropDownLayoutMini"
-          class="dropdown is-right"
-          onclick="dropDownMenuFunction('winnowDropDownLayoutMini')"
-        >
-          <div class="dropdown-trigger">
-            <button
-              class="button"
-              aria-haspopup="true"
-              aria-controls="dropdown-menu"
-            >
-              <span class="icon is-small">
-                <i class="fal fa-th"></i>
-              </span>
-              <span class="icon is-small">
-                <i class="fas fa-angle-down" aria-hidden="true"></i>
-              </span>
-            </button>
-          </div>
-          <div class="dropdown-menu" id="dropdown-menu" role="menu">
-            <div class="dropdown-content">
-              <div class="dropdown-item">
-                <label class="label is-small">NEW LAYOUT</label>
-                <div class="field has-addons">
-                  <div class="control is-expanded">
-                    <input
-                      type="text"
-                      class="input is-fullwidth"
-                      placeholder="New layout name"
-                    />
-                  </div>
-                  <div class="control">
-                    <a class="button"><i class="fal fa-save"></i></a>
-                  </div>
-                </div>
-              </div>
-              <hr class="dropdown-divider" />
-              <div class="dropdown-item">
-                <label class="label is-small">SAVED LAYOUTS</label>
-              </div>
-              <a href="#" class="dropdown-item">
-                <div class="level is-mobile">
-                  <div class="level-left">
-                    <span class="icon level-item">
-                      <i class="fas fa-check-circle"></i
-                    ></span>
-                    <span class="level-item">Default Layout</span>
-                  </div>
-                  <div class="level-right">
-                    <span class="icon level-item"> </span>
-                  </div>
-                </div>
-              </a>
-              <a href="#" class="dropdown-item">
-                <div class="level is-mobile">
-                  <div class="level-left">
-                    <span class="icon level-item"> </span>
-                    <span class="level-item">Sales Graph</span>
-                  </div>
-                  <div class="level-right">
-                    <span class="icon level-item">
-                      <i class="fal fa-trash-alt"></i>
-                    </span>
-                  </div>
-                </div>
-              </a>
-              <a href="#" class="dropdown-item">
-                <div class="level is-mobile">
-                  <div class="level-left">
-                    <span class="icon level-item"> </span>
-                    <span class="level-item">Competitor Analysis</span>
-                  </div>
-                  <div class="level-right">
-                    <span class="icon level-item">
-                      <i class="fal fa-trash-alt"></i>
-                    </span>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="navbar-item">
-        <div class="field">
-          <div
-            id="winnowDropDownSettingsMini"
-            class="dropdown is-right"
-            onclick="dropDownMenuFunction('winnowDropDownSettingsMini')"
-          >
-            <div class="dropdown-trigger">
-              <button class="button"><i class="fal fa-cog"></i></button>
-            </div>
-            <div class="dropdown-menu" id="dropdown-menu" role="menu">
-              <div class="dropdown-content">
-                <div class="m-4">
-                  <i class="fas fa-user-circle fa-5x"></i>
-                  <p class="mt-2 has-text-weight-bold">Full Name</p>
-                  <p class="is-size-7">Designation , Department</p>
-                </div>
-                <hr class="dropdown-divider" />
-                <a
-                  href="#"
-                  class="dropdown-item"
-                  onclick="modalFunction('ModalShareLink')"
-                >
-                  <i class="fal fa-share"></i> Share Link
-                </a>
-                <a
-                  href="#"
-                  class="dropdown-item"
-                  data-show="quickview"
-                  data-target="quickviewDefault"
-                >
-                  <i class="fal fa-tags"></i> Manage Tags
-                </a>
-                <hr class="dropdown-divider" />
-                <a
-                  href="#"
-                  class="dropdown-item"
-                  data-show="quickview"
-                  data-target="quickviewDefault"
-                >
-                  <i class="fal fa-sign-out-alt"></i> Logout
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!--Default-->
-  <div class="navbar-menu">
-    <div class="navbar-end">
-      <div class="navbar-item">
-        <div class="field has-addons">
-          <div class="control is-expanded">
-            <input
-              type="text"
-              class="input is-fullwidth"
-              placeholder="Enter company name"
-            />
-          </div>
-          <div class="control">
-            <a class="button"><i class="fal fa-search"></i></a>
-          </div>
-        </div>
-      </div>
-
-      <div class="navbar-item">
-        <div class="field">
-          <div
-            id="winnowDropDownLayout"
-            class="dropdown is-right"
-            onclick="dropDownMenuFunction('winnowDropDownLayout')"
-          >
-            <div class="dropdown-trigger">
-              <button
-                class="button"
-                aria-haspopup="true"
-                aria-controls="dropdown-menu"
-              >
-                <span class="icon is-small">
-                  <i class="fal fa-th"></i>
-                </span>
-                <span>Default Layout</span>
-                <span class="icon is-small">
-                  <i class="fas fa-angle-down" aria-hidden="true"></i>
-                </span>
-              </button>
-            </div>
-            <div class="dropdown-menu" id="dropdown-menu" role="menu">
-              <div class="dropdown-content">
-                <div class="dropdown-item">
-                  <label class="label is-small">NEW LAYOUT</label>
-                  <div class="field has-addons">
-                    <div class="control is-expanded">
-                      <input
-                        type="text"
-                        class="input is-fullwidth"
-                        placeholder="New layout name"
-                      />
-                    </div>
-                    <div class="control">
-                      <a class="button"><i class="fal fa-save"></i></a>
-                    </div>
-                  </div>
-                </div>
-                <hr class="dropdown-divider" />
-                <div class="dropdown-item">
-                  <label class="label is-small">SAVED LAYOUTS</label>
-                </div>
-                <a href="#" class="dropdown-item">
-                  <div class="level">
-                    <div class="level-left">
-                      <span class="icon level-item">
-                        <i class="fas fa-check-circle"></i
-                      ></span>
-                      <span class="level-item">Default Layout</span>
-                    </div>
-                    <div class="level-right">
-                      <span class="icon level-item"> </span>
-                    </div>
-                  </div>
-                </a>
-                <a href="#" class="dropdown-item">
-                  <div class="level">
-                    <div class="level-left">
-                      <span class="icon level-item"> </span>
-                      <span class="level-item">Sales Graph</span>
-                    </div>
-                    <div class="level-right">
-                      <span class="icon level-item">
-                        <i class="fal fa-trash-alt"></i>
-                      </span>
-                    </div>
-                  </div>
-                </a>
-                <a href="#" class="dropdown-item">
-                  <div class="level">
-                    <div class="level-left">
-                      <span class="icon level-item"> </span>
-                      <span class="level-item">Competitor Analysis</span>
-                    </div>
-                    <div class="level-right">
-                      <span class="icon level-item">
-                        <i class="fal fa-trash-alt"></i>
-                      </span>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="navbar-item">
-        <div class="field">
-          <div
-            id="winnowDropDownSettings"
-            class="dropdown is-right"
-            onclick="dropDownMenuFunction('winnowDropDownSettings')"
-          >
-            <div class="dropdown-trigger">
-              <button class="button"><i class="fal fa-cog"></i></button>
-            </div>
-            <div class="dropdown-menu" id="dropdown-menu" role="menu">
-              <div class="dropdown-content">
-                <div class="m-4">
-                  <i class="fas fa-user-circle fa-5x"></i>
-                  <p class="mt-2 has-text-weight-bold">Full Name</p>
-                  <p class="is-size-7">Designation , Department</p>
-                </div>
-                <hr class="dropdown-divider" />
-                <a
-                  href="#"
-                  class="dropdown-item"
-                  onclick="modalFunction('ModalShareLink')"
-                >
-                  <i class="fal fa-share"></i> Share Link
-                </a>
-                <a
-                  href="#"
-                  class="dropdown-item"
-                  data-show="quickview"
-                  data-target="quickviewDefault"
-                >
-                  <i class="fal fa-tags"></i> Manage Tags
-                </a>
-                <hr class="dropdown-divider" />
-                <a
-                  href="#"
-                  class="dropdown-item"
-                  data-show="quickview"
-                  data-target="quickviewDefault"
-                >
-                  <i class="fal fa-sign-out-alt"></i> Logout
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</nav>
-
+      </li>
+      <li>
+        <a href="#"><i class="fal fa-tags mr-1" aria-hidden="true"></i> Tags</a>
+      </li>
+    </ul>
+  </aside>
 </section>
 
       </div>

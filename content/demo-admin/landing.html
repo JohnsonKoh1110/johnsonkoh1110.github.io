@@ -1,0 +1,212 @@
+---
+title: Landing
+layout: layout-fullwidth-admin
+permalink: /demo-admin/landing.html
+category: DemoAdmin/Landing
+---
+
+<div class="is-divider" data-content="DEMO STARTS HERE"></div>
+<section class="main-content columns is-marginless">
+  <aside
+    class="column is-2 is-narrow-mobile section is-hidden-touch py-5"
+    style="background-color: #312a6d; height: 100vh"
+  >
+    <img src="../../assets/img/logo_winnowadmin.svg" width="145" height="35" />
+    <ul class="menu-list mt-5">
+      <li>
+        <a href="/demo-admin/landing.html" class="is-active"
+          ><i class="fal fa-window-restore mr-1" aria-hidden="true"></i>
+          Widgets</a
+        >
+      </li>
+      <li>
+        <a href="/demo-admin/landingtag.html"
+          ><i class="fal fa-tags mr-1" aria-hidden="true"></i> Tags</a
+        >
+      </li>
+    </ul>
+  </aside>
+  <div
+    class="column is-10 is-paddingless"
+    style="background-color: #f2f2f5; height: 100vh"
+  >
+    <!--Navbar-->
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a
+          role="button"
+          class="navbar-burger"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbarBasicExample"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="navbarBasicExample" class="navbar-menu px-2">
+        <div class="navbar-start">
+          <span class="navbar-item has-text-weight-bold has-text-link is-size-5"
+            >Widgets</span
+          >
+        </div>
+        <div class="navbar-end">
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link has-text-link"
+              ><span
+                ><b>Jynn Lyi Yeo</b><br />
+                Digital Technology</span
+              >
+            </a>
+            <div class="navbar-dropdown">
+              <a class="navbar-item"> Settings </a>
+              <hr class="navbar-divider" />
+              <a class="navbar-item"> Logout </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!--Content Body-->
+
+    <section class="section py-5">
+      <div class="level admin-title">
+        <div class="level-left">
+          <span
+            ><b>9 in Total</b><br />
+            Manage Winnow widgets</span
+          >
+        </div>
+        <div class="level-right">
+          Filter by Department
+          <div class="dropdown">
+            <div class="dropdown-trigger">
+              <button
+                class="button ml-2"
+                aria-haspopup="true"
+                aria-controls="dropdown-menu"
+              >
+                <span>All</span>
+                <span class="icon is-small">
+                  <i class="fas fa-angle-down" aria-hidden="true"></i>
+                </span>
+              </button>
+            </div>
+            <div class="dropdown-menu" id="dropdown-menu" role="menu">
+              <div class="dropdown-content">
+                <a href="#" class="dropdown-item"> All </a>
+                <a class="dropdown-item"> Dropdown Item </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Table-->
+      <div class="table-container">
+        <table class="table is-fullwidth">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Widget Title / Brief Description</th>
+              <th>Status</th>
+              <th>Version</th>
+              <th>Maintenance</th>
+              <th>Widget ID</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>5</td>
+              <td>
+                <span class="has-text-weight-bold">Company Info</span
+                ><br /><span class="is-size-7">Basic company information</span>
+              </td>
+              <td>Published</td>
+              <td>1.0.0</td>
+              <td>-</td>
+              <td>companyinfo</td>
+              <td>
+                <a href="/demo-admin/editwidget.html"
+                  ><i class="fal fa-edit mr-1" aria-hidden="true"></i> Edit</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>
+                <span class="has-text-weight-bold">Company Performance</span
+                ><br /><span class="is-size-7"
+                  >Company performance information</span
+                >
+              </td>
+              <td>Published</td>
+              <td>1.0.0</td>
+              <td>-</td>
+              <td>performance</td>
+              <td>
+                <a href="/demo-admin/editwidget.html"
+                  ><i class="fal fa-edit mr-1" aria-hidden="true"></i> Edit</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>
+                <span class="has-text-weight-bold">Deal Status</span><br /><span
+                  class="is-size-7"
+                  >Tracking deal status and working team</span
+                >
+              </td>
+              <td>Published</td>
+              <td>1.0.0</td>
+              <td>-</td>
+              <td>dealstatus</td>
+              <td>
+                <a href="/demo-admin/editwidget.html"
+                  ><i class="fal fa-edit mr-1" aria-hidden="true"></i> Edit</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>
+                <span class="has-text-weight-bold">External References</span
+                ><br /><span class="is-size-7">Add document URL links</span>
+              </td>
+              <td>Published</td>
+              <td>1.0.0</td>
+              <td>-</td>
+              <td>exref</td>
+              <td>
+                <a href="/demo-admin/editwidget.html"
+                  ><i class="fal fa-edit mr-1" aria-hidden="true"></i> Edit</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>
+                <span class="has-text-weight-bold">Financial Info</span
+                ><br /><span class="is-size-7"
+                  >Financial fundamentals and share price</span
+                >
+              </td>
+              <td>Published</td>
+              <td>1.0.0</td>
+              <td>-</td>
+              <td>financial</td>
+              <td>
+                <a href="/demo-admin/editwidget.html"
+                  ><i class="fal fa-edit mr-1" aria-hidden="true"></i> Edit</a
+                >
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </div>
+</section>

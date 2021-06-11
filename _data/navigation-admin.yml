@@ -1,0 +1,9 @@
+path:
+  - title: Components
+    subfolderitems:
+      - page: Sidebar
+        url: /content/components-admin/sidebar.html
+  - title: Elements
+    subfolderitems:
+      - page: Table
+        url: /content/components-admin/table.html

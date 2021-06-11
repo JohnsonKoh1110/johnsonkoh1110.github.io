@@ -1,0 +1,35 @@
+.table thead th,
+.table th {
+  color: #312a6d;
+}
+.table tr {
+  border-top: 4px solid #f2f2f5;
+}
+.table thead {
+  background-color: #e7e9f2;
+  border-top: 0;
+}
+.admin-content .menu-list a {
+  color: #ffffff;
+}
+.admin-title,
+.label {
+  color: #8390d3;
+}
+.card-header {
+  background-color: #e7e9f2;
+}
+.button.is-primary {
+  background-color: #342871;
+}
+.button.is-primary:hover {
+  background-color: #8390d3;
+}
+.button.is-primary.is-outlined {
+  border-color: #342871;
+  color: #342871;
+}
+.button.is-primary.is-outlined:hover {
+  background-color: #8390d3;
+  border-color: #8390d3;
+}

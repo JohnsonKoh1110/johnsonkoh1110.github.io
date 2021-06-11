@@ -1,0 +1,210 @@
+---
+title: Edit Widget
+layout: layout-fullwidth-admin
+permalink: /demo-admin/editwidget.html
+category: DemoAdmin/EditWidget
+---
+
+<div class="is-divider" data-content="DEMO STARTS HERE"></div>
+<section class="main-content columns is-marginless">
+  <aside
+    class="column is-2 is-narrow-mobile section is-hidden-touch py-5"
+    style="background-color: #312a6d; height: 100vh"
+  >
+    <img src="../../assets/img/logo_winnowadmin.svg" width="145" height="35" />
+    <ul class="menu-list mt-5">
+      <li>
+        <a href="/demo-admin/landing.html" class="is-active"
+          ><i class="fal fa-window-restore mr-1" aria-hidden="true"></i>
+          Widgets</a
+        >
+      </li>
+      <li>
+        <a href="/demo-admin/landingtag.html"
+          ><i class="fal fa-tags mr-1" aria-hidden="true"></i> Tags</a
+        >
+      </li>
+    </ul>
+  </aside>
+  <div
+    class="column is-10 is-paddingless"
+    style="background-color: #f2f2f5; height: 100vh"
+  >
+    <!--Navbar-->
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a
+          role="button"
+          class="navbar-burger"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbarBasicExample"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="navbarBasicExample" class="navbar-menu px-2">
+        <div class="navbar-start">
+          <span class="navbar-item has-text-weight-bold has-text-link is-size-5"
+            >Management Team Widget</span
+          >
+        </div>
+        <div class="navbar-end">
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link has-text-link"
+              ><span
+                ><b>Jynn Lyi Yeo</b><br />
+                Digital Technology</span
+              >
+            </a>
+            <div class="navbar-dropdown">
+              <a class="navbar-item"> Settings </a>
+              <hr class="navbar-divider" />
+              <a class="navbar-item"> Logout </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!--Content Body-->
+
+    <section class="section py-5">
+      <div class="level">
+        <div class="level-left">
+          <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+              <li><a href="/demo-admin/landing.html">Widgets</a></li>
+              <li class="is-active">
+                <a href="#" aria-current="page">Management Team</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="level-right">
+          <button class="button is-primary is-outlined">Cancel</button
+          ><button class="button is-primary ml-2">Save Changes</button>
+        </div>
+      </div>
+      <!--Segment-->
+      <div class="tile is-ancestor">
+        <div class="tile is-parent">
+          <div class="card tile is-child">
+            <header class="card-header">
+              <div class="card-header-title">
+                <label>Widget Information</label>
+              </div>
+            </header>
+            <div class="card-content">
+              <div class="content">
+                <div class="field">
+                  <label class="label">Title</label>
+                  <div class="control">
+                    <input
+                      class="input"
+                      type="text"
+                      placeholder="Enter widget title"
+                    />
+                  </div>
+                </div>
+                <div class="field">
+                  <label class="label">Brief Description</label>
+                  <div class="control">
+                    <textarea
+                      class="textarea"
+                      placeholder="Enter a brief dsecription of the widget"
+                    ></textarea>
+                  </div>
+                </div>
+                <div class="field">
+                  <label class="label">Version</label>
+                  <div class="control">
+                    <input
+                      class="input"
+                      type="text"
+                      placeholder="Enter version (e.g. 1.4)"
+                    />
+                  </div>
+                </div>
+                <div class="field">
+                  <label class="label"
+                    >Additional Configuration (optional)</label
+                  >
+                  <div class="control">
+                    <textarea
+                      class="textarea"
+                      placeholder="Enter config"
+                    ></textarea>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tile is-parent">
+          <div class="card tile is-child">
+            <header class="card-header">
+              <div class="card-header-title">
+                <label>Operation</label>
+              </div>
+            </header>
+            <div class="card-content">
+              <div class="content">
+                <div class="field">
+                  <label class="label">Status</label>
+                  <div class="dropdown">
+                    <div class="dropdown-trigger">
+                      <button
+                        class="button"
+                        aria-haspopup="true"
+                        aria-controls="dropdown-menu"
+                      >
+                        <span>Unpublished</span>
+                        <span class="icon is-small">
+                          <i class="fas fa-angle-down" aria-hidden="true"></i>
+                        </span>
+                      </button>
+                    </div>
+                    <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                      <div class="dropdown-content">
+                        <a href="#" class="dropdown-item"> Dropdown item </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="field">
+                  <label class="label">Widget Under Maintenance?</label>
+                  <div class="field">
+                    <input
+                      id="switchRoundedDefault"
+                      type="checkbox"
+                      name="switchRoundedDefault"
+                      class="switch is-rounded"
+                      checked="checked"
+                    />
+                    <label for="switchRoundedDefault">Yes</label>
+                  </div>
+                </div>
+                <div class="field">
+                  <label class="label">Widget Visibility</label>
+                  <div class="control">
+                    <label class="radio">
+                      <input type="radio" name="foobar" checked />
+                      Visible to everyone </label
+                    ><br />
+                    <label class="radio">
+                      <input type="radio" name="foobar" />
+                      Visible to specific AD Groups
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</section>

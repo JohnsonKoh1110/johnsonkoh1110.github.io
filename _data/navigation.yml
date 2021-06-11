@@ -45,6 +45,8 @@ path:
         url: /content/elements/icon.html
       - page: Notification
         url: /content/elements/notification.html
+      - page: Radio
+        url: /content/elements/radio.html
       - page: Input
         url: /content/elements/input.html
       - page: Table

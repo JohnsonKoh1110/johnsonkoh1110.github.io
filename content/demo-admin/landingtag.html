@@ -1,0 +1,131 @@
+---
+title: Landing Tag
+layout: layout-fullwidth-admin
+permalink: /demo-admin/landingtag.html
+category: DemoAdmin/LandingTag
+---
+
+<div class="is-divider" data-content="DEMO STARTS HERE"></div>
+<section class="main-content columns is-marginless">
+  <aside
+    class="column is-2 is-narrow-mobile section is-hidden-touch py-5"
+    style="background-color: #312a6d; height: 100vh"
+  >
+    <img src="../../assets/img/logo_winnowadmin.svg" width="145" height="35" />
+    <ul class="menu-list mt-5">
+      <li>
+        <a href="/demo-admin/landing.html"
+          ><i class="fal fa-window-restore mr-1" aria-hidden="true"></i>
+          Widgets</a
+        >
+      </li>
+      <li>
+        <a href="/demo-admin/landingtag.html" class="is-active"
+          ><i class="fal fa-tags mr-1" aria-hidden="true"></i> Tags</a
+        >
+      </li>
+    </ul>
+  </aside>
+  <div
+    class="column is-10 is-paddingless"
+    style="background-color: #f2f2f5; height: 100vh"
+  >
+    <!--Navbar-->
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a
+          role="button"
+          class="navbar-burger"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbarBasicExample"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="navbarBasicExample" class="navbar-menu px-2">
+        <div class="navbar-start">
+          <span class="navbar-item has-text-weight-bold has-text-link is-size-5"
+            >Tags</span
+          >
+        </div>
+        <div class="navbar-end">
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link has-text-link"
+              ><span
+                ><b>Jynn Lyi Yeo</b><br />
+                Digital Technology</span
+              >
+            </a>
+            <div class="navbar-dropdown">
+              <a class="navbar-item"> Settings </a>
+              <hr class="navbar-divider" />
+              <a class="navbar-item"> Logout </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!--Content Body-->
+
+    <section class="section py-5">
+      <div class="level admin-title">
+        <div class="level-left">
+          <span
+            ><b>2 in Total</b><br />
+            Manage Departments and Department Tag Controls</span
+          >
+        </div>
+        <div class="level-right">
+          <button class="button">
+            <span class="icon">
+              <i class="fal fa-plus-circle"></i>
+            </span>
+            <span>Add Department</span>
+          </button>
+        </div>
+      </div>
+      <!--Table-->
+      <div class="table-container">
+        <table class="table is-fullwidth">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Department</th>
+              <th>Published Widgets</th>
+              <th>Tag Controls</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>2</td>
+              <td>IG-Telecom/Media/Technology</td>
+              <td>9</td>
+              <td>Unassigned</td>
+              <td>
+                <a href="/demo-admin/edittag.html"
+                  ><i class="fal fa-edit mr-1" aria-hidden="true"></i> Edit</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>IG-Life Sciences</td>
+              <td>7</td>
+              <td>Assigned</td>
+              <td>
+                <a href="/demo-admin/edittag.html"
+                  ><i class="fal fa-edit mr-1" aria-hidden="true"></i> Edit</a
+                >
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </div>
+</section>

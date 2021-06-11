@@ -12,7 +12,8 @@
     <meta property="og:url" content="" />
     <link rel="stylesheet" href="/css/fontawesome.css" />
     <link rel="stylesheet" href="/css/winnow.css" />
-    <title>Winnow Design System - Landing</title>
+    <link rel="stylesheet" href="/css/winnow-admin.css" />
+    <title>Winnow Design System - Landing Tag</title>
   </head>
   <body>
     <nav
@@ -38,8 +39,29 @@
       </div>
       <div id="winnowNav" class="navbar-menu">
         <div class="navbar-start">
-          <a class="navbar-item" href="/"> Home </a>
-          <a class="navbar-item" href="/demo/landing.html"> Demo </a>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link"> User App </a>
+            <div class="navbar-dropdown">
+              <a href="/" class="navbar-item"> Design System </a>
+              <a href="/demo-user/landing.html" class="navbar-item">
+                Demo Screens
+              </a>
+            </div>
+          </div>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link"> Admin Portal </a>
+            <div class="navbar-dropdown">
+              <a
+                href="/content/components-admin/sidebar.html"
+                class="navbar-item"
+              >
+                Design System
+              </a>
+              <a href="/demo-admin/landing.html" class="navbar-item">
+                Demo Screens
+              </a>
+            </div>
+          </div>
           <div class="is-hidden-desktop">
             
             <p class="pl-3 pt-3 is-size-7 is-uppercase has-text-grey-light">
@@ -223,6 +245,14 @@
               
               <li>
                 <a
+                  href="/content/elements/radio.html"
+                  class=""
+                  >Radio</a
+                >
+              </li>
+              
+              <li>
+                <a
                   href="/content/elements/input.html"
                   class=""
                   >Input</a
@@ -273,421 +303,138 @@
       </div>
     </nav>
     <section class="main-content columns is-fullheight is-marginless">
-      <div class="column is-paddingless is-fullheight has-background-white">
-        <section class="section content is-paddingless is-marginless pt-5">
-  <div class="is-divider" data-content="DEMO STARTS HERE"></div>
-  <nav class="navbar has-shadow" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand">
-    <a class="navbar-item" href="/demo/landing.html">
-      <img src="../../assets/img/logo_winnow.svg" width="145" height="35" />
-    </a>
-    <div class="navbar-minimal">
-      <div class="navbar-item">
-        <div class="field">
-          <div
-            id="winnowDropDownSettingsMini"
-            class="dropdown is-right"
-            onclick="dropDownMenuFunction('winnowDropDownSettingsMini')"
-          >
-            <div class="dropdown-trigger">
-              <button class="button"><i class="fal fa-cog"></i></button>
-            </div>
-            <div class="dropdown-menu" id="dropdown-menu" role="menu">
-              <div class="dropdown-content">
-                <div class="m-4">
-                  <i class="fas fa-user-circle fa-5x"></i>
-                  <p class="mt-2 has-text-weight-bold">Full Name</p>
-                  <p class="is-size-7">Designation , Department</p>
-                </div>
-                <hr class="dropdown-divider" />
-                <a
-                  href="#"
-                  class="dropdown-item"
-                  onclick="modalFunction('ModalShareLink')"
-                >
-                  <i class="fal fa-share"></i> Share Link
-                </a>
-                <a
-                  href="#"
-                  class="dropdown-item"
-                  data-show="quickview"
-                  data-target="quickviewDefault"
-                >
-                  <i class="fal fa-tags"></i> Manage Tags
-                </a>
-                <hr class="dropdown-divider" />
-                <a
-                  href="#"
-                  class="dropdown-item"
-                  data-show="quickview"
-                  data-target="quickviewDefault"
-                >
-                  <i class="fal fa-sign-out-alt"></i> Logout
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="navbar-menu">
-    <div class="navbar-end">
-      <div class="navbar-item">
-        <div class="field">
-          <div
-            id="winnowDropDownSettings"
-            class="dropdown is-right"
-            onclick="dropDownMenuFunction('winnowDropDownSettings')"
-          >
-            <div class="dropdown-trigger">
-              <button class="button"><i class="fal fa-cog"></i></button>
-            </div>
-            <div class="dropdown-menu" id="dropdown-menu" role="menu">
-              <div class="dropdown-content">
-                <div class="m-4">
-                  <i class="fas fa-user-circle fa-5x"></i>
-                  <p class="mt-2 has-text-weight-bold">Full Name</p>
-                  <p class="is-size-7">Designation , Department</p>
-                </div>
-                <hr class="dropdown-divider" />
-                <a
-                  href="#"
-                  class="dropdown-item"
-                  onclick="modalFunction('ModalShareLink')"
-                >
-                  <i class="fal fa-share"></i> Share Link
-                </a>
-                <a
-                  href="#"
-                  class="dropdown-item"
-                  data-show="quickview"
-                  data-target="quickviewDefault"
-                >
-                  <i class="fal fa-tags"></i> Manage Tags
-                </a>
-                <hr class="dropdown-divider" />
-                <a
-                  href="#"
-                  class="dropdown-item"
-                  data-show="quickview"
-                  data-target="quickviewDefault"
-                >
-                  <i class="fal fa-sign-out-alt"></i> Logout
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</nav>
-
-  <div class="section has-background-light" style="min-height: 650px">
-    <div class="column is-three-fifths is-offset-one-fifth has-text-centered">
-      <h1 class="title has-text-link mt-5">Discover more about a company.</h1>
-      <p>
-        Winnow consolidates company research on a single pane of glass for you.
-      </p>
-      <div class="box mt-5">
-        <div class="field has-addons">
-          <div class="control is-expanded">
-            <input
-              type="text"
-              class="input is-fullwidth"
-              placeholder="Enter a company or tag..."
-              onfocus="showSuggestions()"
-            />
-          </div>
-          <div class="control">
-            <a class="button"><i class="fal fa-search"></i></a>
-          </div>
-        </div>
-        <div
-          class="box suggestions"
-          style="
-            position: absolute;
-            width: calc(100% - 40px);
-            visibility: hidden;
-          "
+      <div
+        class="
+          admin-content
+          column
+          is-paddingless is-fullheight
+          has-background-white
+        "
+      >
+        <div class="is-divider" data-content="DEMO STARTS HERE"></div>
+<section class="main-content columns is-marginless">
+  <aside
+    class="column is-2 is-narrow-mobile section is-hidden-touch py-5"
+    style="background-color: #312a6d; height: 100vh"
+  >
+    <img src="../../assets/img/logo_winnowadmin.svg" width="145" height="35" />
+    <ul class="menu-list mt-5">
+      <li>
+        <a href="/demo-admin/landing.html"
+          ><i class="fal fa-window-restore mr-1" aria-hidden="true"></i>
+          Widgets</a
         >
-          <div class="has-text-left">
-            <span
-              class="
-                is-size-8 is-uppercase
-                has-text-weight-bold has-text-grey-light
-              "
-              >TAGS</span
-            >
-            <hr class="is-marginless" />
-            <div class="tags mt-2">
-              <span class="tag is-info is-light"
-                ><a href="/demo/searchedtags.html">Tag A</a></span
-              >
-
-              <span class="tag is-info is-light"
-                ><a href="/demo/searchedtags.html">Tag B</a></span
-              >
-              <span class="tag is-info is-light"
-                ><a href="/demo/searchedtags.html">Tag C</a></span
-              >
-            </div>
-            <span
-              class="
-                is-size-8 is-uppercase
-                has-text-weight-bold has-text-grey-light
-              "
-              >COMPANIES</span
-            >
-            <hr class="is-marginless" />
-            <p class="pt-3">
-              <a href="/demo/company.html"
-                ><span class="icon has-text-danger">
-                  <i class="fas fa-usd-circle"></i>
-                </span>
-                Company A</a
-              >
-            </p>
-            <p><a href="/demo/company.html">Company B</a></p>
-          </div>
-        </div>
-        <div class="has-text-left">
-          <span
-            class="
-              is-size-8 is-uppercase
-              has-text-weight-bold has-text-grey-light
-            "
-            >DISCOVER TAGS</span
-          >
-          <hr class="is-marginless" />
-          <div class="tags mt-2">
-            <span class="tag is-info is-light"
-              ><a href="/demo/searchedtags.html">Tag A</a>
-            </span>
-            <span class="tag is-info is-light"
-              ><a href="/demo/searchedtags.html">Tag B</a>
-            </span>
-            <span class="tag is-info is-light"
-              ><a href="/demo/searchedtags.html">Tag C</a>
-            </span>
-            <span class="tag is-info is-light"
-              ><a href="/demo/searchedtags.html">Tag D</a>
-            </span>
-            <span class="tag is-info is-light"
-              ><a href="/demo/searchedtags.html">Tag E</a>
-            </span>
-          </div>
-        </div>
-      </div>
-      <p class="mt-5">
-        Please note that selecting a company with this icon
-        <span class="icon has-text-danger">
-          <i class="fas fa-usd-circle"></i>
-        </span>
-        will cost credit from Pitchbook
-      </p>
-    </div>
-  </div>
-</section>
-<div id="quickviewDefault" class="quickview">
-  <header class="quickview-header" style="border: 0">
-    <p class="title has-text-weight-bold">Manage Tags</p>
-    <span class="delete" data-dismiss="quickview"></span>
-  </header>
-  <div class="quickview-body">
-    <div class="quickview-block p-4">
-      <!--Manage Tags-->
-      <section class="mb-5">
-  <p>Add or delete tag(s) to use in Winnow.</p>
-</section>
-
-      <!--Tag Selector-->
-      <section>
-  <div class="tabs is-small mb-2">
-    <ul class="is-marginless">
-      <li class="is-active"><a>Department Tags</a></li>
-      <li><a>Private Tags</a></li>
+      </li>
+      <li>
+        <a href="/demo-admin/landingtag.html" class="is-active"
+          ><i class="fal fa-tags mr-1" aria-hidden="true"></i> Tags</a
+        >
+      </li>
     </ul>
-  </div>
-  <div class="buttons are-small mb-2">
-    <button class="button is-marginless is-ghost p-1" style="border: 0">
-      A
-    </button>
-    <button class="button is-marginless is-ghost p-1" style="border: 0">
-      B
-    </button>
-    <button class="button is-marginless is-ghost p-1" style="border: 0">
-      C
-    </button>
-    <button class="button is-marginless is-ghost p-1" style="border: 0">
-      D
-    </button>
-    <button class="button is-marginless is-ghost p-1" style="border: 0">
-      E
-    </button>
-    <button class="button is-marginless is-ghost p-1" style="border: 0">
-      F
-    </button>
-    <button class="button is-marginless is-ghost p-1" style="border: 0">
-      G
-    </button>
-    <button class="button is-marginless is-ghost p-1" style="border: 0">
-      H
-    </button>
-    <button class="button is-marginless is-ghost p-1" style="border: 0">
-      I
-    </button>
-    <button class="button is-marginless is-ghost p-1" style="border: 0">
-      J
-    </button>
-    <button class="button is-marginless is-ghost p-1" style="border: 0">
-      K
-    </button>
-    <button class="button is-marginless is-ghost p-1" style="border: 0">
-      L
-    </button>
-    <button class="button is-marginless is-ghost p-1" style="border: 0">
-      M
-    </button>
-    <button class="button is-marginless is-ghost p-1" style="border: 0">
-      N
-    </button>
-    <button class="button is-marginless is-ghost p-1" style="border: 0">
-      O
-    </button>
-    <button class="button is-marginless is-ghost p-1" style="border: 0">
-      P
-    </button>
-    <button class="button is-marginless is-ghost p-1" style="border: 0">
-      Q
-    </button>
-    <button class="button is-marginless is-ghost p-1" style="border: 0">
-      R
-    </button>
-    <button class="button is-marginless is-ghost p-1" style="border: 0">
-      S
-    </button>
-    <button class="button is-marginless is-ghost p-1" style="border: 0">
-      T
-    </button>
-    <button class="button is-marginless is-ghost p-1" style="border: 0">
-      U
-    </button>
-    <button class="button is-marginless is-ghost p-1" style="border: 0">
-      V
-    </button>
-    <button class="button is-marginless is-ghost p-1" style="border: 0">
-      W
-    </button>
-    <button class="button is-marginless is-ghost p-1" style="border: 0">
-      X
-    </button>
-    <button class="button is-marginless is-ghost p-1" style="border: 0">
-      Y
-    </button>
-    <button class="button is-marginless is-ghost p-1" style="border: 0">
-      Z
-    </button>
-  </div>
-  <nav class="level is-mobile is-marginless">
-    <div class="level-left">
-      <div class="level-item">
-        <button
-          class="
-            button
-            is-small is-ghost
-            has-text-danger
-            is-marginless is-paddingless
-          "
+  </aside>
+  <div
+    class="column is-10 is-paddingless"
+    style="background-color: #f2f2f5; height: 100vh"
+  >
+    <!--Navbar-->
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a
+          role="button"
+          class="navbar-burger"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbarBasicExample"
         >
-          Delete Selected
-        </button>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
       </div>
-    </div>
-    <div class="level-right">
-      <p class="level-item">
-        <button class="button is-small is-ghost is-marginless is-paddingless">
-          Create New Tags
-        </button>
-      </p>
-    </div>
-  </nav>
-  <hr class="has-background-grey-light is-marginless" />
-  <p class="menu-label">A</p>
-  <ul class="menu-list is-marginless" style="list-style: none">
-    <li>
-      <label class="checkbox">
-        <input type="checkbox" />
-        Adtech
-      </label>
-    </li>
-    <li>
-      <label class="checkbox">
-        <input type="checkbox" />
-        Advanced manufacturing
-      </label>
-    </li>
-    <li>
-      <label class="checkbox">
-        <input type="checkbox" />
-        Agtech
-      </label>
-    </li>
-  </ul>
-  <p class="menu-label">B</p>
-  <ul class="menu-list is-marginless" style="list-style: none">
-    <li>
-      <label class="checkbox">
-        <input type="checkbox" />
-        B2B payments
-      </label>
-    </li>
-    <li>
-      <label class="checkbox">
-        <input type="checkbox" />
-        Beauty
-      </label>
-    </li>
-    <li>
-      <label class="checkbox">
-        <input type="checkbox" />
-        Big data
-      </label>
-    </li>
-  </ul>
-  <p class="menu-label">C</p>
-  <ul class="menu-list is-marginless" style="list-style: none">
-    <li>
-      <label class="checkbox">
-        <input type="checkbox" />
-        Cannabis
-      </label>
-    </li>
-    <li>
-      <label class="checkbox">
-        <input type="checkbox" />
-        Carsharing
-      </label>
-    </li>
-    <li>
-      <label class="checkbox">
-        <input type="checkbox" />
-        Cleantech
-      </label>
-    </li>
-  </ul>
-</section>
 
-    </div>
+      <div id="navbarBasicExample" class="navbar-menu px-2">
+        <div class="navbar-start">
+          <span class="navbar-item has-text-weight-bold has-text-link is-size-5"
+            >Tags</span
+          >
+        </div>
+        <div class="navbar-end">
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link has-text-link"
+              ><span
+                ><b>Jynn Lyi Yeo</b><br />
+                Digital Technology</span
+              >
+            </a>
+            <div class="navbar-dropdown">
+              <a class="navbar-item"> Settings </a>
+              <hr class="navbar-divider" />
+              <a class="navbar-item"> Logout </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!--Content Body-->
+
+    <section class="section py-5">
+      <div class="level admin-title">
+        <div class="level-left">
+          <span
+            ><b>2 in Total</b><br />
+            Manage Departments and Department Tag Controls</span
+          >
+        </div>
+        <div class="level-right">
+          <button class="button">
+            <span class="icon">
+              <i class="fal fa-plus-circle"></i>
+            </span>
+            <span>Add Department</span>
+          </button>
+        </div>
+      </div>
+      <!--Table-->
+      <div class="table-container">
+        <table class="table is-fullwidth">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Department</th>
+              <th>Published Widgets</th>
+              <th>Tag Controls</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>2</td>
+              <td>IG-Telecom/Media/Technology</td>
+              <td>9</td>
+              <td>Unassigned</td>
+              <td>
+                <a href="/demo-admin/edittag.html"
+                  ><i class="fal fa-edit mr-1" aria-hidden="true"></i> Edit</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>IG-Life Sciences</td>
+              <td>7</td>
+              <td>Assigned</td>
+              <td>
+                <a href="/demo-admin/edittag.html"
+                  ><i class="fal fa-edit mr-1" aria-hidden="true"></i> Edit</a
+                >
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
   </div>
-</div>
-<script>
-  function showSuggestions() {
-    document.getElementsByClassName("suggestions")[0].style.visibility =
-      "visible";
-  }
-</script>
+</section>
 
       </div>
     </section>

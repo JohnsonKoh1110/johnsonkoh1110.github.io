@@ -38,8 +38,29 @@
       </div>
       <div id="winnowNav" class="navbar-menu">
         <div class="navbar-start">
-          <a class="navbar-item" href="/"> Home </a>
-          <a class="navbar-item" href="/demo/landing.html"> Demo </a>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link"> User App </a>
+            <div class="navbar-dropdown">
+              <a href="/" class="navbar-item"> Design System </a>
+              <a href="/demo-user/landing.html" class="navbar-item">
+                Demo Screens
+              </a>
+            </div>
+          </div>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link"> Admin Portal </a>
+            <div class="navbar-dropdown">
+              <a
+                href="/content/components-admin/sidebar.html"
+                class="navbar-item"
+              >
+                Design System
+              </a>
+              <a href="/demo-admin/landing.html" class="navbar-item">
+                Demo Screens
+              </a>
+            </div>
+          </div>
           <div class="is-hidden-desktop">
             
             <p class="pl-3 pt-3 is-size-7 is-uppercase has-text-grey-light">
@@ -218,6 +239,14 @@
                   href="/content/elements/notification.html"
                   class=""
                   >Notification</a
+                >
+              </li>
+              
+              <li>
+                <a
+                  href="/content/elements/radio.html"
+                  class=""
+                  >Radio</a
                 >
               </li>
               
@@ -458,6 +487,14 @@
           
           <li>
             <a
+              href="/content/elements/radio.html"
+              class=""
+              >Radio</a
+            >
+          </li>
+          
+          <li>
+            <a
               href="/content/elements/input.html"
               class=""
               >Input</a
@@ -522,10 +559,10 @@
     </p>
     <nav class="navbar has-shadow" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
-    <a class="navbar-item is-hidden-mobile" href="/demo/landing.html">
+    <a class="navbar-item is-hidden-mobile" href="/demo-user/landing.html">
       <img src="../../assets/img/logo_winnow.svg" width="145" height="35" />
     </a>
-    <a class="navbar-item is-hidden-tablet" href="/demo/landing.html">
+    <a class="navbar-item is-hidden-tablet" href="/demo-user/landing.html">
       <img
         src="../../assets/img/logo_winnow_small.svg"
         width="50"
@@ -533,36 +570,22 @@
       />
     </a>
     <div class="navbar-minimal">
-      <div class="navbar-item">
-        <div
-          id="winnowDropDownSearch"
-          class="dropdown is-fullwidth is-right"
-          onclick="dropDownMenuFunction('winnowDropDownSearch')"
-        >
-          <div class="dropdown-trigger">
-            <button class="button"><i class="fal fa-search"></i></button>
+      <div class="navbar-item px-1">
+        <div class="field has-addons">
+          <div class="control is-expanded">
+            <input
+              type="text"
+              class="input is-fullwidth"
+              placeholder="Enter company name"
+            />
           </div>
-          <div class="dropdown-menu" id="dropdown-menu" role="menu">
-            <div class="dropdown-content">
-              <div class="dropdown-item">
-                <div class="field has-addons">
-                  <div class="control is-expanded">
-                    <input
-                      type="text"
-                      class="input is-fullwidth"
-                      placeholder="Enter company name"
-                    />
-                  </div>
-                  <div class="control">
-                    <a class="button"><i class="fal fa-search"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div class="control">
+            <a class="button"><i class="fal fa-search"></i></a>
           </div>
         </div>
       </div>
-      <div class="navbar-item">
+
+      <div class="navbar-item px-1">
         <div
           id="winnowDropDownLayoutMini"
           class="dropdown is-right"
@@ -582,7 +605,12 @@
               </span>
             </button>
           </div>
-          <div class="dropdown-menu" id="dropdown-menu" role="menu">
+          <div
+            class="dropdown-menu"
+            style="width: 98vw; position: absolute; right: -70px; top: 45px"
+            id="dropdown-menu"
+            role="menu"
+          >
             <div class="dropdown-content">
               <div class="dropdown-item">
                 <label class="label is-small">NEW LAYOUT</label>
@@ -646,7 +674,7 @@
           </div>
         </div>
       </div>
-      <div class="navbar-item">
+      <div class="navbar-item pl-1">
         <div class="field">
           <div
             id="winnowDropDownSettingsMini"
@@ -656,7 +684,12 @@
             <div class="dropdown-trigger">
               <button class="button"><i class="fal fa-cog"></i></button>
             </div>
-            <div class="dropdown-menu" id="dropdown-menu" role="menu">
+            <div
+              class="dropdown-menu"
+              style="width: 98vw; position: absolute; right: -15px; top: 45px"
+              id="dropdown-menu"
+              role="menu"
+            >
               <div class="dropdown-content">
                 <div class="m-4">
                   <i class="fas fa-user-circle fa-5x"></i>
@@ -698,7 +731,7 @@
   <!--Default-->
   <div class="navbar-menu">
     <div class="navbar-end">
-      <div class="navbar-item">
+      <div class="navbar-item px-1">
         <div class="field has-addons">
           <div class="control is-expanded">
             <input
@@ -713,7 +746,7 @@
         </div>
       </div>
 
-      <div class="navbar-item">
+      <div class="navbar-item px-1">
         <div class="field">
           <div
             id="winnowDropDownLayout"
@@ -800,7 +833,7 @@
           </div>
         </div>
       </div>
-      <div class="navbar-item">
+      <div class="navbar-item pl-1">
         <div class="field">
           <div
             id="winnowDropDownSettings"
@@ -1010,10 +1043,10 @@
     <p><b>Screen 2</b> - This view will appear after verified company names.</p>
     <nav class="navbar has-shadow" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
-    <a class="navbar-item is-hidden-mobile" href="/demo/landing.html">
+    <a class="navbar-item is-hidden-mobile" href="/demo-user/landing.html">
       <img src="../../assets/img/logo_winnow.svg" width="145" height="35" />
     </a>
-    <a class="navbar-item is-hidden-tablet" href="/demo/landing.html">
+    <a class="navbar-item is-hidden-tablet" href="/demo-user/landing.html">
       <img
         src="../../assets/img/logo_winnow_small.svg"
         width="50"
@@ -1021,36 +1054,22 @@
       />
     </a>
     <div class="navbar-minimal">
-      <div class="navbar-item">
-        <div
-          id="winnowDropDownSearch"
-          class="dropdown is-fullwidth is-right"
-          onclick="dropDownMenuFunction('winnowDropDownSearch')"
-        >
-          <div class="dropdown-trigger">
-            <button class="button"><i class="fal fa-search"></i></button>
+      <div class="navbar-item px-1">
+        <div class="field has-addons">
+          <div class="control is-expanded">
+            <input
+              type="text"
+              class="input is-fullwidth"
+              placeholder="Enter company name"
+            />
           </div>
-          <div class="dropdown-menu" id="dropdown-menu" role="menu">
-            <div class="dropdown-content">
-              <div class="dropdown-item">
-                <div class="field has-addons">
-                  <div class="control is-expanded">
-                    <input
-                      type="text"
-                      class="input is-fullwidth"
-                      placeholder="Enter company name"
-                    />
-                  </div>
-                  <div class="control">
-                    <a class="button"><i class="fal fa-search"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div class="control">
+            <a class="button"><i class="fal fa-search"></i></a>
           </div>
         </div>
       </div>
-      <div class="navbar-item">
+
+      <div class="navbar-item px-1">
         <div
           id="winnowDropDownLayoutMini"
           class="dropdown is-right"
@@ -1070,7 +1089,12 @@
               </span>
             </button>
           </div>
-          <div class="dropdown-menu" id="dropdown-menu" role="menu">
+          <div
+            class="dropdown-menu"
+            style="width: 98vw; position: absolute; right: -70px; top: 45px"
+            id="dropdown-menu"
+            role="menu"
+          >
             <div class="dropdown-content">
               <div class="dropdown-item">
                 <label class="label is-small">NEW LAYOUT</label>
@@ -1134,7 +1158,7 @@
           </div>
         </div>
       </div>
-      <div class="navbar-item">
+      <div class="navbar-item pl-1">
         <div class="field">
           <div
             id="winnowDropDownSettingsMini"
@@ -1144,7 +1168,12 @@
             <div class="dropdown-trigger">
               <button class="button"><i class="fal fa-cog"></i></button>
             </div>
-            <div class="dropdown-menu" id="dropdown-menu" role="menu">
+            <div
+              class="dropdown-menu"
+              style="width: 98vw; position: absolute; right: -15px; top: 45px"
+              id="dropdown-menu"
+              role="menu"
+            >
               <div class="dropdown-content">
                 <div class="m-4">
                   <i class="fas fa-user-circle fa-5x"></i>
@@ -1186,7 +1215,7 @@
   <!--Default-->
   <div class="navbar-menu">
     <div class="navbar-end">
-      <div class="navbar-item">
+      <div class="navbar-item px-1">
         <div class="field has-addons">
           <div class="control is-expanded">
             <input
@@ -1201,7 +1230,7 @@
         </div>
       </div>
 
-      <div class="navbar-item">
+      <div class="navbar-item px-1">
         <div class="field">
           <div
             id="winnowDropDownLayout"
@@ -1288,7 +1317,7 @@
           </div>
         </div>
       </div>
-      <div class="navbar-item">
+      <div class="navbar-item pl-1">
         <div class="field">
           <div
             id="winnowDropDownSettings"
