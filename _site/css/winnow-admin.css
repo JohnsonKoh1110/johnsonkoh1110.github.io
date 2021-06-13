@@ -12,6 +12,12 @@
 .admin-content .menu-list a {
   color: #ffffff;
 }
+.admin-content .menu-list a:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.admin-content .menu-list .is-active {
+  background-color: #8390d3;
+}
 .admin-title,
 .label {
   color: #8390d3;

@@ -1,7 +1,7 @@
 ---
 title: Edit Widget
 layout: layout-fullwidth-admin
-permalink: /demo-admin/editwidget.html
+permalink: /demo-admin/editchangelog.html
 category: DemoAdmin/EditWidget
 ---
 
@@ -14,7 +14,7 @@ category: DemoAdmin/EditWidget
     <img src="../../assets/img/logo_winnowadmin.svg" width="145" height="35" />
     <ul class="menu-list mt-5">
       <li>
-        <a href="/demo-admin/landing.html" class="is-active"
+        <a href="/demo-admin/landing.html"
           ><i class="fal fa-window-restore mr-1" aria-hidden="true"></i>
           Widgets</a
         >
@@ -25,7 +25,7 @@ category: DemoAdmin/EditWidget
         >
       </li>
       <li>
-        <a href="/demo-admin/landingchangelog.html"
+        <a href="/demo-admin/landingchangelog.html" class="is-active"
           ><i class="fal fa-clipboard mr-1" aria-hidden="true"></i> Changelog
         </a>
       </li>
@@ -40,7 +40,7 @@ category: DemoAdmin/EditWidget
       <div class="level is-mobile">
         <div class="level-left">
           <span class="has-text-weight-bold has-text-link is-size-5"
-            >Widgets</span
+            >Changelog</span
           >
         </div>
         <div class="level-right">
@@ -61,16 +61,16 @@ category: DemoAdmin/EditWidget
         <div class="level-left">
           <nav class="breadcrumb" aria-label="breadcrumbs">
             <ul>
-              <li><a href="/demo-admin/landing.html">Widgets</a></li>
+              <li><a href="/demo-admin/landingchangelog.html">Changelog</a></li>
               <li class="is-active">
-                <a href="#" aria-current="page">Management Team</a>
+                <a href="#" aria-current="page">Add Changelog</a>
               </li>
             </ul>
           </nav>
         </div>
         <div class="level-right">
           <button class="button is-primary is-outlined">Cancel</button
-          ><button class="button is-primary ml-2">Save Changes</button>
+          ><button class="button is-primary ml-2">Publish</button>
         </div>
       </div>
       <!--Segment-->
@@ -79,7 +79,7 @@ category: DemoAdmin/EditWidget
           <div class="card tile is-child">
             <header class="card-header">
               <div class="card-header-title">
-                <label>Widget Information</label>
+                <label>Changelog Information</label>
               </div>
             </header>
             <div class="card-content">
@@ -90,37 +90,16 @@ category: DemoAdmin/EditWidget
                     <input
                       class="input"
                       type="text"
-                      placeholder="Enter widget title"
+                      placeholder="Enter changelog title"
                     />
                   </div>
                 </div>
                 <div class="field">
-                  <label class="label">Brief Description</label>
+                  <label class="label">Description</label>
                   <div class="control">
                     <textarea
                       class="textarea"
-                      placeholder="Enter a brief description of the widget"
-                    ></textarea>
-                  </div>
-                </div>
-                <div class="field">
-                  <label class="label">Version</label>
-                  <div class="control">
-                    <input
-                      class="input"
-                      type="text"
-                      placeholder="Enter version (e.g. 1.4)"
-                    />
-                  </div>
-                </div>
-                <div class="field">
-                  <label class="label"
-                    >Additional Configuration (optional)</label
-                  >
-                  <div class="control">
-                    <textarea
-                      class="textarea"
-                      placeholder="Enter config"
+                      placeholder="Enter the description"
                     ></textarea>
                   </div>
                 </div>
@@ -138,42 +117,7 @@ category: DemoAdmin/EditWidget
             <div class="card-content">
               <div class="content">
                 <div class="field">
-                  <label class="label">Status</label>
-                  <div class="dropdown">
-                    <div class="dropdown-trigger">
-                      <button
-                        class="button"
-                        aria-haspopup="true"
-                        aria-controls="dropdown-menu"
-                      >
-                        <span>Unpublished</span>
-                        <span class="icon is-small">
-                          <i class="fas fa-angle-down" aria-hidden="true"></i>
-                        </span>
-                      </button>
-                    </div>
-                    <div class="dropdown-menu" id="dropdown-menu" role="menu">
-                      <div class="dropdown-content">
-                        <a href="#" class="dropdown-item"> Dropdown item </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="field">
-                  <label class="label">Widget Under Maintenance?</label>
-                  <div class="field">
-                    <input
-                      id="switchRoundedDefault"
-                      type="checkbox"
-                      name="switchRoundedDefault"
-                      class="switch is-rounded"
-                      checked="checked"
-                    />
-                    <label for="switchRoundedDefault">Yes</label>
-                  </div>
-                </div>
-                <div class="field">
-                  <label class="label">Widget Visibility</label>
+                  <label class="label">Changelog Visibility</label>
                   <div class="control">
                     <label class="radio">
                       <input type="radio" name="foobar" checked />
@@ -183,6 +127,36 @@ category: DemoAdmin/EditWidget
                       <input type="radio" name="foobar" />
                       Visible to specific AD Groups
                     </label>
+                  </div>
+                  <div class="dropdown mt-5">
+                    <div class="dropdown-trigger">
+                      <button
+                        class="button"
+                        aria-haspopup="true"
+                        aria-controls="dropdown-menu"
+                      >
+                        <span>Search AD Group</span>
+                        <span class="icon is-small">
+                          <i class="fas fa-angle-down" aria-hidden="true"></i>
+                        </span>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="columns is-mobile mt-0">
+                    <div class="column">
+                      <p>AD Group 1</p>
+                    </div>
+                    <div class="column is-4 has-text-right">
+                      <p class="has-text-danger">Remove</p>
+                    </div>
+                  </div>
+                  <div class="columns is-mobile">
+                    <div class="column">
+                      <p>AD Group 2</p>
+                    </div>
+                    <div class="column is-4 has-text-right">
+                      <p class="has-text-danger">Remove</p>
+                    </div>
                   </div>
                 </div>
               </div>
