@@ -47,13 +47,25 @@
     content: "#";
   }
   td:nth-of-type(2):before {
-    content: "Department";
+    content: "Company Name";
   }
   td:nth-of-type(3):before {
-    content: "Published Widgets ddddddddddd";
+    content: "Country of Listing";
   }
   td:nth-of-type(4):before {
-    content: "Tag Controls";
+    content: "Contracting Party Subject to Embargo";
+  }
+  td:nth-of-type(5):before {
+    content: "Details of Restriction";
+  }
+  td:nth-of-type(6):before {
+    content: "Beginning of Restriction Period";
+  }
+  td:nth-of-type(7):before {
+    content: "End of Restriction Period";
+  }
+  td:nth-of-type(8):before {
+    content: "Counsel In-Charge";
   }
 }
 
