@@ -5,10 +5,59 @@
 .table tr {
   border-top: 4px solid #f2f2f5;
 }
+.table td {
+  border: none;
+}
 .table thead {
   background-color: #e7e9f2;
   border-top: 0;
 }
+
+@media only screen and (max-width: 768px) {
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+    background-color: #e7e9f2;
+  }
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  td {
+    background-color: #ffffff;
+    position: relative;
+    padding-left: 200px;
+    margin-left: 150px;
+  }
+  td:before {
+    color: #312a6d;
+    font-weight: bold;
+    position: absolute;
+    left: 8px;
+    width: 200px;
+    padding-right: 40px;
+    white-space: nowrap;
+    margin-left: -150px;
+  }
+  td:nth-of-type(1):before {
+    content: "#";
+  }
+  td:nth-of-type(2):before {
+    content: "Department";
+  }
+  td:nth-of-type(3):before {
+    content: "Published Widgets";
+  }
+  td:nth-of-type(4):before {
+    content: "Tag Controls";
+  }
+}
+
 .admin-content .menu-list a {
   color: #ffffff;
 }
